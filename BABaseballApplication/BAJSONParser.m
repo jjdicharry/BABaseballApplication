@@ -7,12 +7,22 @@
 //
 
 #import "BAJSONParser.h"
+#define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
 
 @implementation BAJSONParser
 
--(NSDictionary*)parseJSON {
+
+-(NSDictionary*)parseJSON:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day{
     NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
-    NSURL        *url;
+    NSURL        *url            = [NSURL URLWithString:@"http://itunes.apple.com/us/rss/topalbums/limit=20/json"];
+    
+    dispatch_async(mainQueue, ^{
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        [self performSelectorOnMainThread:@selector(jsonData:) withObject:data waitUntilDone:YES];
+    });
+    
+    
     
     return jsonDictionary;
 }
