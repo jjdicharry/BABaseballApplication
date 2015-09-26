@@ -16,6 +16,7 @@
 		045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B471D1BB747570088C360 /* LaunchScreen.storyboard */; };
 		045B472A1BB747580088C360 /* BABaseballApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47291BB747580088C360 /* BABaseballApplicationTests.m */; };
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
+		04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		045B47301BB747580088C360 /* BABaseballApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B47341BB747580088C360 /* BABaseballApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABaseballApplicationUITests.m; sourceTree = "<group>"; };
 		045B47361BB747580088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONParser.h; sourceTree = "<group>"; };
+		04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				045B47101BB747570088C360 /* AppDelegate.m */,
 				045B47121BB747570088C360 /* ViewController.h */,
 				045B47131BB747570088C360 /* ViewController.m */,
+				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
+				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
 				045B47151BB747570088C360 /* Main.storyboard */,
 				045B471B1BB747570088C360 /* Assets.xcassets */,
 				045B471D1BB747570088C360 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				045B47141BB747570088C360 /* ViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
+				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +506,7 @@
 				045B473B1BB747580088C360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045B473C1BB747580088C360 /* Build configuration list for PBXNativeTarget "BABaseballApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +515,7 @@
 				045B473E1BB747580088C360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045B473F1BB747580088C360 /* Build configuration list for PBXNativeTarget "BABaseballApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +524,7 @@
 				045B47411BB747580088C360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
