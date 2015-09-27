@@ -2,5 +2,5 @@
 
 iPhone Baseball Application
 
-Parses JSON at http://www.google.com
+Parses JSON at http://gd2.mlb.com/components/game/mlb/
 
