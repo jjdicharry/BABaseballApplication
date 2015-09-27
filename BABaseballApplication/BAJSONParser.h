@@ -10,6 +10,6 @@
 
 @interface BAJSONParser : NSObject
 
--(NSDictionary*)parseJSON:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day;
+-(NSDictionary*)parseJSON:(NSString*)year andMonth:(NSString*)month andDay:(NSString*)day;
 
 @end
