@@ -15,14 +15,22 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+/**
+ *  Method - viewDidLoad
+ */
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     BAJSONParser *jsonParser = [[BAJSONParser alloc] init];
     [jsonParser parseJSON:@"2015" andMonth:@"09" andDay:@"26"];
 }
 
-- (void)didReceiveMemoryWarning {
+/**
+ *  Method - didReceiveMemoryWarning
+ */
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
