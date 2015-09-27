@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BAJSONParser.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    BAJSONParser *jsonParser = [[BAJSONParser alloc] init];
+    [jsonParser parseJSON:@"2015" andMonth:@"09" andDay:@"26"];
 }
 
 - (void)didReceiveMemoryWarning {

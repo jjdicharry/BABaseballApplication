@@ -16,6 +16,7 @@
 		045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B471D1BB747570088C360 /* LaunchScreen.storyboard */; };
 		045B472A1BB747580088C360 /* BABaseballApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47291BB747580088C360 /* BABaseballApplicationTests.m */; };
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
+		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		045B47301BB747580088C360 /* BABaseballApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B47341BB747580088C360 /* BABaseballApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABaseballApplicationUITests.m; sourceTree = "<group>"; };
 		045B47361BB747580088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
+		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
 		04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONParser.h; sourceTree = "<group>"; };
 		04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,12 +109,11 @@
 		045B470B1BB747570088C360 /* BABaseballApplication */ = {
 			isa = PBXGroup;
 			children = (
+				04D529971BB856BE00F03357 /* Controllers */,
+				04D529961BB8569800F03357 /* ModelClasses */,
+				04D529951BB8567B00F03357 /* ViewControllers */,
 				045B470F1BB747570088C360 /* AppDelegate.h */,
 				045B47101BB747570088C360 /* AppDelegate.m */,
-				045B47121BB747570088C360 /* ViewController.h */,
-				045B47131BB747570088C360 /* ViewController.m */,
-				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
-				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
 				045B47151BB747570088C360 /* Main.storyboard */,
 				045B471B1BB747570088C360 /* Assets.xcassets */,
 				045B471D1BB747570088C360 /* LaunchScreen.storyboard */,
@@ -146,6 +148,33 @@
 				045B47361BB747580088C360 /* Info.plist */,
 			);
 			path = BABaseballApplicationUITests;
+			sourceTree = "<group>";
+		};
+		04D529951BB8567B00F03357 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				045B47121BB747570088C360 /* ViewController.h */,
+				045B47131BB747570088C360 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04D529961BB8569800F03357 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				04D529921BB84DA700F03357 /* BAScoreboard.h */,
+				04D529931BB84DA700F03357 /* BAScoreboard.m */,
+			);
+			name = ModelClasses;
+			sourceTree = "<group>";
+		};
+		04D529971BB856BE00F03357 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
+				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +309,7 @@
 			files = (
 				045B47141BB747570088C360 /* ViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
+				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
