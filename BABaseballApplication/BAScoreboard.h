@@ -48,17 +48,20 @@
 @property (strong, nonatomic) NSString *savePitchWin;
 @property (strong, nonatomic) NSString *savePitchSave;
 @property (strong, nonatomic) NSString *savePitchLoss;
+@property (strong, nonatomic) NSString *savePitchERA;
 @property (strong, nonatomic) NSString *winnPitchLastName;
 @property (strong, nonatomic) NSString *winnPitchFirstName;
 @property (strong, nonatomic) NSString *winnPitchNumber;
 @property (strong, nonatomic) NSString *winnPitchWin;
 @property (strong, nonatomic) NSString *winnPitchSave;
 @property (strong, nonatomic) NSString *winnPitchLoss;
+@property (strong, nonatomic) NSString *winnPitchERA;
 @property (strong, nonatomic) NSString *losePitchLastName;
 @property (strong, nonatomic) NSString *losePitchFirstName;
 @property (strong, nonatomic) NSString *losePitchNumber;
 @property (strong, nonatomic) NSString *losePitchWin;
 @property (strong, nonatomic) NSString *losePitchSave;
 @property (strong, nonatomic) NSString *losePitchLoss;
+@property (strong, nonatomic) NSString *losePitchERA;
 
 @end
