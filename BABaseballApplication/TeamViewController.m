@@ -6,7 +6,7 @@
 //  Copyright © 2015 MAC. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TeamViewController.h"
 
 #import "BAJSONParser.h"
 #import "Team.h"
