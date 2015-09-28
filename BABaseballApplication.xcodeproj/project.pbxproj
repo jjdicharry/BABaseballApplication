@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5061BB99B150076F540 /* TeamTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		044BD50A1BB99E110076F540 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5091BB99E110076F540 /* Team.m */; settings = {ASSET_TAGS = (); }; };
 		045B470E1BB747570088C360 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B470D1BB747570088C360 /* main.m */; };
 		045B47111BB747570088C360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47101BB747570088C360 /* AppDelegate.m */; };
 		045B47141BB747570088C360 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47131BB747570088C360 /* ViewController.m */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044BD5051BB99B150076F540 /* TeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
+		044BD5061BB99B150076F540 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
+		044BD5081BB99E110076F540 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		044BD5091BB99E110076F540 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 		045B47091BB747570088C360 /* BABaseballApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BABaseballApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B470D1BB747570088C360 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045B470F1BB747570088C360 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -173,6 +179,10 @@
 			children = (
 				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
 				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
+				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
+				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
+				044BD5081BB99E110076F540 /* Team.h */,
+				044BD5091BB99E110076F540 /* Team.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -307,9 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044BD50A1BB99E110076F540 /* Team.m in Sources */,
 				045B47141BB747570088C360 /* ViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
+				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
