@@ -12,11 +12,11 @@
 #import "Team.h"
 #import "TeamTableViewCell.h"
 
-@interface ViewController ()
+@interface TeamViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TeamViewController
 {
 	NSMutableArray *teams;
 }
