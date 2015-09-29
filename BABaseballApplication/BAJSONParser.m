@@ -8,13 +8,14 @@
 
 #import "BAJSONParser.h"
 #import "BAScoreboard.h"
+#import "AppDelegate.h"
+
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
 @implementation BAJSONParser
 
-
--(NSDictionary*)parseJSON:(NSString*)year andMonth:(NSString*)month andDay:(NSString*)day{
+- (NSDictionary *)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day{
     NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
     NSURL        *url;
     NSString     *urlString      = @"http://gd2.mlb.com/components/game/mlb/year_";
@@ -172,5 +173,34 @@
         
     }
 }
+
+- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
+    NSData                 *entityData    = nil;
+    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
+    NSEntityDescription    *contactEntity = [NSEntityDescription entityForName:@"Scoreboard"
+                                                        inManagedObjectContext:context];
+    
+    NSFetchRequest *request   = [[NSFetchRequest alloc] init];
+    NSError        *error;
+    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
+    
+    [request setEntity:contactEntity];
+    [request setPredicate:predicate];
+    
+    NSManagedObject *matches      = nil;
+    NSArray         *requestArray = [context executeFetchRequest:request error:&error];
+    
+    if (requestArray.count == 0) {
+        entityData = nil;
+    }
+    else {
+        matches    = [requestArray objectAtIndex:0];
+        entityData = [matches valueForKey:@"gameDate"];
+    }
+    
+    return entityData;
+}
+
 
 @end
