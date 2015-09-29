@@ -15,7 +15,7 @@
 
 @implementation BAJSONParser
 
-- (NSDictionary *)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day{
+- (void)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day {
     NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
     NSURL        *url;
     NSString     *urlString      = @"http://gd2.mlb.com/components/game/mlb/year_";
@@ -31,8 +31,6 @@
         NSData *data   = [NSData dataWithContentsOfURL:url];
         [self performSelectorOnMainThread:@selector(jsonData:) withObject:data waitUntilDone:YES];
     });
-    
-    return jsonDictionary;
 }
 
 - (void)jsonData:(NSData *)data {
@@ -178,6 +176,7 @@
 }
 
 - (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
+    BOOL                   rowFound       = NO;
     NSData                 *entityData    = nil;
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
@@ -186,7 +185,7 @@
     
     NSFetchRequest *request   = [[NSFetchRequest alloc] init];
     NSError        *error;
-    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
+    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
     
     [request setEntity:contactEntity];
     [request setPredicate:predicate];
@@ -196,6 +195,7 @@
     
     if (requestArray.count == 0) {
         entityData = nil;
+        rowFound   = NO;
     }
     else {
         matches    = [requestArray objectAtIndex:0];
