@@ -8,7 +8,7 @@
 
 #import "TeamViewController.h"
 
-#import "BAJSONParser.h"
+#import "BAJSON.h"
 #import "Favorite.h"
 #import "TeamTableViewCell.h"
 
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    BAJSONParser *jsonParser = [[BAJSONParser alloc] init];
+    BAJSON *jsonParser = [[BAJSON alloc] init];
     [jsonParser parseJSON:@"2015" andMonth:@"09" andDay:@"26"];
 	
 	// load teams from Defaults.plist

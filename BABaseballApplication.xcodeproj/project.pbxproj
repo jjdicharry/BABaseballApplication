@@ -21,7 +21,7 @@
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
 		04A45FC11BBAE2F500F4B17A /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A45FC01BBAE2F500F4B17A /* Favorite.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
-		04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
+		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,8 @@
 		04A45FC01BBAE2F500F4B17A /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
-		04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONParser.h; sourceTree = "<group>"; };
-		04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONParser.m; sourceTree = "<group>"; };
+		04D9CF501BB74AEE000E2F37 /* BAJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSON.h; sourceTree = "<group>"; };
+		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,8 +183,8 @@
 		04D529971BB856BE00F03357 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
-				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
+				04D9CF501BB74AEE000E2F37 /* BAJSON.h */,
+				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
 				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 				043740901BBA28840009858C /* Alert.h */,
@@ -333,7 +333,7 @@
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				04A45FC11BBAE2F500F4B17A /* Favorite.m in Sources */,
-				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
+				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

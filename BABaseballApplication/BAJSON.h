@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BAJSONParser : NSObject
+@interface BAJSON : NSObject
 
 -(NSDictionary*)parseJSON:(NSString*)year andMonth:(NSString*)month andDay:(NSString*)day;
 

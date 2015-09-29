@@ -6,12 +6,12 @@
 //  Copyright © 2015 MAC. All rights reserved.
 //
 
-#import "BAJSONParser.h"
+#import "BAJSON.h"
 #import "BAScoreboard.h"
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
-@implementation BAJSONParser
+@implementation BAJSON
 
 
 -(NSDictionary*)parseJSON:(NSString*)year andMonth:(NSString*)month andDay:(NSString*)day{
