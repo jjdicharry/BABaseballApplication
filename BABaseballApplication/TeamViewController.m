@@ -9,7 +9,7 @@
 #import "TeamViewController.h"
 
 #import "BAJSONParser.h"
-#import "Team.h"
+#import "Favorite.h"
 #import "TeamTableViewCell.h"
 
 @interface TeamViewController ()
@@ -45,6 +45,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+	/*
+	NSArray *favorites;
+	NSError *error;
+	
+	favorites = [Favorite getAll:&error];
+	
+	if (error)
+		return 1;
+	
+	if (favorites.count > 0)
+		return 2;
+	 */
+	
 	return 1;
 }
 
@@ -56,6 +69,20 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
+	/*
+	NSArray *favorites;
+	NSError *error;
+	
+	favorites = [Favorite getAll:&error];
+	
+	if (!error && (favorites.count > 0)) {
+		if (section == 2)
+			return teams.count;
+		else if (section == 1)
+			return 0;
+	}
+	 */
+	
 	return teams.count;
 }
 
@@ -65,11 +92,29 @@
 	static NSString *reuseIdentifier = @"TeamTableViewCell";
 	TeamTableViewCell *cell;
 	NSDictionary *team;
+	NSManagedObject *favorite;
+	NSMutableString *name;
+	NSError *error;
+	UIImage *icon;
 	
 	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+	
 	team = [teams objectAtIndex:indexPath.row];
 	
-	cell.teamNameLabel.text = [team objectForKey:@"Name"];
+	name = [team objectForKey:@"Name"];
+	cell.teamNameLabel.text = name;
+	cell.tableView = tableView;
+	cell.delegate = self;
+	
+	favorite = [Favorite getByName:name error:&error];
+	
+	if (!error && favorite) {
+		icon = [UIImage imageNamed:@"yellow_star"];
+		[cell.favoriteIcon setImage:icon forState:UIControlStateNormal];
+	} else {
+		icon = [UIImage imageNamed:@"star"];
+		[cell.favoriteIcon setImage:icon forState:UIControlStateNormal];
+	}
 	
 	return cell;
 }

@@ -12,7 +12,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *teamNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *favoriteIcon;
+@property (weak, nonatomic) UIViewController *delegate;
+@property (weak, nonatomic) UITableView *tableView;
 
+/**
+ *  Happens when a favorite button "star icon" is pressed
+ */
 - (IBAction)favoritePressed:(id)sender;
 
 @end

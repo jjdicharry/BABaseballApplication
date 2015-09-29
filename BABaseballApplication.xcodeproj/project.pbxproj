@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0437408F1BB9FCB80009858C /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0437408E1BB9FCB80009858C /* Defaults.plist */; settings = {ASSET_TAGS = (); }; };
+		043740921BBA28840009858C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 043740911BBA28840009858C /* Alert.m */; settings = {ASSET_TAGS = (); }; };
 		044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5061BB99B150076F540 /* TeamTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		044BD50A1BB99E110076F540 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5091BB99E110076F540 /* Team.m */; settings = {ASSET_TAGS = (); }; };
 		045B470E1BB747570088C360 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B470D1BB747570088C360 /* main.m */; };
 		045B47111BB747570088C360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47101BB747570088C360 /* AppDelegate.m */; };
 		045B47141BB747570088C360 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47131BB747570088C360 /* TeamViewController.m */; };
@@ -19,6 +19,7 @@
 		045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B471D1BB747570088C360 /* LaunchScreen.storyboard */; };
 		045B472A1BB747580088C360 /* BABaseballApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47291BB747580088C360 /* BABaseballApplicationTests.m */; };
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
+		04A45FC11BBAE2F500F4B17A /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A45FC01BBAE2F500F4B17A /* Favorite.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -42,10 +43,10 @@
 
 /* Begin PBXFileReference section */
 		0437408E1BB9FCB80009858C /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		043740901BBA28840009858C /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		043740911BBA28840009858C /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
 		044BD5051BB99B150076F540 /* TeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
 		044BD5061BB99B150076F540 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
-		044BD5081BB99E110076F540 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
-		044BD5091BB99E110076F540 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 		045B47091BB747570088C360 /* BABaseballApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BABaseballApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B470D1BB747570088C360 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045B470F1BB747570088C360 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +64,8 @@
 		045B47301BB747580088C360 /* BABaseballApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B47341BB747580088C360 /* BABaseballApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABaseballApplicationUITests.m; sourceTree = "<group>"; };
 		045B47361BB747580088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A45FBF1BBAE2F500F4B17A /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
+		04A45FC01BBAE2F500F4B17A /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
 		04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONParser.h; sourceTree = "<group>"; };
@@ -184,8 +187,10 @@
 				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
 				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
-				044BD5081BB99E110076F540 /* Team.h */,
-				044BD5091BB99E110076F540 /* Team.m */,
+				043740901BBA28840009858C /* Alert.h */,
+				043740911BBA28840009858C /* Alert.m */,
+				04A45FBF1BBAE2F500F4B17A /* Favorite.h */,
+				04A45FC01BBAE2F500F4B17A /* Favorite.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -321,12 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044BD50A1BB99E110076F540 /* Team.m in Sources */,
 				045B47141BB747570088C360 /* TeamViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
+				043740921BBA28840009858C /* Alert.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
+				04A45FC11BBAE2F500F4B17A /* Favorite.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);
