@@ -128,7 +128,7 @@
     }
     else {
         requestResult       = [requestArray objectAtIndex:0];
-        scoreboard.gameDate = [requestResult valueForKey:@"gameDate"];
+        [self setScoreboard:requestResult];
     }
     
     return scoreboard;
@@ -136,6 +136,80 @@
 
 - (BAScoreboard *)setScoreboard:(NSManagedObject *)requestResult {
     BAScoreboard *scoreboard = [[BAScoreboard alloc] init];
+    
+    scoreboard.gameDate       = [requestResult  valueForKey:@"gameDate"];
+    scoreboard.location       = [requestResult  valueForKey:@"location"];
+    scoreboard.time           = [requestResult  valueForKey:@"time"];
+    scoreboard.amPM           = [requestResult  valueForKey:@"amPM"];
+    scoreboard.venue          = [requestResult  valueForKey:@"venue"];
+    scoreboard.awayTeamName   = [requestResult  valueForKey:@"awayTeamName"];
+    scoreboard.awayTeamCity   = [requestResult  valueForKey:@"awayTeamCity"];
+    scoreboard.awayTeamAbbr   = [requestResult  valueForKey:@"awayTeamAbbr"];
+    scoreboard.awayWin        = [[requestResult valueForKey:@"awayWin"] intValue];
+    scoreboard.awayLoss       = [[requestResult valueForKey:@"awayLoss"] intValue];
+    scoreboard.awayGameBack   = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"awayGameBack"]];
+    scoreboard.awayGameBackWC = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"awayGameBackWC"]];
+    scoreboard.awayRun        = [[requestResult valueForKey:@"awayRun"] intValue];
+    scoreboard.awayHit        = [[requestResult valueForKey:@"awayHit"] intValue];
+    scoreboard.awayError      = [[requestResult valueForKey:@"awayError"] intValue];
+    scoreboard.awayHomeRun    = [[requestResult valueForKey:@"awayHomeRun"] intValue];
+    scoreboard.awayStrikeOut  = [[requestResult valueForKey:@"awayStrikeOut"] intValue];
+    scoreboard.awayStoleBase  = [[requestResult valueForKey:@"awayStoleBase"] intValue];
+    scoreboard.awayInni01     = [[requestResult valueForKey:@"awayInni01"] intValue];
+    scoreboard.awayInni02     = [[requestResult valueForKey:@"awayInni02"] intValue];
+    scoreboard.awayInni03     = [[requestResult valueForKey:@"awayInni03"] intValue];
+    scoreboard.awayInni04     = [[requestResult valueForKey:@"awayInni04"] intValue];
+    scoreboard.awayInni05     = [[requestResult valueForKey:@"awayInni05"] intValue];
+    scoreboard.awayInni06     = [[requestResult valueForKey:@"awayInni06"] intValue];
+    scoreboard.awayInni07     = [[requestResult valueForKey:@"awayInni07"] intValue];
+    scoreboard.awayInni08     = [[requestResult valueForKey:@"awayInni08"] intValue];
+    scoreboard.awayInni09     = [[requestResult valueForKey:@"awayInni09"] intValue];
+    scoreboard.awayInniEx     = [[requestResult valueForKey:@"awayInniEx"] intValue];
+    scoreboard.homeTeamName   = [requestResult  valueForKey:@"homeTeamName"];
+    scoreboard.homeTeamCity   = [requestResult  valueForKey:@"homeTeamCity"];
+    scoreboard.homeTeamAbbr   = [requestResult  valueForKey:@"homeTeamAbbr"];
+    scoreboard.homeWin        = [[requestResult valueForKey:@"homeWin"] intValue];
+    scoreboard.homeLoss       = [[requestResult valueForKey:@"homeLoss"] intValue];
+    scoreboard.homeGameBack   = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"homeGameBack"]];
+    scoreboard.homeGameBackWC = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"homeGameBackWC"]];
+    scoreboard.homeRun        = [[requestResult valueForKey:@"homeRun"] intValue];
+    scoreboard.homeHit        = [[requestResult valueForKey:@"homeHit"] intValue];
+    scoreboard.homeError      = [[requestResult valueForKey:@"homeError"] intValue];
+    scoreboard.homeHomeRun    = [[requestResult valueForKey:@"homeHomeRun"] intValue];
+    scoreboard.homeStrikeOut  = [[requestResult valueForKey:@"homeStrikeOut"] intValue];
+    scoreboard.homeStoleBase  = [[requestResult valueForKey:@"homeStoleBase"] intValue];
+    scoreboard.homeInni01     = [[requestResult valueForKey:@"homeInni01"] intValue];
+    scoreboard.homeInni02     = [[requestResult valueForKey:@"homeInni02"] intValue];
+    scoreboard.homeInni03     = [[requestResult valueForKey:@"homeInni03"] intValue];
+    scoreboard.homeInni04     = [[requestResult valueForKey:@"homeInni04"] intValue];
+    scoreboard.homeInni05     = [[requestResult valueForKey:@"homeInni05"] intValue];
+    scoreboard.homeInni06     = [[requestResult valueForKey:@"homeInni06"] intValue];
+    scoreboard.homeInni07     = [[requestResult valueForKey:@"homeInni07"] intValue];
+    scoreboard.homeInni08     = [[requestResult valueForKey:@"homeInni08"] intValue];
+    scoreboard.homeInni09     = [[requestResult valueForKey:@"homeInni09"] intValue];
+    scoreboard.homeInniEx     = [[requestResult valueForKey:@"homeInniEx"] intValue];
+    
+    scoreboard.savePitchLastName  = [requestResult valueForKey:@"savePitchLastName"];
+    scoreboard.savePitchFirstName = [requestResult valueForKey:@"savePitchFirstName"];
+    scoreboard.savePitchNumber    = [[requestResult valueForKey:@"savePitchNumber"] integerValue];
+    scoreboard.savePitchWin       = [[requestResult valueForKey:@"savePitchWin"] integerValue];
+    scoreboard.savePitchSave      = [[requestResult valueForKey:@"savePitchSave"] integerValue];
+    scoreboard.savePitchLoss      = [[requestResult valueForKey:@"savePitchLoss"] integerValue];
+    scoreboard.savePitchERA       = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"savePitchERA"]];
+    scoreboard.winnPitchLastName  = [requestResult valueForKey:@"winnPitchLastName"];
+    scoreboard.winnPitchFirstName = [requestResult valueForKey:@"winnPitchFirstName"];
+    scoreboard.winnPitchNumber    = [[requestResult valueForKey:@"winnPitchNumber"] integerValue];
+    scoreboard.winnPitchWin       = [[requestResult valueForKey:@"winnPitchWin"] integerValue];
+    scoreboard.winnPitchSave      = [[requestResult valueForKey:@"winnPitchSave"] integerValue];
+    scoreboard.winnPitchLoss      = [[requestResult valueForKey:@"winnPitchLoss"] integerValue];
+    scoreboard.winnPitchERA       = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"winnPitchERA"]];
+    scoreboard.losePitchLastName  = [requestResult valueForKey:@"losePitchLastName"];
+    scoreboard.losePitchFirstName = [requestResult valueForKey:@"losePitchFirstName"];
+    scoreboard.losePitchNumber    = [[requestResult valueForKey:@"losePitchNumber"] integerValue];
+    scoreboard.losePitchWin       = [[requestResult valueForKey:@"losePitchWin"] integerValue];
+    scoreboard.losePitchSave      = [[requestResult valueForKey:@"losePitchSave"] integerValue];
+    scoreboard.losePitchLoss      = [[requestResult valueForKey:@"losePitchLoss"] integerValue];
+    scoreboard.losePitchERA       = [NSDecimalNumber decimalNumberWithString:[requestResult valueForKey:@"losePitchERA"]];
     
     return scoreboard;
 }
