@@ -10,6 +10,16 @@
         <attribute name="awayGameBackWC" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="awayHit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="awayHomeRun" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni01" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni02" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni03" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni04" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni05" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni06" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni07" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni08" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInni09" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="awayInniEx" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="awayLoss" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="awayRun" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="awayStoleBase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,6 +34,16 @@
         <attribute name="homeGameBackWC" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homeHit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homeHomeRun" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni01" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni02" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni03" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni04" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni05" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni06" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni07" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni08" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInni09" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="homeInniEx" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homeLoss" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homeRun" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homeStoleBase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -33,11 +53,32 @@
         <attribute name="homeTeamName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="homeWin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="losePitchERA" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="losePitchFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="losePitchLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="losePitchLoss" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="losePitchNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="losePitchSave" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="losePitchWin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="savePitchERA" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="savePitchFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="savePitchLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="savePitchLoss" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="savePitchNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="savePitchSave" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="savePitchWin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="venue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winnPitchERA" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="winnPitchFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winnPitchLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winnPitchLoss" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="winnPitchNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="winnPitchSave" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="winnPitchWin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Scoreboard" positionX="-63" positionY="-18" width="128" height="510"/>
-        <element name="Favorite" positionX="196" positionY="135" width="128" height="58"/>
+        <element name="Favorite" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Scoreboard" positionX="-63" positionY="-18" width="128" height="1125"/>
     </elements>
 </model>

@@ -7,17 +7,17 @@
 //
 
 #import "BAJSON.h"
+#import "BACoreData.h"
 #import "BAScoreboard.h"
-#define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
+#define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 @implementation BAJSON
 
-
--(NSDictionary*)parseJSON:(NSString*)year andMonth:(NSString*)month andDay:(NSString*)day{
-    NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
-    NSURL        *url;
-    NSString     *urlString      = @"http://gd2.mlb.com/components/game/mlb/year_";
+- (void)parseScoreboardWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day {
+    NSURL    *url;
+    NSString *urlString = @"http://gd2.mlb.com/components/game/mlb/year_";
+    
     urlString = [urlString stringByAppendingString:year];
     urlString = [urlString stringByAppendingString:@"/month_"];
     urlString = [urlString stringByAppendingString:month];
@@ -28,13 +28,11 @@
     
     dispatch_async(mainQueue, ^{
         NSData *data   = [NSData dataWithContentsOfURL:url];
-        [self performSelectorOnMainThread:@selector(jsonData:) withObject:data waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(scoreboardData:) withObject:data waitUntilDone:YES];
     });
-    
-    return jsonDictionary;
 }
 
-- (void)jsonData:(NSData *)data {
+- (void)scoreboardData:(NSData *)data {
     NSError *error;
     
     // Get all the data
@@ -170,7 +168,8 @@
             }
         }
         
+        BACoreData *coreData = [[BACoreData alloc] init];
+        [coreData insScoreboard:scoreboard];
     }
 }
-
 @end

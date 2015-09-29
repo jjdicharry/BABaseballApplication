@@ -24,8 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    BAJSON *jsonParser = [[BAJSON alloc] init];
-    [jsonParser parseJSON:@"2015" andMonth:@"09" andDay:@"26"];
+    BAJSON *json = [[BAJSON alloc] init];
+    [json parseScoreboardWithYear:@"2015" andMonth:@"09" andDay:@"26"];
 	
 	// load teams from Defaults.plist
 	NSBundle *bundle = [NSBundle mainBundle];
