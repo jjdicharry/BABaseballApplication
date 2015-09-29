@@ -6,11 +6,119 @@
 	<array>
 		<dict>
 			<key>Name</key>
+			<string>Diamondbacks</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Braves</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Orioles</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Red Sox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>White Sox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Cubs</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Reds</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Indians</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Rockies</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Tigers</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Marlins</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Astros</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Royals</string>
+		</dict>
+		<dict>
+			<key>Name</key>
 			<string>Angels</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Dodgers</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Brewers</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Twins</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Mets</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Yankees</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Athletics</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Phillies</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Padres</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Giants</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Mariners</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Cardinals</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Rays</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Rangers</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Blue Jays</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Nationals</string>
 		</dict>
 	</array>
 </dict>
