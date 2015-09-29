@@ -19,8 +19,9 @@
 		045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B471D1BB747570088C360 /* LaunchScreen.storyboard */; };
 		045B472A1BB747580088C360 /* BABaseballApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47291BB747580088C360 /* BABaseballApplicationTests.m */; };
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
+		049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
-		04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
+		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,12 @@
 		045B47301BB747580088C360 /* BABaseballApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B47341BB747580088C360 /* BABaseballApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABaseballApplicationUITests.m; sourceTree = "<group>"; };
 		045B47361BB747580088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049AB4691BBAE1A1005DB4E8 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
+		049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
 		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
-		04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONParser.h; sourceTree = "<group>"; };
-		04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONParser.m; sourceTree = "<group>"; };
+		04D9CF501BB74AEE000E2F37 /* BAJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSON.h; sourceTree = "<group>"; };
+		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +183,10 @@
 		04D529971BB856BE00F03357 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04D9CF501BB74AEE000E2F37 /* BAJSONParser.h */,
-				04D9CF511BB74AEE000E2F37 /* BAJSONParser.m */,
+				049AB4691BBAE1A1005DB4E8 /* BACoreData.h */,
+				049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */,
+				04D9CF501BB74AEE000E2F37 /* BAJSON.h */,
+				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
 				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 				044BD5081BB99E110076F540 /* Team.h */,
@@ -321,13 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */,
 				044BD50A1BB99E110076F540 /* Team.m in Sources */,
 				045B47141BB747570088C360 /* TeamViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
-				04D9CF521BB74AEE000E2F37 /* BAJSONParser.m in Sources */,
+				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

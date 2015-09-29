@@ -6,16 +6,15 @@
 //  Copyright © 2015 MAC. All rights reserved.
 //
 
-#import "BAJSONParser.h"
+#import "BAJSON.h"
+#import "BACoreData.h"
 #import "BAScoreboard.h"
-#import "AppDelegate.h"
 
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
+@implementation BAJSON
 
-@implementation BAJSONParser
-
-- (void)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day {
+- (void)parseScoreboardWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day {
     NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
     NSURL        *url;
     NSString     *urlString      = @"http://gd2.mlb.com/components/game/mlb/year_";
@@ -169,38 +168,10 @@
             }
         }
         
-        [self insScoreboardWithDate:scoreboard.gameDate
+        BACoreData *coreData = [[BACoreData alloc] init];
+        [coreData insScoreboardWithDate:scoreboard.gameDate
                             andTime:scoreboard.time
                         andHomeTeam:scoreboard.homeTeamAbbr];
     }
 }
-
-- (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
-    BOOL                   rowFound       = NO;
-    NSData                 *entityData    = nil;
-    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
-    NSEntityDescription    *contactEntity = [NSEntityDescription entityForName:@"Scoreboard"
-                                                        inManagedObjectContext:context];
-    
-    NSFetchRequest *request   = [[NSFetchRequest alloc] init];
-    NSError        *error;
-    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
-    
-    [request setEntity:contactEntity];
-    [request setPredicate:predicate];
-    
-    NSManagedObject *matches      = nil;
-    NSArray         *requestArray = [context executeFetchRequest:request error:&error];
-    
-    if (requestArray.count == 0) {
-        entityData = nil;
-        rowFound   = NO;
-    }
-    else {
-        matches    = [requestArray objectAtIndex:0];
-        entityData = [matches valueForKey:@"gameDate"];
-    }
-}
-
 @end
