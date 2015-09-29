@@ -171,7 +171,9 @@
             }
         }
         
-        [self insScoreboardWithDate:gameDate andTime:time andHomeTeam:homeTeamAbbr];
+        [self insScoreboardWithDate:scoreboard.gameDate
+                            andTime:scoreboard.time
+                        andHomeTeam:scoreboard.homeTeamAbbr];
     }
 }
 
