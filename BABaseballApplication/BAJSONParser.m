@@ -171,10 +171,11 @@
             }
         }
         
+        [self insScoreboardWithDate:gameDate andTime:time andHomeTeam:homeTeamAbbr];
     }
 }
 
-- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
+- (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
     NSData                 *entityData    = nil;
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
@@ -198,9 +199,6 @@
         matches    = [requestArray objectAtIndex:0];
         entityData = [matches valueForKey:@"gameDate"];
     }
-    
-    return entityData;
 }
-
 
 @end

@@ -10,7 +10,7 @@
 
 @interface BAJSONParser : NSObject
 
-- (NSDictionary *)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day;
-- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
+- (void)parseJSONWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day;
+- (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
 
 @end
