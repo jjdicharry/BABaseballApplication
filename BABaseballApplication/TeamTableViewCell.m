@@ -21,6 +21,8 @@
 }
 
 - (IBAction)favoritePressed:(id)sender {
+	
+	
 }
 
 @end

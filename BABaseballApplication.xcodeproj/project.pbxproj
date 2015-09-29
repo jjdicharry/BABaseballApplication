@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0437408F1BB9FCB80009858C /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0437408E1BB9FCB80009858C /* Defaults.plist */; settings = {ASSET_TAGS = (); }; };
 		044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5061BB99B150076F540 /* TeamTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		044BD50A1BB99E110076F540 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5091BB99E110076F540 /* Team.m */; settings = {ASSET_TAGS = (); }; };
 		045B470E1BB747570088C360 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B470D1BB747570088C360 /* main.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0437408E1BB9FCB80009858C /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		044BD5051BB99B150076F540 /* TeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
 		044BD5061BB99B150076F540 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 		044BD5081BB99E110076F540 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				045B471B1BB747570088C360 /* Assets.xcassets */,
 				045B471D1BB747570088C360 /* LaunchScreen.storyboard */,
 				045B47201BB747570088C360 /* Info.plist */,
+				0437408E1BB9FCB80009858C /* Defaults.plist */,
 				045B47181BB747570088C360 /* BABaseballApplication.xcdatamodeld */,
 				045B470C1BB747570088C360 /* Supporting Files */,
 			);
@@ -290,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0437408F1BB9FCB80009858C /* Defaults.plist in Resources */,
 				045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */,
 				045B471C1BB747570088C360 /* Assets.xcassets in Resources */,
 				045B47171BB747570088C360 /* Main.storyboard in Resources */,

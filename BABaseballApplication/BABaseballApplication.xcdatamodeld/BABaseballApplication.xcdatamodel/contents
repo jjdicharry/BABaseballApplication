@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Favorite" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Scoreboard" syncable="YES">
         <attribute name="amPM" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="awayError" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
