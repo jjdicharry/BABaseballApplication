@@ -15,9 +15,9 @@
 @implementation BAJSON
 
 - (void)parseScoreboardWithYear:(NSString *)year andMonth:(NSString *)month andDay:(NSString *)day {
-    NSDictionary *jsonDictionary = [[NSDictionary alloc] init];
-    NSURL        *url;
-    NSString     *urlString      = @"http://gd2.mlb.com/components/game/mlb/year_";
+    NSURL    *url;
+    NSString *urlString = @"http://gd2.mlb.com/components/game/mlb/year_";
+    
     urlString = [urlString stringByAppendingString:year];
     urlString = [urlString stringByAppendingString:@"/month_"];
     urlString = [urlString stringByAppendingString:month];

@@ -7,7 +7,6 @@
 //
 
 #import "BACoreData.h"
-#import "AppDelegate.h"
 
 @implementation BACoreData
 
