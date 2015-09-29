@@ -11,7 +11,7 @@
 
 @interface BACoreData : NSObject
 
+- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
 - (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
-
 
 @end

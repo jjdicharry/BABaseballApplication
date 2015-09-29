@@ -28,11 +28,11 @@
     
     dispatch_async(mainQueue, ^{
         NSData *data   = [NSData dataWithContentsOfURL:url];
-        [self performSelectorOnMainThread:@selector(jsonData:) withObject:data waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(scoreboardData:) withObject:data waitUntilDone:YES];
     });
 }
 
-- (void)jsonData:(NSData *)data {
+- (void)scoreboardData:(NSData *)data {
     NSError *error;
     
     // Get all the data
@@ -170,8 +170,8 @@
         
         BACoreData *coreData = [[BACoreData alloc] init];
         [coreData insScoreboardWithDate:scoreboard.gameDate
-                            andTime:scoreboard.time
-                        andHomeTeam:scoreboard.homeTeamAbbr];
+                                andTime:scoreboard.time
+                            andHomeTeam:scoreboard.homeTeamAbbr];
     }
 }
 @end
