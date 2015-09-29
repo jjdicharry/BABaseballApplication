@@ -169,9 +169,7 @@
         }
         
         BACoreData *coreData = [[BACoreData alloc] init];
-        [coreData insScoreboardWithDate:scoreboard.gameDate
-                                andTime:scoreboard.time
-                            andHomeTeam:scoreboard.homeTeamAbbr];
+        [coreData insScoreboard:scoreboard];
     }
 }
 @end

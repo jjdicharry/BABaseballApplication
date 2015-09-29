@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
+#import "BAScoreboard.h"
 
 @interface BACoreData : NSObject
 
-- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
-- (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team;
+- (void)insScoreboard:(BAScoreboard *)scoreboard;
+- (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team;
 
 @end

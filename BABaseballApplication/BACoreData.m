@@ -10,62 +10,64 @@
 
 @implementation BACoreData
 
-- (void)insScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
-    BOOL                   rowFound       = NO;
-    NSData                 *entityData    = nil;
-    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
-    NSEntityDescription    *contactEntity = [NSEntityDescription entityForName:@"Scoreboard"
-                                                        inManagedObjectContext:context];
+- (void)insScoreboard:(BAScoreboard *)scoreboard {
+    BAScoreboard           *test        = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context     = [appDelegate managedObjectContext];
+    NSManagedObject        *entity      = [NSEntityDescription insertNewObjectForEntityForName:@"Scoreboard"
+                                                                        inManagedObjectContext:context];
     
-    NSFetchRequest *request   = [[NSFetchRequest alloc] init];
-    NSError        *error;
-    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
+    test = [self getScoreboardWithDate:scoreboard.gameDate
+                               andTime:scoreboard.time
+                           andHomeTeam:scoreboard.homeTeamAbbr];
     
-    [request setEntity:contactEntity];
-    [request setPredicate:predicate];
-    
-    NSManagedObject *matches      = nil;
-    NSArray         *requestArray = [context executeFetchRequest:request error:&error];
-    
-    if (requestArray.count == 0) {
-        entityData = nil;
-        rowFound   = NO;
-    }
-    else {
-        matches    = [requestArray objectAtIndex:0];
-        entityData = [matches valueForKey:@"gameDate"];
+    if ([test.gameDate isEqualToString:@""]) {
+        [entity setValue:scoreboard.gameDate     forKey:@"gameDate"];
+        [entity setValue:scoreboard.location     forKey:@"location"];
+        [entity setValue:scoreboard.time         forKey:@"time"];
+        [entity setValue:scoreboard.amPM         forKey:@"amPM"];
+        [entity setValue:scoreboard.venue        forKey:@"venue"];
+        [entity setValue:scoreboard.awayTeamName forKey:@"awayTeamName"];
+        [entity setValue:scoreboard.awayTeamCity forKey:@"awayTeamCity"];
+        [entity setValue:scoreboard.awayTeamAbbr forKey:@"awayTeamAbbr"];
+        
+        NSError *error;
+        
+        if ([context save:&error]) {
+            NSLog(@"Saved successfully");
+        }
+        else {
+            NSLog(@"Saved unsuccessfully");
+        }
     }
 }
 
-- (NSData *)getScoreboardWithDate:(NSString *)date andTime:(NSString *)time andHomeTeam:(NSString *)team {
-    BOOL                   rowFound       = NO;
-    NSData                 *entityData    = nil;
-    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
-    NSEntityDescription    *contactEntity = [NSEntityDescription entityForName:@"Scoreboard"
-                                                        inManagedObjectContext:context];
+- (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team {
+    BAScoreboard           *scoreboard  = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context     = [appDelegate managedObjectContext];
+    NSEntityDescription    *entity      = [NSEntityDescription entityForName:@"Scoreboard"
+                                                      inManagedObjectContext:context];
     
     NSFetchRequest *request   = [[NSFetchRequest alloc] init];
     NSError        *error;
     NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
     
-    [request setEntity:contactEntity];
+    [request setEntity:entity];
     [request setPredicate:predicate];
     
-    NSManagedObject *matches      = nil;
-    NSArray         *requestArray = [context executeFetchRequest:request error:&error];
+    NSManagedObject *requestResult = nil;
+    NSArray         *requestArray  = [context executeFetchRequest:request error:&error];
     
     if (requestArray.count == 0) {
-        entityData = nil;
-        rowFound   = NO;
+        scoreboard = [[BAScoreboard alloc] init];
     }
     else {
-        matches    = [requestArray objectAtIndex:0];
-        entityData = [matches valueForKey:@"gameDate"];
+        requestResult       = [requestArray objectAtIndex:0];
+        scoreboard.gameDate = [requestResult valueForKey:@"gameDate"];
     }
     
-    return entityData;
+    return scoreboard;
 }
 
 @end
