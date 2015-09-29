@@ -16,8 +16,6 @@
     NSManagedObjectContext *context     = [appDelegate managedObjectContext];
     NSManagedObject        *entity      = [NSEntityDescription insertNewObjectForEntityForName:@"Scoreboard"
                                                                         inManagedObjectContext:context];
-    NSNumberFormatter      *formatter   = [[NSNumberFormatter alloc] init];
-    formatter.numberStyle               = NSNumberFormatterDecimalStyle;
     
     test = [self getScoreboardWithDate:scoreboard.gameDate
                                andTime:scoreboard.time
@@ -132,6 +130,12 @@
         requestResult       = [requestArray objectAtIndex:0];
         scoreboard.gameDate = [requestResult valueForKey:@"gameDate"];
     }
+    
+    return scoreboard;
+}
+
+- (BAScoreboard *)setScoreboard:(NSManagedObject *)requestResult {
+    BAScoreboard *scoreboard = [[BAScoreboard alloc] init];
     
     return scoreboard;
 }

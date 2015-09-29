@@ -14,5 +14,6 @@
 
 - (void)insScoreboard:(BAScoreboard *)scoreboard;
 - (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team;
+- (BAScoreboard *)setScoreboard:(NSManagedObject *)requestResult;
 
 @end
