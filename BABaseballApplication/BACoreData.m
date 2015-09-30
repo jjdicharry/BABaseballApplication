@@ -12,11 +12,11 @@
 
 - (void)insScoreboard:(BAScoreboard *)scoreboard {
     BAScoreboard           *test        = [[BAScoreboard alloc] init];
-    NSError                *error       = [[NSError alloc] init];
     AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context     = [appDelegate managedObjectContext];
     NSManagedObject        *entity      = [NSEntityDescription insertNewObjectForEntityForName:@"Scoreboard"
                                                                         inManagedObjectContext:context];
+    NSError                *error;
     
     test = [self getScoreboardWithDate:scoreboard.gameDate
                                andTime:scoreboard.time
@@ -36,7 +36,6 @@
 
 - (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team {
     BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
-    NSError                *error         = [[NSError alloc] init];
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
     NSEntityDescription    *entity        = [NSEntityDescription entityForName:@"Scoreboard"
@@ -45,6 +44,7 @@
     NSPredicate            *predicate     = [[NSPredicate alloc] init];
     NSManagedObject        *requestResult = [[NSManagedObject alloc] init];
     NSArray                *requestArray  = [[NSArray alloc] init];
+    NSError                *error;
     
     predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
     
