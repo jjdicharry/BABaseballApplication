@@ -22,7 +22,7 @@
                                andTime:scoreboard.time
                            andHomeTeam:scoreboard.homeTeamAbbr];
     
-    if (test.gameDate == nil) {
+//    if (test.gameDate == nil) {
         entity = [self setScoreboardEntity:entity andObject:scoreboard];
         
         if ([context save:&error]) {
@@ -31,7 +31,7 @@
         else {
             NSLog(@"Saved unsuccessfully");
         }
-    }
+//    }
 }
 
 - (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team {
@@ -42,7 +42,7 @@
                                                         inManagedObjectContext:context];
     NSFetchRequest         *request       = [[NSFetchRequest alloc] init];
     NSPredicate            *predicate     = [[NSPredicate alloc] init];
-    NSManagedObject        *requestResult = [[NSManagedObject alloc] init];
+    NSManagedObject        *requestResult;
     NSArray                *requestArray  = [[NSArray alloc] init];
     NSError                *error;
     
