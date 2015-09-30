@@ -11,30 +11,29 @@
 @implementation BACoreData
 
 - (void)insScoreboard:(BAScoreboard *)scoreboard {
-    BAScoreboard           *test        = [[BAScoreboard alloc] init];
     AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context     = [appDelegate managedObjectContext];
     NSManagedObject        *entity      = [NSEntityDescription insertNewObjectForEntityForName:@"Scoreboard"
                                                                         inManagedObjectContext:context];
     NSError                *error;
     
-    test = [self getScoreboardWithDate:scoreboard.gameDate
-                               andTime:scoreboard.time
-                           andHomeTeam:scoreboard.homeTeamAbbr];
+    [self getScoreboardWithDate:scoreboard.gameDate
+                        andTime:scoreboard.time
+                    andHomeTeam:scoreboard.homeTeamAbbr
+                      andRemove:YES];
     
-//    if (test.gameDate == nil) {
-        entity = [self setScoreboardEntity:entity andObject:scoreboard];
-        
-        if ([context save:&error]) {
-            NSLog(@"Saved successfully");
-        }
-        else {
-            NSLog(@"Saved unsuccessfully");
-        }
-//    }
+    entity = [self setScoreboardEntity:entity andObject:scoreboard];
+    
+    if ([context save:&error]) {
+        NSLog(@"Saved successfully");
+    }
+    else {
+        NSLog(@"Saved unsuccessfully");
+    }
 }
 
-- (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team {
+- (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
+                            andHomeTeam:(NSString *)team andRemove:(BOOL)remove {
     BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
@@ -51,14 +50,17 @@
     [request setEntity:entity];
     [request setPredicate:predicate];
     
-    requestArray  = [context executeFetchRequest:request error:&error];
+    requestArray = [context executeFetchRequest:request error:&error];
     
-    if (requestArray.count == 0) {
-        scoreboard = [[BAScoreboard alloc] init];
-    }
-    else {
+    if (requestArray.count > 0) {
         requestResult = [requestArray objectAtIndex:0];
-        scoreboard    = [self setScoreboardObject:requestResult];
+        
+        if (remove) {
+            [context deleteObject:requestResult];
+        }
+        else {
+            scoreboard = [self setScoreboardObject:requestResult];
+        }
     }
     
     return scoreboard;
