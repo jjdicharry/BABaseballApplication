@@ -127,7 +127,7 @@
         scoreboard = [[BAScoreboard alloc] init];
     }
     else {
-        requestResult       = [requestArray objectAtIndex:0];
+        requestResult = [requestArray objectAtIndex:0];
         [self setScoreboard:requestResult];
     }
     
