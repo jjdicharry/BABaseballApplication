@@ -31,6 +31,8 @@
     else {
         NSLog(@"Saved unsuccessfully");
     }
+    
+//    [self getScoreboardWithDate:scoreboard.gameDate andTeam:scoreboard.homeTeamAbbr];
 }
 
 - (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
@@ -81,6 +83,37 @@
     NSError                *error;
     
     predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
+    
+    [request setEntity:entity];
+    [request setPredicate:predicate];
+    
+    requestArray = [context executeFetchRequest:request error:&error];
+    
+    if (requestArray.count > 0) {
+        for (requestResult in requestArray) {
+            scoreboard = [self setScoreboardObject:requestResult];
+            
+            [returnArray addObject:scoreboard];
+        }
+    }
+    
+    return returnArray;
+}
+
+- (NSMutableArray *)getScoreboardWithDate:(NSString *)date andTeam:(NSString *)team {
+    BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
+    NSEntityDescription    *entity        = [NSEntityDescription entityForName:@"Scoreboard"
+                                                        inManagedObjectContext:context];
+    NSFetchRequest         *request       = [[NSFetchRequest alloc] init];
+    NSPredicate            *predicate     = [[NSPredicate alloc] init];
+    NSManagedObject        *requestResult;
+    NSArray                *requestArray  = [[NSArray alloc] init];
+    NSMutableArray         *returnArray   = [[NSMutableArray alloc] init];
+    NSError                *error;
+    
+    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and ((awayTeamAbbr = %@) or (homeTeamAbbr = %@))", date, team, team];
     
     [request setEntity:entity];
     [request setPredicate:predicate];

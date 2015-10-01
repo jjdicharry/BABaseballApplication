@@ -13,9 +13,9 @@
 @interface BACoreData : NSObject
 
 - (void)insScoreboard:(BAScoreboard *)scoreboard;
-- (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
-                            andHomeTeam:(NSString *)team andRemove:(BOOL)remove;
 - (NSManagedObject *)setScoreboardEntity:(NSManagedObject *)entity andObject:(BAScoreboard *)scoreboard;
 - (BAScoreboard *)setScoreboardObject:(NSManagedObject *)requestResult;
-
+- (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
+                            andHomeTeam:(NSString *)team andRemove:(BOOL)remove;
+- (NSMutableArray *)getScoreboardWithDate:(NSString *)date;
 @end
