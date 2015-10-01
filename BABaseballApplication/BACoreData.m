@@ -67,7 +67,7 @@
 }
 
 
-- (BAScoreboard *)getScoreboardWithDate:(NSString *)date {
+- (NSMutableArray *)getScoreboardWithDate:(NSString *)date {
     BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
@@ -79,7 +79,7 @@
     NSArray                *requestArray  = [[NSArray alloc] init];
     NSError                *error;
     
-//    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
+    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
     
     [request setEntity:entity];
     [request setPredicate:predicate];
