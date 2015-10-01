@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GamesViewController : UIViewController
+    <UITableViewDataSource, UITableViewDelegate>
 
 @end
