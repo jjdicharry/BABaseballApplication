@@ -11,130 +11,139 @@
 @implementation BACoreData
 
 - (void)insScoreboard:(BAScoreboard *)scoreboard {
-    BAScoreboard           *test        = [[BAScoreboard alloc] init];
     AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context     = [appDelegate managedObjectContext];
     NSManagedObject        *entity      = [NSEntityDescription insertNewObjectForEntityForName:@"Scoreboard"
                                                                         inManagedObjectContext:context];
+    NSError                *error;
     
-    test = [self getScoreboardWithDate:scoreboard.gameDate
-                               andTime:scoreboard.time
-                           andHomeTeam:scoreboard.homeTeamAbbr];
+    [self getScoreboardWithDate:scoreboard.gameDate
+                        andTime:scoreboard.time
+                    andHomeTeam:scoreboard.homeTeamAbbr
+                      andRemove:YES];
     
-    if (test.gameDate == nil) {
-        [entity setValue:scoreboard.gameDate           forKey:@"gameDate"];
-        [entity setValue:scoreboard.location           forKey:@"location"];
-        [entity setValue:scoreboard.time               forKey:@"time"];
-        [entity setValue:scoreboard.amPM               forKey:@"amPM"];
-        [entity setValue:scoreboard.venue              forKey:@"venue"];
-        [entity setValue:scoreboard.awayTeamName       forKey:@"awayTeamName"];
-        [entity setValue:scoreboard.awayTeamCity       forKey:@"awayTeamCity"];
-        [entity setValue:scoreboard.awayTeamAbbr       forKey:@"awayTeamAbbr"];
-        [entity setValue:scoreboard.awayWin            forKey:@"awayWin"];
-        [entity setValue:scoreboard.awayLoss           forKey:@"awayLoss"];
-        [entity setValue:scoreboard.awayGameBack       forKey:@"awayGameBack"];
-        [entity setValue:scoreboard.awayGameBackWC     forKey:@"awayGameBackWC"];
-        [entity setValue:scoreboard.awayRun            forKey:@"awayRun"];
-        [entity setValue:scoreboard.awayHit            forKey:@"awayHit"];
-        [entity setValue:scoreboard.awayError          forKey:@"awayError"];
-        [entity setValue:scoreboard.awayHomeRun        forKey:@"awayHomeRun"];
-        [entity setValue:scoreboard.awayStrikeOut      forKey:@"awayStrikeOut"];
-        [entity setValue:scoreboard.awayStoleBase      forKey:@"awayStoleBase"];
-        [entity setValue:scoreboard.awayInni01         forKey:@"awayInni01"];
-        [entity setValue:scoreboard.awayInni02         forKey:@"awayInni02"];
-        [entity setValue:scoreboard.awayInni03         forKey:@"awayInni03"];
-        [entity setValue:scoreboard.awayInni04         forKey:@"awayInni04"];
-        [entity setValue:scoreboard.awayInni05         forKey:@"awayInni05"];
-        [entity setValue:scoreboard.awayInni06         forKey:@"awayInni06"];
-        [entity setValue:scoreboard.awayInni07         forKey:@"awayInni07"];
-        [entity setValue:scoreboard.awayInni08         forKey:@"awayInni08"];
-        [entity setValue:scoreboard.awayInni09         forKey:@"awayInni09"];
-        [entity setValue:scoreboard.awayInniEx         forKey:@"awayInniEx"];
-        [entity setValue:scoreboard.homeTeamName       forKey:@"homeTeamName"];
-        [entity setValue:scoreboard.homeTeamCity       forKey:@"homeTeamCity"];
-        [entity setValue:scoreboard.homeTeamAbbr       forKey:@"homeTeamAbbr"];
-        [entity setValue:scoreboard.homeWin            forKey:@"homeWin"];
-        [entity setValue:scoreboard.homeLoss           forKey:@"homeLoss"];
-        [entity setValue:scoreboard.homeGameBack       forKey:@"homeGameBack"];
-        [entity setValue:scoreboard.homeGameBackWC     forKey:@"homeGameBackWC"];
-        [entity setValue:scoreboard.homeRun            forKey:@"homeRun"];
-        [entity setValue:scoreboard.homeHit            forKey:@"homeHit"];
-        [entity setValue:scoreboard.homeError          forKey:@"homeError"];
-        [entity setValue:scoreboard.homeHomeRun        forKey:@"homeHomeRun"];
-        [entity setValue:scoreboard.homeStrikeOut      forKey:@"homeStrikeOut"];
-        [entity setValue:scoreboard.homeStoleBase      forKey:@"homeStoleBase"];
-        [entity setValue:scoreboard.homeInni01         forKey:@"homeInni01"];
-        [entity setValue:scoreboard.homeInni02         forKey:@"homeInni02"];
-        [entity setValue:scoreboard.homeInni03         forKey:@"homeInni03"];
-        [entity setValue:scoreboard.homeInni04         forKey:@"homeInni04"];
-        [entity setValue:scoreboard.homeInni05         forKey:@"homeInni05"];
-        [entity setValue:scoreboard.homeInni06         forKey:@"homeInni06"];
-        [entity setValue:scoreboard.homeInni07         forKey:@"homeInni07"];
-        [entity setValue:scoreboard.homeInni08         forKey:@"homeInni08"];
-        [entity setValue:scoreboard.homeInni09         forKey:@"homeInni09"];
-        [entity setValue:scoreboard.homeInniEx         forKey:@"homeInniEx"];
-        [entity setValue:scoreboard.savePitchLastName  forKey:@"savePitchLastName"];
-        [entity setValue:scoreboard.savePitchFirstName forKey:@"savePitchFirstName"];
-        [entity setValue:scoreboard.savePitchNumber    forKey:@"savePitchNumber"];
-        [entity setValue:scoreboard.savePitchWin       forKey:@"savePitchWin"];
-        [entity setValue:scoreboard.savePitchSave      forKey:@"savePitchSave"];
-        [entity setValue:scoreboard.savePitchLoss      forKey:@"savePitchLoss"];
-        [entity setValue:scoreboard.savePitchERA       forKey:@"savePitchERA"];
-        [entity setValue:scoreboard.winnPitchLastName  forKey:@"winnPitchLastName"];
-        [entity setValue:scoreboard.winnPitchFirstName forKey:@"winnPitchFirstName"];
-        [entity setValue:scoreboard.winnPitchNumber    forKey:@"winnPitchNumber"];
-        [entity setValue:scoreboard.winnPitchWin       forKey:@"winnPitchWin"];
-        [entity setValue:scoreboard.winnPitchSave      forKey:@"winnPitchSave"];
-        [entity setValue:scoreboard.winnPitchLoss      forKey:@"winnPitchLoss"];
-        [entity setValue:scoreboard.winnPitchERA       forKey:@"winnPitchERA"];
-        [entity setValue:scoreboard.losePitchLastName  forKey:@"losePitchLastName"];
-        [entity setValue:scoreboard.losePitchFirstName forKey:@"losePitchFirstName"];
-        [entity setValue:scoreboard.losePitchNumber    forKey:@"losePitchNumber"];
-        [entity setValue:scoreboard.losePitchWin       forKey:@"losePitchWin"];
-        [entity setValue:scoreboard.losePitchSave      forKey:@"losePitchSave"];
-        [entity setValue:scoreboard.losePitchLoss      forKey:@"losePitchLoss"];
-        [entity setValue:scoreboard.losePitchERA       forKey:@"losePitchERA"];
-        
-        NSError *error;
-        
-        if ([context save:&error]) {
-            NSLog(@"Saved successfully");
-        }
-        else {
-            NSLog(@"Saved unsuccessfully");
-        }
+    entity = [self setScoreboardEntity:entity andObject:scoreboard];
+    
+    if ([context save:&error]) {
+        NSLog(@"Saved successfully");
+    }
+    else {
+        NSLog(@"Saved unsuccessfully");
     }
 }
 
-- (BAScoreboard*)getScoreboardWithDate:(NSString*)date andTime:(NSString*)time andHomeTeam:(NSString*)team {
-    BAScoreboard           *scoreboard  = [[BAScoreboard alloc] init];
-    AppDelegate            *appDelegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context     = [appDelegate managedObjectContext];
-    NSEntityDescription    *entity      = [NSEntityDescription entityForName:@"Scoreboard"
-                                                      inManagedObjectContext:context];
+- (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
+                            andHomeTeam:(NSString *)team andRemove:(BOOL)remove {
+    BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
+    NSEntityDescription    *entity        = [NSEntityDescription entityForName:@"Scoreboard"
+                                                        inManagedObjectContext:context];
+    NSFetchRequest         *request       = [[NSFetchRequest alloc] init];
+    NSPredicate            *predicate     = [[NSPredicate alloc] init];
+    NSManagedObject        *requestResult;
+    NSArray                *requestArray  = [[NSArray alloc] init];
+    NSError                *error;
     
-    NSFetchRequest *request   = [[NSFetchRequest alloc] init];
-    NSError        *error;
-    NSPredicate    *predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
+    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
     
     [request setEntity:entity];
     [request setPredicate:predicate];
     
-    NSManagedObject *requestResult = nil;
-    NSArray         *requestArray  = [context executeFetchRequest:request error:&error];
+    requestArray = [context executeFetchRequest:request error:&error];
     
-    if (requestArray.count == 0) {
-        scoreboard = [[BAScoreboard alloc] init];
-    }
-    else {
+    if (requestArray.count > 0) {
         requestResult = [requestArray objectAtIndex:0];
-        [self setScoreboard:requestResult];
+        
+        if (remove) {
+            [context deleteObject:requestResult];
+        }
+        else {
+            scoreboard = [self setScoreboardObject:requestResult];
+        }
     }
     
     return scoreboard;
 }
 
-- (BAScoreboard *)setScoreboard:(NSManagedObject *)requestResult {
+- (NSManagedObject *)setScoreboardEntity:(NSManagedObject *)entity andObject:(BAScoreboard *)scoreboard {
+    [entity setValue:scoreboard.gameDate           forKey:@"gameDate"];
+    [entity setValue:scoreboard.location           forKey:@"location"];
+    [entity setValue:scoreboard.time               forKey:@"time"];
+    [entity setValue:scoreboard.amPM               forKey:@"amPM"];
+    [entity setValue:scoreboard.venue              forKey:@"venue"];
+    [entity setValue:scoreboard.awayTeamName       forKey:@"awayTeamName"];
+    [entity setValue:scoreboard.awayTeamCity       forKey:@"awayTeamCity"];
+    [entity setValue:scoreboard.awayTeamAbbr       forKey:@"awayTeamAbbr"];
+    [entity setValue:scoreboard.awayWin            forKey:@"awayWin"];
+    [entity setValue:scoreboard.awayLoss           forKey:@"awayLoss"];
+    [entity setValue:scoreboard.awayGameBack       forKey:@"awayGameBack"];
+    [entity setValue:scoreboard.awayGameBackWC     forKey:@"awayGameBackWC"];
+    [entity setValue:scoreboard.awayRun            forKey:@"awayRun"];
+    [entity setValue:scoreboard.awayHit            forKey:@"awayHit"];
+    [entity setValue:scoreboard.awayError          forKey:@"awayError"];
+    [entity setValue:scoreboard.awayHomeRun        forKey:@"awayHomeRun"];
+    [entity setValue:scoreboard.awayStrikeOut      forKey:@"awayStrikeOut"];
+    [entity setValue:scoreboard.awayStoleBase      forKey:@"awayStoleBase"];
+    [entity setValue:scoreboard.awayInni01         forKey:@"awayInni01"];
+    [entity setValue:scoreboard.awayInni02         forKey:@"awayInni02"];
+    [entity setValue:scoreboard.awayInni03         forKey:@"awayInni03"];
+    [entity setValue:scoreboard.awayInni04         forKey:@"awayInni04"];
+    [entity setValue:scoreboard.awayInni05         forKey:@"awayInni05"];
+    [entity setValue:scoreboard.awayInni06         forKey:@"awayInni06"];
+    [entity setValue:scoreboard.awayInni07         forKey:@"awayInni07"];
+    [entity setValue:scoreboard.awayInni08         forKey:@"awayInni08"];
+    [entity setValue:scoreboard.awayInni09         forKey:@"awayInni09"];
+    [entity setValue:scoreboard.awayInniEx         forKey:@"awayInniEx"];
+    [entity setValue:scoreboard.homeTeamName       forKey:@"homeTeamName"];
+    [entity setValue:scoreboard.homeTeamCity       forKey:@"homeTeamCity"];
+    [entity setValue:scoreboard.homeTeamAbbr       forKey:@"homeTeamAbbr"];
+    [entity setValue:scoreboard.homeWin            forKey:@"homeWin"];
+    [entity setValue:scoreboard.homeLoss           forKey:@"homeLoss"];
+    [entity setValue:scoreboard.homeGameBack       forKey:@"homeGameBack"];
+    [entity setValue:scoreboard.homeGameBackWC     forKey:@"homeGameBackWC"];
+    [entity setValue:scoreboard.homeRun            forKey:@"homeRun"];
+    [entity setValue:scoreboard.homeHit            forKey:@"homeHit"];
+    [entity setValue:scoreboard.homeError          forKey:@"homeError"];
+    [entity setValue:scoreboard.homeHomeRun        forKey:@"homeHomeRun"];
+    [entity setValue:scoreboard.homeStrikeOut      forKey:@"homeStrikeOut"];
+    [entity setValue:scoreboard.homeStoleBase      forKey:@"homeStoleBase"];
+    [entity setValue:scoreboard.homeInni01         forKey:@"homeInni01"];
+    [entity setValue:scoreboard.homeInni02         forKey:@"homeInni02"];
+    [entity setValue:scoreboard.homeInni03         forKey:@"homeInni03"];
+    [entity setValue:scoreboard.homeInni04         forKey:@"homeInni04"];
+    [entity setValue:scoreboard.homeInni05         forKey:@"homeInni05"];
+    [entity setValue:scoreboard.homeInni06         forKey:@"homeInni06"];
+    [entity setValue:scoreboard.homeInni07         forKey:@"homeInni07"];
+    [entity setValue:scoreboard.homeInni08         forKey:@"homeInni08"];
+    [entity setValue:scoreboard.homeInni09         forKey:@"homeInni09"];
+    [entity setValue:scoreboard.homeInniEx         forKey:@"homeInniEx"];
+    [entity setValue:scoreboard.savePitchLastName  forKey:@"savePitchLastName"];
+    [entity setValue:scoreboard.savePitchFirstName forKey:@"savePitchFirstName"];
+    [entity setValue:scoreboard.savePitchNumber    forKey:@"savePitchNumber"];
+    [entity setValue:scoreboard.savePitchWin       forKey:@"savePitchWin"];
+    [entity setValue:scoreboard.savePitchSave      forKey:@"savePitchSave"];
+    [entity setValue:scoreboard.savePitchLoss      forKey:@"savePitchLoss"];
+    [entity setValue:scoreboard.savePitchERA       forKey:@"savePitchERA"];
+    [entity setValue:scoreboard.winnPitchLastName  forKey:@"winnPitchLastName"];
+    [entity setValue:scoreboard.winnPitchFirstName forKey:@"winnPitchFirstName"];
+    [entity setValue:scoreboard.winnPitchNumber    forKey:@"winnPitchNumber"];
+    [entity setValue:scoreboard.winnPitchWin       forKey:@"winnPitchWin"];
+    [entity setValue:scoreboard.winnPitchSave      forKey:@"winnPitchSave"];
+    [entity setValue:scoreboard.winnPitchLoss      forKey:@"winnPitchLoss"];
+    [entity setValue:scoreboard.winnPitchERA       forKey:@"winnPitchERA"];
+    [entity setValue:scoreboard.losePitchLastName  forKey:@"losePitchLastName"];
+    [entity setValue:scoreboard.losePitchFirstName forKey:@"losePitchFirstName"];
+    [entity setValue:scoreboard.losePitchNumber    forKey:@"losePitchNumber"];
+    [entity setValue:scoreboard.losePitchWin       forKey:@"losePitchWin"];
+    [entity setValue:scoreboard.losePitchSave      forKey:@"losePitchSave"];
+    [entity setValue:scoreboard.losePitchLoss      forKey:@"losePitchLoss"];
+    [entity setValue:scoreboard.losePitchERA       forKey:@"losePitchERA"];
+    
+    return entity;
+}
+
+- (BAScoreboard *)setScoreboardObject:(NSManagedObject *)requestResult {
     BAScoreboard *scoreboard = [[BAScoreboard alloc] init];
     
     scoreboard.gameDate           = [requestResult valueForKey:@"gameDate"];
