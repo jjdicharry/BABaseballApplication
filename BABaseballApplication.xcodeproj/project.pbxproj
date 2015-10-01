@@ -20,6 +20,8 @@
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
 		0462263A1BBB1F770044A8A3 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 046226391BBB1F770044A8A3 /* Favorite.m */; settings = {ASSET_TAGS = (); }; };
 		0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462263C1BBB1FD10044A8A3 /* Alert.m */; settings = {ASSET_TAGS = (); }; };
+		048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048200981BBC9B72003E209C /* FavoritesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
@@ -68,6 +70,10 @@
 		046226391BBB1F770044A8A3 /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 		0462263B1BBB1FD10044A8A3 /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
 		0462263C1BBB1FD10044A8A3 /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
+		048200971BBC9B72003E209C /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		048200981BBC9B72003E209C /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewCell.h; sourceTree = "<group>"; };
+		0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewCell.m; sourceTree = "<group>"; };
 		049AB4691BBAE1A1005DB4E8 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
 		049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
 		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
@@ -173,6 +179,8 @@
 			children = (
 				045B47121BB747570088C360 /* TeamViewController.h */,
 				045B47131BB747570088C360 /* TeamViewController.m */,
+				048200971BBC9B72003E209C /* FavoritesViewController.h */,
+				048200981BBC9B72003E209C /* FavoritesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +207,8 @@
 				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
 				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
+				0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */,
+				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -351,6 +361,8 @@
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */,
 				0462263A1BBB1F770044A8A3 /* Favorite.m in Sources */,
+				048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */,
+				0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);

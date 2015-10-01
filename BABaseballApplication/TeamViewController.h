@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TeamViewController : UIViewController
-	<UITableViewDataSource, UITableViewDelegate>
+    <UITableViewDataSource, UITableViewDelegate>
 
 @end
