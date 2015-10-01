@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *favoriteIcon;
 @property (weak, nonatomic) UIViewController *delegate;
 @property (weak, nonatomic) UITableView *tableView;
+@property (weak, nonatomic) UITableView *favoriteTableView;
 
 /**
  *  Happens when a favorite button "star icon" is pressed
