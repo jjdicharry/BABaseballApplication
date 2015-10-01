@@ -25,7 +25,8 @@
     entity = [self setScoreboardEntity:entity andObject:scoreboard];
     
     if ([context save:&error]) {
-        NSLog(@"Saved successfully");
+        NSLog(@"\nSaved successfully for date:%@, time:%@ and homeTeam: %@",
+              scoreboard.gameDate, scoreboard.time, scoreboard.homeTeamAbbr);
     }
     else {
         NSLog(@"Saved unsuccessfully");
