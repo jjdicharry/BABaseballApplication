@@ -33,7 +33,7 @@
     for (int i=1; i<=30; i++) {
         [json parseScoreboardWithYear:@"2015"
                              andMonth:@"09"
-                               andDay:[NSString stringWithFormat:@"%i",i]];
+                               andDay:[NSString stringWithFormat:@"%02i",i]];
     }
 
     // load teams from Defaults.plist
