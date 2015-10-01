@@ -31,8 +31,6 @@
     else {
         NSLog(@"Saved unsuccessfully");
     }
-    
-    [self getScoreboardWithTeam:scoreboard.homeTeamAbbr];
 }
 
 - (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
