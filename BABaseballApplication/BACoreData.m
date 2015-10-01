@@ -66,8 +66,7 @@
     return scoreboard;
 }
 
-
-- (BAScoreboard *)getScoreboardWithDate:(NSString *)date {
+- (NSMutableArray *)getScoreboardWithDate:(NSString *)date {
     BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
     AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context       = [appDelegate managedObjectContext];
@@ -77,9 +76,10 @@
     NSPredicate            *predicate     = [[NSPredicate alloc] init];
     NSManagedObject        *requestResult;
     NSArray                *requestArray  = [[NSArray alloc] init];
+    NSMutableArray         *returnArray   = [[NSMutableArray alloc] init];
     NSError                *error;
     
-//    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and (time = %@) and (homeTeamAbbr = %@)", date, time, team];
+    predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
     
     [request setEntity:entity];
     [request setPredicate:predicate];
@@ -87,20 +87,15 @@
     requestArray = [context executeFetchRequest:request error:&error];
     
     if (requestArray.count > 0) {
-        requestResult = [requestArray objectAtIndex:0];
-        
-        if (remove) {
-            [context deleteObject:requestResult];
-        }
-        else {
+        for (requestResult in requestArray) {
             scoreboard = [self setScoreboardObject:requestResult];
+            
+            [returnArray addObject:scoreboard];
         }
     }
     
-    return scoreboard;
+    return returnArray;
 }
-
-
 
 - (NSManagedObject *)setScoreboardEntity:(NSManagedObject *)entity andObject:(BAScoreboard *)scoreboard {
     [entity setValue:scoreboard.gameDate           forKey:@"gameDate"];
