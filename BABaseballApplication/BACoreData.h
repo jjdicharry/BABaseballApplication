@@ -18,4 +18,7 @@
 - (BAScoreboard *)getScoreboardWithDate:(NSString *)date   andTime:(NSString *)time
                             andHomeTeam:(NSString *)team andRemove:(BOOL)remove;
 - (NSMutableArray *)getScoreboardWithDate:(NSString *)date;
+- (NSMutableArray *)getScoreboardWithDate:(NSString *)date andTeam:(NSString *)team;
+- (NSMutableArray *)getScoreboardWithTeam:(NSString *)team;
+
 @end
