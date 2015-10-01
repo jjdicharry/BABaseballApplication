@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Favorites View Controller-->
+        <!--Favorite Teams-->
         <scene sceneID="bim-ub-fOR">
             <objects>
                 <viewController id="USx-5M-c0l" customClass="FavoritesViewController" sceneMemberID="viewController">
@@ -17,25 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-Mh-EBR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="wDM-sW-GUj">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-Mh-EBR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" id="wUC-xo-22h" customClass="FavoriteTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" id="wUC-xo-22h" customClass="FavoriteTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wUC-xo-22h" id="6lM-IZ-xAw">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-Q5-foI">
                                                     <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="teamLabel" destination="f5b-Q5-foI" id="Uma-o1-XNj"/>
                                         </connections>
@@ -49,20 +54,40 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uT8-Mh-EBR" firstAttribute="top" secondItem="Pdd-ox-jUe" secondAttribute="topMargin" id="1kf-hc-k7t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wDM-sW-GUj" secondAttribute="trailing" constant="-20" id="4G5-6c-BtW"/>
                             <constraint firstItem="uT8-Mh-EBR" firstAttribute="bottom" secondItem="Pdd-ox-jUe" secondAttribute="bottomMargin" id="4P8-01-jbP"/>
+                            <constraint firstItem="uT8-Mh-EBR" firstAttribute="top" secondItem="m2S-ba-GwO" secondAttribute="bottom" id="Ai3-ao-auY"/>
+                            <constraint firstItem="uT8-Mh-EBR" firstAttribute="leading" secondItem="Pdd-ox-jUe" secondAttribute="leadingMargin" constant="-20" id="Pow-24-TF4"/>
+                            <constraint firstItem="wDM-sW-GUj" firstAttribute="top" secondItem="Pdd-ox-jUe" secondAttribute="topMargin" id="Ugb-XM-uTh"/>
+                            <constraint firstItem="wDM-sW-GUj" firstAttribute="bottom" secondItem="Pdd-ox-jUe" secondAttribute="bottomMargin" id="Xx5-Hx-3X0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uT8-Mh-EBR" secondAttribute="trailing" constant="-20" id="d9c-CU-JNg"/>
                             <constraint firstItem="uT8-Mh-EBR" firstAttribute="top" secondItem="Pdd-ox-jUe" secondAttribute="topMargin" id="p5v-qX-FId"/>
+                            <constraint firstItem="uT8-Mh-EBR" firstAttribute="top" secondItem="m2S-ba-GwO" secondAttribute="bottom" id="plJ-xb-Wof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uT8-Mh-EBR" secondAttribute="trailing" constant="-20" id="tXP-zi-wBo"/>
+                            <constraint firstItem="wDM-sW-GUj" firstAttribute="leading" secondItem="Pdd-ox-jUe" secondAttribute="leadingMargin" constant="-20" id="ugb-Pd-59a"/>
                             <constraint firstItem="uT8-Mh-EBR" firstAttribute="leading" secondItem="Pdd-ox-jUe" secondAttribute="leadingMargin" constant="-20" id="w5V-DE-wLu"/>
+                            <constraint firstItem="uT8-Mh-EBR" firstAttribute="bottom" secondItem="Pdd-ox-jUe" secondAttribute="bottomMargin" id="yPi-Ko-Jpc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1kf-hc-k7t"/>
+                                <exclude reference="4P8-01-jbP"/>
+                                <exclude reference="d9c-CU-JNg"/>
+                                <exclude reference="p5v-qX-FId"/>
+                                <exclude reference="plJ-xb-Wof"/>
+                                <exclude reference="w5V-DE-wLu"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="d4z-AP-BDl"/>
+                    <navigationItem key="navigationItem" title="Favorite Teams" id="SI7-kP-vBe"/>
                     <connections>
                         <outlet property="tableView" destination="uT8-Mh-EBR" id="2Em-iO-LRr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rm4-zu-EJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="-424"/>
+            <point key="canvasLocation" x="2946" y="-424"/>
         </scene>
         <!--Teams-->
         <scene sceneID="tne-QT-ifu">
@@ -76,19 +101,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DQF-qq-mh3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="7fy-0Y-QhH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DQF-qq-mh3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamTableViewCell" id="Xmh-kq-Yd2" customClass="TeamTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xmh-kq-Yd2" id="6eI-2I-xet">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-xu-9ak">
                                                     <rect key="frame" x="41" y="14" width="551" height="21"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="0Xc-aO-3QH"/>
                                                         <constraint firstAttribute="height" constant="21" id="KU5-jI-xLc"/>
@@ -130,6 +159,7 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="favoriteIcon" destination="nmc-Bl-3t1" id="M0L-J4-N4x"/>
                                             <outlet property="teamNameLabel" destination="RKo-xu-9ak" id="94w-hu-o5c"/>
@@ -145,24 +175,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7fy-0Y-QhH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0cW-Sb-HQl"/>
+                            <constraint firstItem="DQF-qq-mh3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0rm-Ve-nk1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DQF-qq-mh3" secondAttribute="trailing" constant="-20" id="7bM-Xu-Kh1"/>
+                            <constraint firstItem="DQF-qq-mh3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IjW-Hf-efH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DQF-qq-mh3" secondAttribute="bottom" id="IyX-50-sNV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQF-qq-mh3" secondAttribute="trailing" constant="-20" id="JAj-c5-ff1"/>
+                            <constraint firstItem="DQF-qq-mh3" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="Jgd-Ye-md1"/>
+                            <constraint firstItem="7fy-0Y-QhH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KfG-Ii-c2V"/>
                             <constraint firstItem="DQF-qq-mh3" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="YBv-lw-Aa5"/>
+                            <constraint firstItem="DQF-qq-mh3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aRQ-cB-Lh9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7fy-0Y-QhH" secondAttribute="trailing" constant="-20" id="h99-Kk-Nu4"/>
+                            <constraint firstItem="7fy-0Y-QhH" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="lpR-rD-Kfp"/>
                             <constraint firstItem="DQF-qq-mh3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="nve-EX-pjN"/>
                             <constraint firstItem="DQF-qq-mh3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pkp-Ga-feo"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="0rm-Ve-nk1"/>
+                                <exclude reference="7bM-Xu-Kh1"/>
+                                <exclude reference="YBv-lw-Aa5"/>
+                                <exclude reference="nve-EX-pjN"/>
+                                <exclude reference="pkp-Ga-feo"/>
                                 <exclude reference="IyX-50-sNV"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="All Teams" id="Baj-rf-Isk"/>
                     <navigationItem key="navigationItem" title="Teams" id="ZXe-aT-C3c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="341"/>
+            <point key="canvasLocation" x="2946" y="341"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="s9B-aE-XJ2">
@@ -174,16 +217,55 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="USx-5M-c0l" kind="relationship" relationship="viewControllers" id="kxp-8h-24S"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uVQ-MY-LVl"/>
+                        <segue destination="1VD-bF-aLQ" kind="relationship" relationship="viewControllers" id="kxp-8h-24S"/>
+                        <segue destination="GJd-aL-V5V" kind="relationship" relationship="viewControllers" id="uVQ-MY-LVl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qjx-w1-9EG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1322" y="-42"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ryk-fn-s2w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1VD-bF-aLQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="d4z-AP-BDl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c4d-kt-eKh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="USx-5M-c0l" kind="relationship" relationship="rootViewController" id="wcV-h2-uE2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRo-U7-DeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="-424"/>
+        </scene>
+        <!--All Teams-->
+        <scene sceneID="QBo-92-MA8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GJd-aL-V5V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="All Teams" id="Baj-rf-Isk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBG-Hs-iZl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Xn-TG-Nsf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o77-Tw-K9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="341"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="grass" width="2048" height="2048"/>
         <image name="star" width="41" height="41"/>
     </resources>
 </document>
