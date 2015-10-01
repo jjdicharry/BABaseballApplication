@@ -23,6 +23,8 @@
 		048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048200981BBC9B72003E209C /* FavoritesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */; settings = {ASSET_TAGS = (); }; };
+		04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB31BBD8F5100435C01 /* GamesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
 		04DA22181BBCA84A008D49C8 /* TOR.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DA22171BBCA849008D49C8 /* TOR.png */; settings = {ASSET_TAGS = (); }; };
@@ -76,6 +78,10 @@
 		0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewCell.m; sourceTree = "<group>"; };
 		049AB4691BBAE1A1005DB4E8 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
 		049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
+		04AEDDB21BBD8F5100435C01 /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
+		04AEDDB31BBD8F5100435C01 /* GamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesViewController.m; sourceTree = "<group>"; };
+		04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
+		04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
 		04D529921BB84DA700F03357 /* BAScoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboard.h; sourceTree = "<group>"; };
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
 		04D9CF501BB74AEE000E2F37 /* BAJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSON.h; sourceTree = "<group>"; };
@@ -181,6 +187,8 @@
 				045B47131BB747570088C360 /* TeamViewController.m */,
 				048200971BBC9B72003E209C /* FavoritesViewController.h */,
 				048200981BBC9B72003E209C /* FavoritesViewController.m */,
+				04AEDDB21BBD8F5100435C01 /* GamesViewController.h */,
+				04AEDDB31BBD8F5100435C01 /* GamesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +217,8 @@
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 				0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */,
 				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
+				04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */,
+				04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -356,6 +366,8 @@
 				049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */,
 				045B47141BB747570088C360 /* TeamViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
+				04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */,
+				04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,

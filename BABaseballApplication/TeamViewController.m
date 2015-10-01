@@ -56,18 +56,17 @@
 
 #pragma mark - UITableViewDelegate Methods
 
-/*
-   - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-   {
-        return 1;
-   }
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+     return 1;
+}
 
-   - (NSString *)tableView:(UITableView *)tableView
-   titleForHeaderInSection:(NSInteger)section
-   {
-        return @"Section Title";
-   }
- */
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section
+{
+	tableView.sectionIndexColor = [UIColor redColor];
+     return @"Section Title";
+}
 
 - (NSInteger)   tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section
