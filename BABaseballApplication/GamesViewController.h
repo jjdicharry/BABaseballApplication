@@ -11,4 +11,6 @@
 @interface GamesViewController : UIViewController
     <UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) NSString *teamAbbr;
+
 @end

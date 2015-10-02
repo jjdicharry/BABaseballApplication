@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *teamNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *favoriteIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *teamLogo;
+@property (weak, nonatomic) NSString *teamAbbr;
 @property (weak, nonatomic) UIViewController *delegate;
 @property (weak, nonatomic) UITableView *tableView;
 @property (weak, nonatomic) UITableView *favoriteTableView;

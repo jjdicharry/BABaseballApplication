@@ -11,6 +11,7 @@
 #import "BAJSON.h"
 #import "Favorite.h"
 #import "TeamTableViewCell.h"
+#import "GamesViewController.h"
 
 @interface TeamViewController ()
 
@@ -130,6 +131,7 @@ titleForHeaderInSection:(NSInteger)section
     NSDictionary *team;
     NSManagedObject *favorite;
     NSMutableString *name;
+    NSString *teamAbbr;
     NSError *error;
     UIImage *icon;
 
@@ -138,7 +140,10 @@ titleForHeaderInSection:(NSInteger)section
     team = [teams objectAtIndex:indexPath.row];
 
     name = [team objectForKey:@"Name"];
+    teamAbbr = [team objectForKey:@"Abbreviation"];
+    
     cell.teamNameLabel.text = name;
+    cell.teamAbbr = teamAbbr;
     cell.tableView = tableView;
     cell.delegate = self;
 
@@ -153,6 +158,16 @@ titleForHeaderInSection:(NSInteger)section
     }
 
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"GameSegue"]) {
+        TeamTableViewCell *cell = (TeamTableViewCell *) sender;
+        GamesViewController *gamesViewController;
+        gamesViewController = segue.destinationViewController;
+        gamesViewController.teamAbbr = cell.teamAbbr;
+        NSLog(@"");
+    }
 }
 
 @end
