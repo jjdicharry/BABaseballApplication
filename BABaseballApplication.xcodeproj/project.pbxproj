@@ -27,7 +27,6 @@
 		04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
-		04DA22181BBCA84A008D49C8 /* TOR.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DA22171BBCA849008D49C8 /* TOR.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
 		04D9CF501BB74AEE000E2F37 /* BAJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSON.h; sourceTree = "<group>"; };
 		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
-		04DA22171BBCA849008D49C8 /* TOR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TOR.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 		045B470B1BB747570088C360 /* BABaseballApplication */ = {
 			isa = PBXGroup;
 			children = (
-				04DA221A1BBCA8DE008D49C8 /* Images */,
 				04D529971BB856BE00F03357 /* Controllers */,
 				04D529961BB8569800F03357 /* ModelClasses */,
 				04D529951BB8567B00F03357 /* ViewControllers */,
@@ -221,14 +218,6 @@
 				04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		04DA221A1BBCA8DE008D49C8 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				04DA22171BBCA849008D49C8 /* TOR.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DA22181BBCA84A008D49C8 /* TOR.png in Resources */,
 				0437408F1BB9FCB80009858C /* Defaults.plist in Resources */,
 				045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */,
 				045B471C1BB747570088C360 /* Assets.xcassets in Resources */,
