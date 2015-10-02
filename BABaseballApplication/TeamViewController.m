@@ -18,7 +18,8 @@
 
 @implementation TeamViewController
 {
-    NSMutableArray *teams;
+    NSArray *teams;
+    NSArray *unsortedTeams;
 }
 
 /**
@@ -32,7 +33,7 @@
     
     for (int i=1; i<=30; i++) {
         [json parseScoreboardWithYear:@"2015"
-                             andMonth:@"09"
+                             andMonth:@"10"
                                andDay:[NSString stringWithFormat:@"%02i",i]];
     }
 
@@ -42,7 +43,11 @@
     NSMutableDictionary *root;
     path = [bundle pathForResource:@"Defaults" ofType:@"plist"];
     root = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
-    teams = [root objectForKey:@"Teams"];
+    unsortedTeams = [root objectForKey:@"Teams"];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"Name" ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    teams = [unsortedTeams sortedArrayUsingDescriptors:sortDescriptors];
 }
 
 /**
