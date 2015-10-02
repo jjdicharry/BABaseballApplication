@@ -162,7 +162,7 @@
                                         <connections>
                                             <outlet property="favoriteIcon" destination="nmc-Bl-3t1" id="M0L-J4-N4x"/>
                                             <outlet property="teamNameLabel" destination="RKo-xu-9ak" id="94w-hu-o5c"/>
-                                            <segue destination="ekf-dA-Yt2" kind="show" id="8gz-Y4-K5B"/>
+                                            <segue destination="ekf-dA-Yt2" kind="show" identifier="GameSegue" id="8gz-Y4-K5B"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -231,47 +231,55 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-yP-y3v">
-                                                    <rect key="frame" x="8" y="11" width="80" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="105" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv1-wo-Yif">
-                                                    <rect key="frame" x="85" y="11" width="56" height="21"/>
+                                                    <rect key="frame" x="8" y="47" width="83" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-SF-Rka">
-                                                    <rect key="frame" x="227" y="11" width="147" height="21"/>
+                                                    <rect key="frame" x="203" y="11" width="147" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-FW-EiB">
-                                                    <rect key="frame" x="227" y="45" width="147" height="21"/>
+                                                    <rect key="frame" x="203" y="45" width="147" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-26-WST">
-                                                    <rect key="frame" x="416" y="45" width="153" height="21"/>
+                                                    <rect key="frame" x="434" y="45" width="153" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U47-1b-0gi">
-                                                    <rect key="frame" x="416" y="11" width="153" height="21"/>
+                                                    <rect key="frame" x="434" y="11" width="153" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-cJ-Iqd">
+                                                    <rect key="frame" x="131" y="8" width="64" height="64"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-cq-kNb">
+                                                    <rect key="frame" x="366" y="8" width="64" height="64"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="awayTeamLogo" destination="bcl-cJ-Iqd" id="l2S-PO-VgG"/>
                                             <outlet property="awayTeamNameLabel" destination="Hol-SF-Rka" id="7di-tm-txV"/>
                                             <outlet property="awayTeamRunsLabel" destination="CMq-FW-EiB" id="Adz-Ml-tNl"/>
                                             <outlet property="dateLabel" destination="Hwq-yP-y3v" id="WZL-il-7zo"/>
+                                            <outlet property="homeTeamLogo" destination="ELg-cq-kNb" id="GFG-8t-Lt5"/>
                                             <outlet property="homeTeamNameLabel" destination="U47-1b-0gi" id="zET-8D-ym6"/>
                                             <outlet property="homeTeamRunsLabel" destination="MQ6-26-WST" id="xBb-qG-QBI"/>
                                             <outlet property="timeLabel" destination="Nv1-wo-Yif" id="kkK-TK-iDc"/>
