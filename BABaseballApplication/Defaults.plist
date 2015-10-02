@@ -7,22 +7,32 @@
 		<dict>
 			<key>Name</key>
 			<string>Diamondbacks</string>
+			<key>Abbreviation</key>
+			<string>ARI</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Braves</string>
+			<key>Abbreviation</key>
+			<string>ATL</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Orioles</string>
+			<key>Abbreviation</key>
+			<string>BAL</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Red Sox</string>
+			<key>Abbreviation</key>
+			<string>BOS</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>White Sox</string>
+			<key>Abbreviation</key>
+			<string>CWS</string>
 		</dict>
 		<dict>
 			<key>Name</key>
