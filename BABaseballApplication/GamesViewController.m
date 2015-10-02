@@ -22,13 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    BACoreData *coreData = [[BACoreData alloc] init];
+    gamesArray = [coreData getScoreboardWithTeam:self.teamAbbr];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    BACoreData *coreData = [[BACoreData alloc] init];
-    gamesArray = [coreData getScoreboardWithTeam:self.teamAbbr];
 }
 
 /*
@@ -60,8 +60,10 @@
     tableViewCell.timeLabel.text         = [scoreboard.time stringByAppendingString:@" "];
     tableViewCell.timeLabel.text         = [tableViewCell.timeLabel.text
                                             stringByAppendingString:scoreboard.amPM];
+    tableViewCell.awayTeamLogo.image     = [UIImage imageNamed:scoreboard.awayTeamAbbr];
     tableViewCell.awayTeamNameLabel.text = scoreboard.awayTeamName;
     tableViewCell.awayTeamRunsLabel.text = scoreboard.awayRun;
+    tableViewCell.homeTeamLogo.image     = [UIImage imageNamed:scoreboard.homeTeamAbbr];
     tableViewCell.homeTeamNameLabel.text = scoreboard.homeTeamName;
     tableViewCell.homeTeamRunsLabel.text = scoreboard.homeRun;
     
