@@ -22,13 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    BACoreData *coreData = [[BACoreData alloc] init];
+    gamesArray = [coreData getScoreboardWithTeam:self.teamAbbr];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    BACoreData *coreData = [[BACoreData alloc] init];
-    gamesArray = [coreData getScoreboardWithTeam:self.teamAbbr];
 }
 
 /*
