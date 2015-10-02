@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-jY-AtA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-jY-AtA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baseball Launch Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Od-Plg">
+                                <rect key="frame" x="38" y="28" width="525" height="187"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baseball Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-lS-9Wb">
+                                <rect key="frame" x="29" y="235" width="543" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Ixl-IF-7D7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-dQ-bSo">
+                                <rect key="frame" x="205" y="373" width="190" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="0ud-tt-I5z"/>
+                                    <constraint firstAttribute="width" constant="190" id="Cht-fj-SJt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJF-Od-Plg" secondAttribute="trailing" constant="17" id="2xf-Vu-tf3"/>
+                            <constraint firstItem="R5v-lS-9Wb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4XD-Ux-s6t"/>
+                            <constraint firstItem="AJF-Od-Plg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5fC-Rz-zzl"/>
+                            <constraint firstItem="UNs-dQ-bSo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8uk-iX-TvA"/>
+                            <constraint firstItem="AJF-Od-Plg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="18" id="QPm-8M-AgC"/>
+                            <constraint firstItem="R5v-lS-9Wb" firstAttribute="top" secondItem="AJF-Od-Plg" secondAttribute="bottom" constant="8" id="VaA-4U-FGf"/>
+                            <constraint firstItem="R5v-lS-9Wb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YtC-Nt-aQh"/>
+                            <constraint firstItem="c9m-jY-AtA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="b2J-Dz-ra9"/>
+                            <constraint firstItem="UNs-dQ-bSo" firstAttribute="top" secondItem="R5v-lS-9Wb" secondAttribute="bottom" constant="8" id="dms-mZ-Jrx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R5v-lS-9Wb" secondAttribute="trailing" constant="8" id="hW5-6K-be2"/>
+                            <constraint firstItem="c9m-jY-AtA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="iMY-tR-bEs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c9m-jY-AtA" secondAttribute="trailing" constant="-20" id="nxQ-3C-Vq3"/>
+                            <constraint firstItem="AJF-Od-Plg" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="w35-WV-4Zm"/>
+                            <constraint firstItem="R5v-lS-9Wb" firstAttribute="top" secondItem="AJF-Od-Plg" secondAttribute="bottom" constant="20" id="xHb-LX-EKX"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="c9m-jY-AtA" secondAttribute="bottom" id="xiT-T3-tXe"/>
+                            <constraint firstItem="R5v-lS-9Wb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="9" id="xtR-yi-3Xz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VaA-4U-FGf"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,6 +76,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Baseball Launch Logo" width="392" height="140"/>
         <image name="grass" width="2048" height="2048"/>
     </resources>
 </document>
