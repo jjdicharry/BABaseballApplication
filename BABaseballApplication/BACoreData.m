@@ -80,7 +80,7 @@
     NSMutableArray         *returnArray     = [[NSMutableArray alloc] init];
     NSSortDescriptor       *sortDescriptor  = [[NSSortDescriptor alloc]
                                               initWithKey:@"homeTeamAbbr" ascending:YES];
-    NSArray                *sortDescriptors = [[NSArray alloc] initWithObjects: sortDescriptor, nil];
+    NSArray                *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     NSError                *error;
     
     predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@)", date];
@@ -103,22 +103,28 @@
 }
 
 - (NSMutableArray *)getScoreboardWithDate:(NSString *)date andTeam:(NSString *)team {
-    BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
-    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
-    NSEntityDescription    *entity        = [NSEntityDescription entityForName:@"Scoreboard"
-                                                        inManagedObjectContext:context];
-    NSFetchRequest         *request       = [[NSFetchRequest alloc] init];
-    NSPredicate            *predicate     = [[NSPredicate alloc] init];
+    BAScoreboard           *scoreboard      = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate     = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context         = [appDelegate managedObjectContext];
+    NSEntityDescription    *entity          = [NSEntityDescription entityForName:@"Scoreboard"
+                                                          inManagedObjectContext:context];
+    NSFetchRequest         *request         = [[NSFetchRequest alloc] init];
+    NSPredicate            *predicate       = [[NSPredicate alloc] init];
     NSManagedObject        *requestResult;
-    NSArray                *requestArray  = [[NSArray alloc] init];
-    NSMutableArray         *returnArray   = [[NSMutableArray alloc] init];
+    NSArray                *requestArray    = [[NSArray alloc] init];
+    NSMutableArray         *returnArray     = [[NSMutableArray alloc] init];
+    NSSortDescriptor       *sortDescriptor  = [[NSSortDescriptor alloc]
+                                               initWithKey:@"time" ascending:YES];
+    NSArray                *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+
     NSError                *error;
     
     predicate = [NSPredicate predicateWithFormat:@"(gameDate = %@) and ((awayTeamAbbr = %@) or (homeTeamAbbr = %@))", date, team, team];
     
     [request setEntity:entity];
     [request setPredicate:predicate];
+    [request setSortDescriptors:sortDescriptors];
+
     
     requestArray = [context executeFetchRequest:request error:&error];
     
@@ -134,22 +140,27 @@
 }
 
 - (NSMutableArray *)getScoreboardWithTeam:(NSString *)team {
-    BAScoreboard           *scoreboard    = [[BAScoreboard alloc] init];
-    AppDelegate            *appDelegate   = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context       = [appDelegate managedObjectContext];
-    NSEntityDescription    *entity        = [NSEntityDescription entityForName:@"Scoreboard"
-                                                        inManagedObjectContext:context];
-    NSFetchRequest         *request       = [[NSFetchRequest alloc] init];
-    NSPredicate            *predicate     = [[NSPredicate alloc] init];
+    BAScoreboard           *scoreboard      = [[BAScoreboard alloc] init];
+    AppDelegate            *appDelegate     = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context         = [appDelegate managedObjectContext];
+    NSEntityDescription    *entity          = [NSEntityDescription entityForName:@"Scoreboard"
+                                                          inManagedObjectContext:context];
+    NSFetchRequest         *request         = [[NSFetchRequest alloc] init];
+    NSPredicate            *predicate       = [[NSPredicate alloc] init];
     NSManagedObject        *requestResult;
-    NSArray                *requestArray  = [[NSArray alloc] init];
-    NSMutableArray         *returnArray   = [[NSMutableArray alloc] init];
+    NSArray                *requestArray    = [[NSArray alloc] init];
+    NSMutableArray         *returnArray     = [[NSMutableArray alloc] init];
+    NSSortDescriptor       *sortDescriptor  = [[NSSortDescriptor alloc]
+                                               initWithKey:@"gameDate" ascending:NO];
+    NSArray                *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     NSError                *error;
     
     predicate = [NSPredicate predicateWithFormat:@"(awayTeamAbbr = %@) or (homeTeamAbbr = %@)", team, team];
     
     [request setEntity:entity];
     [request setPredicate:predicate];
+    [request setSortDescriptors:sortDescriptors];
+
     
     requestArray = [context executeFetchRequest:request error:&error];
     
