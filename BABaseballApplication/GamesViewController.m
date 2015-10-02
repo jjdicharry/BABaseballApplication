@@ -7,8 +7,13 @@
 //
 
 #import "GamesViewController.h"
+#import "GameTableViewCell.h"
+#import "BACoreData.h"
+#import "BAScoreboard.h"
 
-@interface GamesViewController ()
+@interface GamesViewController () {
+    NSMutableArray *gamesArray;
+}
 
 @end
 
@@ -22,6 +27,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    BACoreData *coreData = [[BACoreData alloc] init];
+    gamesArray = [coreData getScoreboardWithTeam:self.teamAbbr];
 }
 
 /*
@@ -39,8 +46,28 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [gamesArray count];
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *reuseIdentifier = @"GameTableViewCell";
+    
+    GameTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    BAScoreboard *scoreboard = (BAScoreboard *)[gamesArray objectAtIndex:indexPath.row];
+    
+    tableViewCell.dateLabel.text         = scoreboard.gameDate;
+    tableViewCell.timeLabel.text         = [scoreboard.time stringByAppendingString:@" "];
+    tableViewCell.timeLabel.text         = [tableViewCell.timeLabel.text
+                                            stringByAppendingString:scoreboard.amPM];
+    tableViewCell.awayTeamNameLabel.text = scoreboard.awayTeamName;
+    tableViewCell.awayTeamRunsLabel.text = scoreboard.awayRun;
+    tableViewCell.homeTeamNameLabel.text = scoreboard.homeTeamName;
+    tableViewCell.homeTeamRunsLabel.text = scoreboard.homeRun;
+    
+    return tableViewCell;
+}
+
 
 
 

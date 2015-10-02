@@ -140,6 +140,7 @@ titleForHeaderInSection:(NSInteger)section
         GamesViewController *gamesViewController;
         gamesViewController = segue.destinationViewController;
         gamesViewController.teamAbbr = cell.teamAbbr;
+        NSLog(@"");
     }
 }
 
