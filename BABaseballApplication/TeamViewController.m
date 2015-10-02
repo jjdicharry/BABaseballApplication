@@ -58,32 +58,58 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-     return 1;
+	/*
+    NSError *error;
+    NSArray *favorites;
+	
+    favorites = [Favorite getAll:&error];
+	
+    if (error || !favorites || (favorites.count == 0)) {
+	    return 1;
+    }
+	
+    return 2;
+	 */
+	return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView
 titleForHeaderInSection:(NSInteger)section
 {
-	tableView.sectionIndexColor = [UIColor redColor];
-     return @"Section Title";
+	/*
+    NSError *error;
+    NSArray *favorites;
+	
+    favorites = [Favorite getAll:&error];
+	
+    if (error || !favorites || (favorites.count == 0)) {
+	    return @"Teams";
+    }
+	
+	if (section == 0) {
+		return @"Favorites";
+	}
+	 */
+	
+     return @"Teams";
 }
 
 - (NSInteger)   tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section
 {
-    /*
+	/*
        NSArray *favorites;
        NSError *error;
 
        favorites = [Favorite getAll:&error];
 
-       if (!error && (favorites.count > 0)) {
-            if (section == 2)
+       if (!error && (favorites != nil) && (favorites.count > 0)) {
+            if (section == 1)
                     return teams.count;
-            else if (section == 1)
-                    return 0;
+            else if (section == 0)
+                    return favorites.count;
        }
-     */
+	 */
 
     return teams.count;
 }
