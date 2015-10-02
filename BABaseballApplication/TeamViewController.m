@@ -116,10 +116,11 @@ titleForHeaderInSection:(NSInteger)section
     name = [team objectForKey:@"Name"];
     teamAbbr = [team objectForKey:@"Abbreviation"];
     
+    cell.teamLogo.image     = [UIImage imageNamed:teamAbbr];
     cell.teamNameLabel.text = name;
-    cell.teamAbbr = teamAbbr;
-    cell.tableView = tableView;
-    cell.delegate = self;
+    cell.teamAbbr           = teamAbbr;
+    cell.tableView          = tableView;
+    cell.delegate           = self;
 
     favorite = [Favorite getByName:name error:&error];
 

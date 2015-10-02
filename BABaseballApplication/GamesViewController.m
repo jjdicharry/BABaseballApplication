@@ -60,8 +60,10 @@
     tableViewCell.timeLabel.text         = [scoreboard.time stringByAppendingString:@" "];
     tableViewCell.timeLabel.text         = [tableViewCell.timeLabel.text
                                             stringByAppendingString:scoreboard.amPM];
+    tableViewCell.awayTeamLogo.image     = [UIImage imageNamed:scoreboard.awayTeamAbbr];
     tableViewCell.awayTeamNameLabel.text = scoreboard.awayTeamName;
     tableViewCell.awayTeamRunsLabel.text = scoreboard.awayRun;
+    tableViewCell.homeTeamLogo.image     = [UIImage imageNamed:scoreboard.homeTeamAbbr];
     tableViewCell.homeTeamNameLabel.text = scoreboard.homeTeamName;
     tableViewCell.homeTeamRunsLabel.text = scoreboard.homeRun;
     
