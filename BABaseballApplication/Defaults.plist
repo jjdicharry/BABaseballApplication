@@ -37,98 +37,152 @@
 		<dict>
 			<key>Name</key>
 			<string>Cubs</string>
+			<key>Abbreviation</key>
+			<string>CHC</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Reds</string>
+			<key>Abbreviation</key>
+			<string>CIN</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Indians</string>
+			<key>Abbreviation</key>
+			<string>CLE</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rockies</string>
+			<key>Abbreviation</key>
+			<string>COL</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Tigers</string>
+			<key>Abbreviation</key>
+			<string>DET</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Marlins</string>
+			<key>Abbreviation</key>
+			<string>MIA</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Astros</string>
+			<key>Abbreviation</key>
+			<string>HOU</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Royals</string>
+			<key>Abbreviation</key>
+			<string>KC</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Angels</string>
+			<key>Abbreviation</key>
+			<string>LAA</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Dodgers</string>
+			<key>Abbreviation</key>
+			<string>LAD</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Brewers</string>
+			<key>Abbreviation</key>
+			<string>MIL</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Twins</string>
+			<key>Abbreviation</key>
+			<string>MIN</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Mets</string>
+			<key>Abbreviation</key>
+			<string>NYM</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Yankees</string>
+			<key>Abbreviation</key>
+			<string>NYY</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Athletics</string>
+			<key>Abbreviation</key>
+			<string>OAK</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Phillies</string>
+			<key>Abbreviation</key>
+			<string>PHI</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Padres</string>
+			<key>Abbreviation</key>
+			<string>SD</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Giants</string>
+			<key>Abbreviation</key>
+			<string>SF</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Mariners</string>
+			<key>Abbreviation</key>
+			<string>SEA</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Cardinals</string>
+			<key>Abbreviation</key>
+			<string>STL</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rays</string>
+			<key>Abbreviation</key>
+			<string>TB</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rangers</string>
+			<key>Abbreviation</key>
+			<string>TEX</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Blue Jays</string>
+			<key>Abbreviation</key>
+			<string>TOR</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Nationals</string>
+			<key>Abbreviation</key>
+			<string>WSH</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Pirates</string>
+			<key>Abbreviation</key>
+			<string>PIT</string>
 		</dict>
 	</array>
 </dict>
