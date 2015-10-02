@@ -19,5 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *homeTeamLogo;
 @property (weak, nonatomic) IBOutlet UILabel *homeTeamNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *homeTeamRunsLabel;
+@property (weak, nonatomic) NSString *awayTeamAbbr;
+@property (weak, nonatomic) NSString *homeTeamAbbr;
+@property (weak, nonatomic) NSString *teamAbbr;
 
 @end
