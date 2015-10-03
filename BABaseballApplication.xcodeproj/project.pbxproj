@@ -135,7 +135,6 @@
 		045B470B1BB747570088C360 /* BABaseballApplication */ = {
 			isa = PBXGroup;
 			children = (
-				04CF3CF61BBF39DE0046236C /* Images */,
 				04D529971BB856BE00F03357 /* Controllers */,
 				04D529961BB8569800F03357 /* ModelClasses */,
 				04D529951BB8567B00F03357 /* ViewControllers */,
@@ -176,13 +175,6 @@
 				045B47361BB747580088C360 /* Info.plist */,
 			);
 			path = BABaseballApplicationUITests;
-			sourceTree = "<group>";
-		};
-		04CF3CF61BBF39DE0046236C /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		04D529951BB8567B00F03357 /* ViewControllers */ = {
