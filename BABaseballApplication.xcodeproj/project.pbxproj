@@ -69,7 +69,6 @@
 		045B47301BB747580088C360 /* BABaseballApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B47341BB747580088C360 /* BABaseballApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABaseballApplicationUITests.m; sourceTree = "<group>"; };
 		045B47361BB747580088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046226381BBB1F770044A8A3 /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
 		046226391BBB1F770044A8A3 /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 		0462263B1BBB1FD10044A8A3 /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
 		0462263C1BBB1FD10044A8A3 /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
@@ -218,8 +217,6 @@
 				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
 				04DA53231BC04A8B00D6F8FB /* BAXML.h */,
 				04DA53241BC04A8B00D6F8FB /* BAXML.m */,
-				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
-				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 				0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */,
 				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
 				04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */,
