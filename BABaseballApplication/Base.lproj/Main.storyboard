@@ -276,49 +276,93 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-yP-y3v">
-                                                    <rect key="frame" x="8" y="3" width="105" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-yP-y3v">
+                                                    <rect key="frame" x="8" y="3" width="94" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="PNh-GJ-EXc"/>
+                                                        <constraint firstAttribute="width" constant="94" id="Qhn-l8-wGL"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv1-wo-Yif">
-                                                    <rect key="frame" x="8" y="41" width="83" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv1-wo-Yif">
+                                                    <rect key="frame" x="8" y="41" width="94" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-SF-Rka">
-                                                    <rect key="frame" x="203" y="3" width="147" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-SF-Rka">
+                                                    <rect key="frame" x="182" y="3" width="112" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="DLV-ic-GYM"/>
+                                                        <constraint firstAttribute="width" constant="112" id="til-DF-GOs"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-FW-EiB">
-                                                    <rect key="frame" x="203" y="41" width="147" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-FW-EiB">
+                                                    <rect key="frame" x="182" y="41" width="112" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-26-WST">
-                                                    <rect key="frame" x="434" y="41" width="153" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U47-1b-0gi">
+                                                    <rect key="frame" x="374" y="3" width="218" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="HG6-hM-Q6d"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U47-1b-0gi">
-                                                    <rect key="frame" x="434" y="3" width="153" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-cJ-Iqd">
-                                                    <rect key="frame" x="131" y="3" width="64" height="64"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-cJ-Iqd">
+                                                    <rect key="frame" x="110" y="3" width="64" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="QQD-65-w1p"/>
+                                                        <constraint firstAttribute="width" constant="64" id="l4q-l2-8cN"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-cq-kNb">
-                                                    <rect key="frame" x="366" y="3" width="64" height="64"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-cq-kNb">
+                                                    <rect key="frame" x="302" y="3" width="64" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="4RR-Vg-ujl"/>
+                                                        <constraint firstAttribute="height" constant="64" id="jlG-8c-aBf"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-26-WST">
+                                                    <rect key="frame" x="374" y="41" width="218" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="gHE-xb-IRZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CMq-FW-EiB" firstAttribute="leading" secondItem="bcl-cJ-Iqd" secondAttribute="trailing" constant="8" id="1Sq-hn-9cL"/>
+                                                <constraint firstItem="bcl-cJ-Iqd" firstAttribute="top" secondItem="Tnr-1R-m81" secondAttribute="topMargin" constant="-5" id="3O7-X1-HqN"/>
+                                                <constraint firstItem="U47-1b-0gi" firstAttribute="top" secondItem="Tnr-1R-m81" secondAttribute="topMargin" constant="-5" id="8nU-kM-OZw"/>
+                                                <constraint firstItem="bcl-cJ-Iqd" firstAttribute="leading" secondItem="Nv1-wo-Yif" secondAttribute="trailing" constant="8" id="AjT-Ht-i1r"/>
+                                                <constraint firstItem="U47-1b-0gi" firstAttribute="trailing" secondItem="Tnr-1R-m81" secondAttribute="trailingMargin" id="B70-ql-ee3"/>
+                                                <constraint firstItem="ELg-cq-kNb" firstAttribute="leading" secondItem="Hol-SF-Rka" secondAttribute="trailing" constant="8" id="DDd-jB-1eq"/>
+                                                <constraint firstItem="CMq-FW-EiB" firstAttribute="top" secondItem="Hol-SF-Rka" secondAttribute="bottom" constant="17" id="EQM-ZK-BwR"/>
+                                                <constraint firstItem="MQ6-26-WST" firstAttribute="top" secondItem="U47-1b-0gi" secondAttribute="bottom" constant="17" id="Iv8-da-hpr"/>
+                                                <constraint firstItem="MQ6-26-WST" firstAttribute="leading" secondItem="ELg-cq-kNb" secondAttribute="trailing" constant="8" id="Kbd-Hf-kOO"/>
+                                                <constraint firstItem="U47-1b-0gi" firstAttribute="leading" secondItem="ELg-cq-kNb" secondAttribute="trailing" constant="8" id="TuS-hy-aZV"/>
+                                                <constraint firstItem="ELg-cq-kNb" firstAttribute="top" secondItem="Tnr-1R-m81" secondAttribute="topMargin" constant="-5" id="UiO-pZ-Erq"/>
+                                                <constraint firstItem="Nv1-wo-Yif" firstAttribute="leading" secondItem="Tnr-1R-m81" secondAttribute="leadingMargin" id="Ynp-oZ-YoQ"/>
+                                                <constraint firstItem="Hol-SF-Rka" firstAttribute="top" secondItem="Tnr-1R-m81" secondAttribute="topMargin" constant="-5" id="boh-ca-6Qd"/>
+                                                <constraint firstItem="Hol-SF-Rka" firstAttribute="leading" secondItem="bcl-cJ-Iqd" secondAttribute="trailing" constant="8" id="bsu-Qs-WcV"/>
+                                                <constraint firstItem="Nv1-wo-Yif" firstAttribute="top" secondItem="Hwq-yP-y3v" secondAttribute="bottom" constant="17" id="cVm-7x-L86"/>
+                                                <constraint firstItem="MQ6-26-WST" firstAttribute="trailing" secondItem="Tnr-1R-m81" secondAttribute="trailingMargin" id="gKQ-he-kvd"/>
+                                                <constraint firstItem="bcl-cJ-Iqd" firstAttribute="leading" secondItem="Hwq-yP-y3v" secondAttribute="trailing" constant="8" id="grn-ue-13s"/>
+                                                <constraint firstItem="Hwq-yP-y3v" firstAttribute="top" secondItem="Tnr-1R-m81" secondAttribute="topMargin" constant="-5" id="i9z-pP-UrQ"/>
+                                                <constraint firstItem="ELg-cq-kNb" firstAttribute="leading" secondItem="CMq-FW-EiB" secondAttribute="trailing" constant="8" id="tU9-65-WxH"/>
+                                                <constraint firstItem="Hwq-yP-y3v" firstAttribute="leading" secondItem="Tnr-1R-m81" secondAttribute="leadingMargin" id="xgY-MY-Jlo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="awayTeamLogo" destination="bcl-cJ-Iqd" id="l2S-PO-VgG"/>
@@ -555,6 +599,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6Cl-ba-ISU"/>
-        <segue reference="qhS-pV-KC1"/>
+        <segue reference="up3-OZ-io8"/>
     </inferredMetricsTieBreakers>
 </document>
