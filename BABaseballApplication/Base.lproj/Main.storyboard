@@ -478,7 +478,7 @@
                                             <outlet property="homeTeamNameLabel" destination="U47-1b-0gi" id="zET-8D-ym6"/>
                                             <outlet property="homeTeamRunsLabel" destination="MQ6-26-WST" id="xBb-qG-QBI"/>
                                             <outlet property="timeLabel" destination="Nv1-wo-Yif" id="kkK-TK-iDc"/>
-                                            <segue destination="XR7-pW-Eg0" kind="showDetail" id="up3-OZ-io8"/>
+                                            <segue destination="XR7-pW-Eg0" kind="showDetail" identifier="ScoreboardSegue" id="up3-OZ-io8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

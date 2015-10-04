@@ -10,6 +10,7 @@
 #import "GameTableViewCell.h"
 #import "BACoreData.h"
 #import "BAScoreboard.h"
+#import "BAScoreboardViewController.h"
 
 @interface GamesViewController () {
     NSMutableArray *gamesArray;
@@ -66,12 +67,25 @@
     tableViewCell.homeTeamLogo.image     = [UIImage imageNamed:scoreboard.homeTeamAbbr];
     tableViewCell.homeTeamNameLabel.text = scoreboard.homeTeamName;
     tableViewCell.homeTeamRunsLabel.text = scoreboard.homeRun;
+    tableViewCell.gameDate               = scoreboard.gameDate;
+    tableViewCell.time                   = scoreboard.time;
+    tableViewCell.homeTeamAbbr           = scoreboard.homeTeamAbbr;
 
     tableViewCell.backgroundColor = [UIColor clearColor];
     
     return tableViewCell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ScoreboardSegue"]) {
+        GameTableViewCell *cell = (GameTableViewCell *) sender;
+        BAScoreboardViewController *scoreboardViewController;
+        scoreboardViewController                     = segue.destinationViewController;
+        scoreboardViewController.gameDateLabel.text  = cell.gameDate;
+        scoreboardViewController.timeLabel.text      = cell.time;
+        scoreboardViewController.homeAbbr1Label.text = cell.homeTeamAbbr;
+    }
+}
 
 
 

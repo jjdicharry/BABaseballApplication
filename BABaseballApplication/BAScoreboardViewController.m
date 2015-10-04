@@ -7,6 +7,8 @@
 //
 
 #import "BAScoreboardViewController.h"
+#import "BAScoreboard.h"
+#import "BACoreData.h"
 
 @interface BAScoreboardViewController ()
 
@@ -17,6 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    BACoreData   *coreData   = [[BACoreData alloc] init];
+    BAScoreboard *scoreboard = [[BAScoreboard alloc] init];
+    
+    scoreboard = [coreData getScoreboardWithDate:self.gameDateLabel.text
+                                         andTime:self.timeLabel.text
+                                     andHomeTeam:self.homeAbbr1Label.text
+                                       andRemove:NO];
+    self.gameDateLabel.text = scoreboard.gameDate;
+    self.timeLabel.text     = scoreboard.time;
+    [self.timeLabel.text stringByAppendingString:@" "];
+    [self.timeLabel.text stringByAppendingString:scoreboard.amPM];
 }
 
 - (void)didReceiveMemoryWarning {
