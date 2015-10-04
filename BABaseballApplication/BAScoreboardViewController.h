@@ -34,5 +34,34 @@
 @property (weak, nonatomic) IBOutlet UILabel *homeStoleBaseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *awayRecordLabel;
 @property (weak, nonatomic) IBOutlet UILabel *homeRecordLabel;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun1Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun1Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun2Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun2Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun3Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun3Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun4Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun4Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun5Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun5Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun6Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun6Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun7Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun7Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun8Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun8Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRun9Label;
+@property (weak, nonatomic) IBOutlet UILabel *homeRun9Label;
+@property (weak, nonatomic) IBOutlet UILabel *awayRunELabel;
+@property (weak, nonatomic) IBOutlet UILabel *homeRunELabel;
+@property (weak, nonatomic) IBOutlet UILabel *winnPitchNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *losePitchNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *winnPitchERALabel;
+@property (weak, nonatomic) IBOutlet UILabel *losePitchERALabel;
+@property (weak, nonatomic) IBOutlet UIButton *media1Button;
+@property (weak, nonatomic) IBOutlet UIButton *media2Button;
+@property (weak, nonatomic) IBOutlet UIButton *media3Button;
+@property (weak, nonatomic) IBOutlet UIButton *media4Button;
+@property (weak, nonatomic) IBOutlet UIButton *media5Button;
 
 @end

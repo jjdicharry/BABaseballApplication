@@ -991,6 +991,16 @@
                         <outlet property="awayHomeRunLabel" destination="NQC-oj-Moj" id="7Ix-JH-sWh"/>
                         <outlet property="awayLogoImage" destination="e9P-A7-AY5" id="saA-zL-atl"/>
                         <outlet property="awayRecordLabel" destination="11E-XH-YAe" id="KFT-7G-mSQ"/>
+                        <outlet property="awayRun1Label" destination="ven-cX-nda" id="QcL-Iu-Gaf"/>
+                        <outlet property="awayRun2Label" destination="w8e-cb-dbB" id="ncg-IC-894"/>
+                        <outlet property="awayRun3Label" destination="9Ht-Pm-Iah" id="uOn-6l-x3F"/>
+                        <outlet property="awayRun4Label" destination="qkm-78-Jcl" id="M08-To-fv4"/>
+                        <outlet property="awayRun5Label" destination="URj-5d-zWm" id="AM4-F4-JJn"/>
+                        <outlet property="awayRun6Label" destination="4my-BL-Rbq" id="qs3-qC-GBx"/>
+                        <outlet property="awayRun7Label" destination="2y0-FA-pUf" id="wgT-TL-KAj"/>
+                        <outlet property="awayRun8Label" destination="3wj-cf-sP8" id="tyF-No-9aE"/>
+                        <outlet property="awayRun9Label" destination="dFd-qh-gHu" id="OCO-xR-POG"/>
+                        <outlet property="awayRunELabel" destination="t2K-oC-TZV" id="jfu-7X-KVH"/>
                         <outlet property="awayRunLabel" destination="rkq-nQ-TxE" id="Ree-VU-A6Z"/>
                         <outlet property="awayStoleBaseLabel" destination="KAu-Sm-yaw" id="K3S-ec-q8X"/>
                         <outlet property="awayStrikeOutLabel" destination="4UK-Fp-D09" id="B2T-zw-Yvt"/>
@@ -1003,10 +1013,29 @@
                         <outlet property="homeHomeRunLabel" destination="8Xo-NZ-B3A" id="Hc1-B5-k8O"/>
                         <outlet property="homeLogoImage" destination="Xs5-dT-VwP" id="Yw0-Wb-tye"/>
                         <outlet property="homeRecordLabel" destination="jut-pP-cBN" id="AzI-m3-moK"/>
+                        <outlet property="homeRun1Label" destination="0oU-ia-eIw" id="bAQ-hd-N3T"/>
+                        <outlet property="homeRun2Label" destination="Zqs-JR-lRc" id="fKv-hd-aZQ"/>
+                        <outlet property="homeRun3Label" destination="nQM-Rw-spD" id="7CE-Le-atF"/>
+                        <outlet property="homeRun4Label" destination="KgB-vn-LVb" id="un0-iA-wbf"/>
+                        <outlet property="homeRun5Label" destination="6Xp-fm-RQR" id="Pdz-bG-5Mo"/>
+                        <outlet property="homeRun6Label" destination="AwJ-yK-kPy" id="I3l-XR-B9H"/>
+                        <outlet property="homeRun7Label" destination="23T-VT-Jza" id="6Ap-ds-2EJ"/>
+                        <outlet property="homeRun8Label" destination="xi5-oM-1jV" id="1rj-Rk-ftP"/>
+                        <outlet property="homeRun9Label" destination="loD-2O-NJq" id="bQ1-vr-noj"/>
+                        <outlet property="homeRunELabel" destination="qq8-ka-x9Y" id="ChX-nu-okt"/>
                         <outlet property="homeRunLabel" destination="oKe-Hb-dnv" id="vxs-il-8WO"/>
                         <outlet property="homeStoleBaseLabel" destination="jXY-rr-RbH" id="4EY-5U-Pat"/>
                         <outlet property="homeStrikeOutLabel" destination="UtN-Qq-YlD" id="dgN-KU-WJk"/>
+                        <outlet property="losePitchERALabel" destination="CfN-Tt-ZlH" id="YCv-8l-K44"/>
+                        <outlet property="losePitchNameLabel" destination="StI-wR-W6U" id="PMf-NN-ZDY"/>
+                        <outlet property="media1Button" destination="djv-zV-yCb" id="sib-mJ-DB9"/>
+                        <outlet property="media2Button" destination="umW-zp-NYq" id="cFf-Kf-07m"/>
+                        <outlet property="media3Button" destination="wNb-wT-bTF" id="WFU-so-WjH"/>
+                        <outlet property="media4Button" destination="oc0-WD-GZk" id="Cgi-Ol-yMl"/>
+                        <outlet property="media5Button" destination="Ckn-tc-owq" id="pdg-xT-PbK"/>
                         <outlet property="timeLabel" destination="EiK-0A-3ZX" id="Ztl-0g-1K2"/>
+                        <outlet property="winnPitchERALabel" destination="1gB-6k-AHN" id="QHM-ft-1qn"/>
+                        <outlet property="winnPitchNameLabel" destination="4v7-sU-8YW" id="qW5-4I-ymE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3A-Sy-I5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
