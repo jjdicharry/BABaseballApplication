@@ -82,5 +82,15 @@
 @property (strong, nonatomic) NSString *losePitchSave;
 @property (strong, nonatomic) NSString *losePitchLoss;
 @property (strong, nonatomic) NSString *losePitchERA;
+@property (strong, nonatomic) NSString *highlightURL01;
+@property (strong, nonatomic) NSString *highlightURL02;
+@property (strong, nonatomic) NSString *highlightURL03;
+@property (strong, nonatomic) NSString *highlightURL04;
+@property (strong, nonatomic) NSString *highlightURL05;
+@property (strong, nonatomic) NSString *highlightURL06;
+@property (strong, nonatomic) NSString *highlightURL07;
+@property (strong, nonatomic) NSString *highlightURL08;
+@property (strong, nonatomic) NSString *highlightURL09;
+@property (strong, nonatomic) NSString *highlightURL10;
 
 @end

@@ -28,6 +28,7 @@
 		04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
+		04DA53251BC04A8B00D6F8FB /* BAXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA53241BC04A8B00D6F8FB /* BAXML.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		04D529931BB84DA700F03357 /* BAScoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboard.m; sourceTree = "<group>"; };
 		04D9CF501BB74AEE000E2F37 /* BAJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSON.h; sourceTree = "<group>"; };
 		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
+		04DA53231BC04A8B00D6F8FB /* BAXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAXML.h; sourceTree = "<group>"; };
+		04DA53241BC04A8B00D6F8FB /* BAXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAXML.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,8 +216,10 @@
 				049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */,
 				04D9CF501BB74AEE000E2F37 /* BAJSON.h */,
 				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
-				046226381BBB1F770044A8A3 /* Favorite.h */,
-				046226391BBB1F770044A8A3 /* Favorite.m */,
+				04DA53231BC04A8B00D6F8FB /* BAXML.h */,
+				04DA53241BC04A8B00D6F8FB /* BAXML.m */,
+				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
+				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 				0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */,
 				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
 				04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */,
@@ -369,6 +374,7 @@
 				0462263A1BBB1F770044A8A3 /* Favorite.m in Sources */,
 				048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */,
 				0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */,
+				04DA53251BC04A8B00D6F8FB /* BAXML.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 			);
