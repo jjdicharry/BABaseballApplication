@@ -23,7 +23,6 @@
 		048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048200981BBC9B72003E209C /* FavoritesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		04953F6B1BC0388800C33944 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04953F6A1BC0388800C33944 /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04953F6E1BC039E100C33944 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04953F6D1BC039E100C33944 /* MenuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */; settings = {ASSET_TAGS = (); }; };
 		04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB31BBD8F5100435C01 /* GamesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -79,8 +78,6 @@
 		0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewCell.m; sourceTree = "<group>"; };
 		04953F691BC0388800C33944 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		04953F6A1BC0388800C33944 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		04953F6C1BC039E100C33944 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
-		04953F6D1BC039E100C33944 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		049AB4691BBAE1A1005DB4E8 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
 		049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
 		04AEDDB21BBD8F5100435C01 /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
@@ -222,8 +219,6 @@
 				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
 				04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */,
 				04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */,
-				04953F6C1BC039E100C33944 /* MenuTableViewCell.h */,
-				04953F6D1BC039E100C33944 /* MenuTableViewCell.m */,
 				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
 				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 			);
@@ -367,7 +362,6 @@
 				04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */,
 				04953F6B1BC0388800C33944 /* MenuViewController.m in Sources */,
 				04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */,
-				04953F6E1BC039E100C33944 /* MenuTableViewCell.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,

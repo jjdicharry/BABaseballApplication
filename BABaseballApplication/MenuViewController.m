@@ -8,7 +8,7 @@
 
 #import "MenuViewController.h"
 
-#import "MenuTableViewCell.h"
+#import "TeamViewController.h"
 
 @interface MenuViewController ()
 
@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
+
 	menuItems = @[@"Favorites", @"All Teams", @"Locations"];
 }
 
@@ -40,32 +40,29 @@
 
 #pragma mark - UITableViewDelegate Methods
 
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
+/**
+ *  Method - tableView:numberOfRowsInSection:
+ */
+- (NSInteger)       tableView:(UITableView *)tableView
+        numberOfRowsInSection:(NSInteger)section
 {
 	return menuItems.count;
 }
 
+/**
+ *  Method - tableView:cellForRowAtIndexPath:
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView
-	 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *reuseIdentifier = @"MenuTableViewCell";
-	MenuTableViewCell *cell;
+	NSString *reuseIdentifier;
+	UITableViewCell *cell;
 	
+	reuseIdentifier = menuItems[indexPath.row];
 	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-	cell.itemLabel.text = menuItems[indexPath.row];
-	
+	cell.textLabel.text = menuItems[indexPath.row];
+
 	return cell;
-}
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little
-// preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-	// Get the new view controller using [segue destinationViewController].
-	// Pass the selected object to the new view controller.
 }
 
 @end

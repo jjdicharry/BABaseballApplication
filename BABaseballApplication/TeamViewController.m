@@ -12,6 +12,7 @@
 #import "Favorite.h"
 #import "TeamTableViewCell.h"
 #import "GamesViewController.h"
+#import "FavoriteTableViewCell.h"
 
 @interface TeamViewController ()
 
@@ -161,12 +162,24 @@ titleForHeaderInSection:(NSInteger)section
     return cell;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"GameSegue"]) {
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"TeamGameSegue"]) {
+	    
         TeamTableViewCell *cell = (TeamTableViewCell *) sender;
         GamesViewController *gamesViewController;
         gamesViewController = segue.destinationViewController;
         gamesViewController.teamAbbr = cell.teamAbbr;
+	    
+    } else if ([segue.identifier isEqualToString:@"FavoriteTeamGameSegue"]) {
+	    
+        FavoriteTableViewCell *cell = (FavoriteTableViewCell *) sender;
+        GamesViewController *gamesViewController;
+        gamesViewController = segue.destinationViewController;
+        gamesViewController.teamAbbr = cell.teamAbbr;
+	    
     }
 }
 

@@ -11,5 +11,7 @@
 @interface FavoriteTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *teamLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *teamLogo;
+@property (weak, nonatomic) NSString *teamAbbr;
 
 @end
