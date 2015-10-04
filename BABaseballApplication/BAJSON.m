@@ -9,6 +9,7 @@
 #import "BAJSON.h"
 #import "BACoreData.h"
 #import "BAScoreboard.h"
+#import "BAXML.h"
 
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
@@ -28,23 +29,23 @@
     
     dispatch_async(mainQueue, ^{
         NSData *data   = [NSData dataWithContentsOfURL:url];
-        [self performSelectorOnMainThread:@selector(scoreboardData:) withObject:data waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(parseJSON:) withObject:data waitUntilDone:YES];
     });
 }
 
-- (void)scoreboardData:(NSData *)data {
-    NSError *error;
-    
-    // Get all the data
-    NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    
-    // Get first part of the data
+- (void)parseJSON:(NSData *)data {
+    NSError      *error;
+    NSDictionary *jsonDictionary  = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions
+                                                                      error:&error];
     NSDictionary *dataDictionary  = [jsonDictionary  objectForKey:@"data"];
     NSDictionary *gamesDictionary = [dataDictionary  objectForKey:@"games"];
     NSArray      *gameArray       = [gamesDictionary objectForKey:@"game"];
     
     // Extract the data
     for (NSDictionary *gameDictionary in gameArray) {
+        NSString     *mediaURL        = @"http://gd2.mlb.com";
+        BAXML        *xml             = [[BAXML alloc] init];
+        BACoreData   *coreData        = [[BACoreData alloc] init];
         NSDictionary *savePitcher     = [gameDictionary objectForKey:@"save_pitcher"];
         NSDictionary *winnPitcher     = [gameDictionary objectForKey:@"winning_pitcher"];
         NSDictionary *losePitcher     = [gameDictionary objectForKey:@"losing_pitcher"];
@@ -161,7 +162,11 @@
             }
         }
         
-        BACoreData *coreData = [[BACoreData alloc] init];
+        mediaURL   = [mediaURL stringByAppendingString:[gameDictionary
+                                                        objectForKey:@"game_data_directory"]];
+        mediaURL   = [mediaURL stringByAppendingString:@"/media/highlights.xml"];
+        scoreboard = [xml parseXMLWithURL:mediaURL andScoreboard:scoreboard];
+
         [coreData insScoreboard:scoreboard];
     }
 }
