@@ -433,11 +433,6 @@
                                                 <mask key="constraints">
                                                     <exclude reference="i9z-pP-UrQ"/>
                                                     <exclude reference="xgY-MY-Jlo"/>
-                                                    <exclude reference="8U7-Si-ryW"/>
-                                                    <exclude reference="Ynp-oZ-YoQ"/>
-                                                    <exclude reference="cVm-7x-L86"/>
-                                                    <exclude reference="iSY-Jf-T5U"/>
-                                                    <exclude reference="tHL-I6-8t2"/>
                                                     <exclude reference="3O7-X1-HqN"/>
                                                     <exclude reference="AjT-Ht-i1r"/>
                                                     <exclude reference="Hhh-4v-TYT"/>
@@ -456,6 +451,11 @@
                                                     <exclude reference="72R-KH-kdf"/>
                                                     <exclude reference="EQM-ZK-BwR"/>
                                                     <exclude reference="nnM-hL-Mg9"/>
+                                                    <exclude reference="8U7-Si-ryW"/>
+                                                    <exclude reference="Ynp-oZ-YoQ"/>
+                                                    <exclude reference="cVm-7x-L86"/>
+                                                    <exclude reference="iSY-Jf-T5U"/>
+                                                    <exclude reference="tHL-I6-8t2"/>
                                                     <exclude reference="DDd-jB-1eq"/>
                                                     <exclude reference="UiO-pZ-Erq"/>
                                                     <exclude reference="tU9-65-WxH"/>
@@ -505,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="4940" y="971"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="gXt-Z1-B5X">
             <objects>
-                <viewController id="XR7-pW-Eg0" sceneMemberID="viewController">
+                <viewController id="XR7-pW-Eg0" customClass="BAScoreboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="axe-8j-HOE"/>
                         <viewControllerLayoutGuide type="bottom" id="7Nj-Oh-Wsl"/>
@@ -517,8 +517,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scoreboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-aC-k2D">
-                                <rect key="frame" x="138" y="101" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-aC-k2D">
+                                <rect key="frame" x="20" y="73" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -526,6 +526,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2mp-SC-f3p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3A-Sy-I5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
