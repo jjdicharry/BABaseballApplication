@@ -10,12 +10,12 @@
 		0437408F1BB9FCB80009858C /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0437408E1BB9FCB80009858C /* Defaults.plist */; settings = {ASSET_TAGS = (); }; };
 		044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BD5061BB99B150076F540 /* TeamTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		045705B71BC18E2B006F9800 /* BAScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045705B61BC18E2B006F9800 /* BAScoreboardViewController.m */; settings = {ASSET_TAGS = (); }; };
+		045705B91BC1C398006F9800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045705B81BC1C398006F9800 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		045B470E1BB747570088C360 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B470D1BB747570088C360 /* main.m */; };
 		045B47111BB747570088C360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47101BB747570088C360 /* AppDelegate.m */; };
 		045B47141BB747570088C360 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47131BB747570088C360 /* TeamViewController.m */; };
 		045B47171BB747570088C360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B47151BB747570088C360 /* Main.storyboard */; };
 		045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045B47181BB747570088C360 /* BABaseballApplication.xcdatamodeld */; };
-		045B471C1BB747570088C360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B471B1BB747570088C360 /* Assets.xcassets */; };
 		045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B471D1BB747570088C360 /* LaunchScreen.storyboard */; };
 		045B472A1BB747580088C360 /* BABaseballApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47291BB747580088C360 /* BABaseballApplicationTests.m */; };
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
@@ -55,6 +55,7 @@
 		044BD5061BB99B150076F540 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 		045705B51BC18E2B006F9800 /* BAScoreboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScoreboardViewController.h; sourceTree = "<group>"; };
 		045705B61BC18E2B006F9800 /* BAScoreboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAScoreboardViewController.m; sourceTree = "<group>"; };
+		045705B81BC1C398006F9800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045B47091BB747570088C360 /* BABaseballApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BABaseballApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B470D1BB747570088C360 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045B470F1BB747570088C360 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		045B47131BB747570088C360 /* TeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
 		045B47161BB747570088C360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045B47191BB747570088C360 /* BABaseballApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BABaseballApplication.xcdatamodel; sourceTree = "<group>"; };
-		045B471B1BB747570088C360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045B471E1BB747570088C360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045B47201BB747570088C360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045B47251BB747580088C360 /* BABaseballApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BABaseballApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,11 +149,11 @@
 				045B470F1BB747570088C360 /* AppDelegate.h */,
 				045B47101BB747570088C360 /* AppDelegate.m */,
 				045B47151BB747570088C360 /* Main.storyboard */,
-				045B471B1BB747570088C360 /* Assets.xcassets */,
 				045B471D1BB747570088C360 /* LaunchScreen.storyboard */,
 				045B47201BB747570088C360 /* Info.plist */,
 				0437408E1BB9FCB80009858C /* Defaults.plist */,
 				045B47181BB747570088C360 /* BABaseballApplication.xcdatamodeld */,
+				045705B81BC1C398006F9800 /* Assets.xcassets */,
 				045B470C1BB747570088C360 /* Supporting Files */,
 			);
 			path = BABaseballApplication;
@@ -337,7 +337,7 @@
 			files = (
 				0437408F1BB9FCB80009858C /* Defaults.plist in Resources */,
 				045B471F1BB747570088C360 /* LaunchScreen.storyboard in Resources */,
-				045B471C1BB747570088C360 /* Assets.xcassets in Resources */,
+				045705B91BC1C398006F9800 /* Assets.xcassets in Resources */,
 				045B47171BB747570088C360 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
