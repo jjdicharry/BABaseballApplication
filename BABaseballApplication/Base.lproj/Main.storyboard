@@ -982,6 +982,32 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2mp-SC-f3p"/>
+                    <connections>
+                        <outlet property="awayAbbr1Label" destination="lzQ-3m-PPO" id="K30-vk-aOI"/>
+                        <outlet property="awayAbbr2Label" destination="m5C-ME-RZc" id="b7n-Nc-qmD"/>
+                        <outlet property="awayBigRunLabel" destination="LfW-Eu-qR3" id="g2T-Gc-LYZ"/>
+                        <outlet property="awayErrorLabel" destination="M8D-IY-WZ6" id="hcP-e4-Ier"/>
+                        <outlet property="awayHitLabel" destination="aDR-Xw-NNs" id="AlI-1i-k87"/>
+                        <outlet property="awayHomeRunLabel" destination="NQC-oj-Moj" id="7Ix-JH-sWh"/>
+                        <outlet property="awayLogoImage" destination="e9P-A7-AY5" id="saA-zL-atl"/>
+                        <outlet property="awayRecordLabel" destination="11E-XH-YAe" id="KFT-7G-mSQ"/>
+                        <outlet property="awayRunLabel" destination="rkq-nQ-TxE" id="Ree-VU-A6Z"/>
+                        <outlet property="awayStoleBaseLabel" destination="KAu-Sm-yaw" id="K3S-ec-q8X"/>
+                        <outlet property="awayStrikeOutLabel" destination="4UK-Fp-D09" id="B2T-zw-Yvt"/>
+                        <outlet property="gameDateLabel" destination="uqu-fk-mts" id="lVW-Zv-SL1"/>
+                        <outlet property="homeAbbr1Label" destination="67C-Lb-ToX" id="BnN-zM-HnT"/>
+                        <outlet property="homeAbbr2Label" destination="eKZ-4l-u18" id="dir-6i-ZtL"/>
+                        <outlet property="homeBigRunLabel" destination="txQ-rS-PFO" id="CZ8-Pa-Wft"/>
+                        <outlet property="homeErrorLabel" destination="ymP-Ze-PNz" id="BgN-pX-ffm"/>
+                        <outlet property="homeHitLabel" destination="yOH-RL-HmS" id="yBZ-Fc-ygr"/>
+                        <outlet property="homeHomeRunLabel" destination="8Xo-NZ-B3A" id="Hc1-B5-k8O"/>
+                        <outlet property="homeLogoImage" destination="Xs5-dT-VwP" id="Yw0-Wb-tye"/>
+                        <outlet property="homeRecordLabel" destination="jut-pP-cBN" id="AzI-m3-moK"/>
+                        <outlet property="homeRunLabel" destination="oKe-Hb-dnv" id="vxs-il-8WO"/>
+                        <outlet property="homeStoleBaseLabel" destination="jXY-rr-RbH" id="4EY-5U-Pat"/>
+                        <outlet property="homeStrikeOutLabel" destination="UtN-Qq-YlD" id="dgN-KU-WJk"/>
+                        <outlet property="timeLabel" destination="EiK-0A-3ZX" id="Ztl-0g-1K2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3A-Sy-I5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
