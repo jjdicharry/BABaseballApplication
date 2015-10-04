@@ -96,6 +96,8 @@
 
 	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
 
+	cell.backgroundColor = [UIColor clearColor];
+	
 	favorites = [Favorite getAll:&error];
 
 	if (error || !favorites || (favorites.count == 0)) {

@@ -159,6 +159,8 @@ titleForHeaderInSection:(NSInteger)section
         [cell.favoriteIcon setImage:icon forState:UIControlStateNormal];
     }
 
+    cell.backgroundColor = [UIColor clearColor];
+
     return cell;
 }
 

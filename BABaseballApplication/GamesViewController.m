@@ -66,6 +66,8 @@
     tableViewCell.homeTeamLogo.image     = [UIImage imageNamed:scoreboard.homeTeamAbbr];
     tableViewCell.homeTeamNameLabel.text = scoreboard.homeTeamName;
     tableViewCell.homeTeamRunsLabel.text = scoreboard.homeRun;
+
+    tableViewCell.backgroundColor = [UIColor clearColor];
     
     return tableViewCell;
 }
