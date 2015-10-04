@@ -22,6 +22,8 @@
 		0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462263C1BBB1FD10044A8A3 /* Alert.m */; settings = {ASSET_TAGS = (); }; };
 		048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048200981BBC9B72003E209C /* FavoritesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		04953F6B1BC0388800C33944 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04953F6A1BC0388800C33944 /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04953F6E1BC039E100C33944 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04953F6D1BC039E100C33944 /* MenuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		049AB46B1BBAE1A1005DB4E8 /* BACoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */; settings = {ASSET_TAGS = (); }; };
 		04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB31BBD8F5100435C01 /* GamesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -76,6 +78,10 @@
 		048200981BBC9B72003E209C /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewCell.h; sourceTree = "<group>"; };
 		0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewCell.m; sourceTree = "<group>"; };
+		04953F691BC0388800C33944 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		04953F6A1BC0388800C33944 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		04953F6C1BC039E100C33944 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		04953F6D1BC039E100C33944 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		049AB4691BBAE1A1005DB4E8 /* BACoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACoreData.h; sourceTree = "<group>"; };
 		049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACoreData.m; sourceTree = "<group>"; };
 		04AEDDB21BBD8F5100435C01 /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
@@ -183,12 +189,14 @@
 		04D529951BB8567B00F03357 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				045B47121BB747570088C360 /* TeamViewController.h */,
-				045B47131BB747570088C360 /* TeamViewController.m */,
 				048200971BBC9B72003E209C /* FavoritesViewController.h */,
 				048200981BBC9B72003E209C /* FavoritesViewController.m */,
 				04AEDDB21BBD8F5100435C01 /* GamesViewController.h */,
 				04AEDDB31BBD8F5100435C01 /* GamesViewController.m */,
+				04953F691BC0388800C33944 /* MenuViewController.h */,
+				04953F6A1BC0388800C33944 /* MenuViewController.m */,
+				045B47121BB747570088C360 /* TeamViewController.h */,
+				045B47131BB747570088C360 /* TeamViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -207,8 +215,6 @@
 			children = (
 				0462263B1BBB1FD10044A8A3 /* Alert.h */,
 				0462263C1BBB1FD10044A8A3 /* Alert.m */,
-				046226381BBB1F770044A8A3 /* Favorite.h */,
-				046226391BBB1F770044A8A3 /* Favorite.m */,
 				049AB4691BBAE1A1005DB4E8 /* BACoreData.h */,
 				049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */,
 				04D9CF501BB74AEE000E2F37 /* BAJSON.h */,
@@ -221,6 +227,10 @@
 				0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */,
 				04AEDDB51BBD8F9600435C01 /* GameTableViewCell.h */,
 				04AEDDB61BBD8F9600435C01 /* GameTableViewCell.m */,
+				04953F6C1BC039E100C33944 /* MenuTableViewCell.h */,
+				04953F6D1BC039E100C33944 /* MenuTableViewCell.m */,
+				044BD5051BB99B150076F540 /* TeamTableViewCell.h */,
+				044BD5061BB99B150076F540 /* TeamTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,7 +370,9 @@
 				045B47141BB747570088C360 /* TeamViewController.m in Sources */,
 				045B47111BB747570088C360 /* AppDelegate.m in Sources */,
 				04AEDDB71BBD8F9600435C01 /* GameTableViewCell.m in Sources */,
+				04953F6B1BC0388800C33944 /* MenuViewController.m in Sources */,
 				04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */,
+				04953F6E1BC039E100C33944 /* MenuTableViewCell.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
