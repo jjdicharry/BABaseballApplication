@@ -61,6 +61,7 @@
 	reuseIdentifier = menuItems[indexPath.row];
 	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
 	cell.textLabel.text = menuItems[indexPath.row];
+	cell.backgroundColor = [UIColor clearColor];
 
 	return cell;
 }
