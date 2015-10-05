@@ -20,9 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-jY-AtA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baseball Launch Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Od-Plg">
-                                <rect key="frame" x="38" y="28" width="525" height="187"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baseball Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-lS-9Wb">
                                 <rect key="frame" x="29" y="235" width="543" height="130"/>
                                 <constraints>
@@ -42,6 +39,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baseball Launch Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Od-Plg">
+                                <rect key="frame" x="38" y="28" width="525" height="187"/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -76,7 +76,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Baseball Launch Logo" width="392" height="140"/>
+        <image name="Baseball Launch Logo" width="2311" height="816"/>
         <image name="grass" width="2048" height="2048"/>
     </resources>
 </document>
