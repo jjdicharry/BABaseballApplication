@@ -35,6 +35,14 @@
     self.awayBigRunLabel.text = scoreboard.awayRun;
     self.homeLogoImage.image  = [UIImage imageNamed:scoreboard.homeTeamAbbr];
     self.homeBigRunLabel.text = scoreboard.homeRun;
+    self.awayRecordLabel.text = @"W: ";
+    [self.awayRecordLabel.text stringByAppendingString:scoreboard.awayWin];
+    [self.awayRecordLabel.text stringByAppendingString:@" - L: "];
+    [self.awayRecordLabel.text stringByAppendingString:scoreboard.awayLoss];
+    self.homeRecordLabel.text = @"W: ";
+    [self.homeRecordLabel.text stringByAppendingString:scoreboard.homeWin];
+    [self.homeRecordLabel.text stringByAppendingString:@" - L: "];
+    [self.homeRecordLabel.text stringByAppendingString:scoreboard.homeLoss];
     
 }
 
