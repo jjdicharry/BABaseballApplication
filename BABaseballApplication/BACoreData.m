@@ -249,6 +249,16 @@
     [entity setValue:scoreboard.losePitchSave      forKey:@"losePitchSave"];
     [entity setValue:scoreboard.losePitchLoss      forKey:@"losePitchLoss"];
     [entity setValue:scoreboard.losePitchERA       forKey:@"losePitchERA"];
+    [entity setValue:scoreboard.highlightURL01     forKey:@"highlightURL01"];
+    [entity setValue:scoreboard.highlightURL02     forKey:@"highlightURL02"];
+    [entity setValue:scoreboard.highlightURL03     forKey:@"highlightURL03"];
+    [entity setValue:scoreboard.highlightURL04     forKey:@"highlightURL04"];
+    [entity setValue:scoreboard.highlightURL05     forKey:@"highlightURL05"];
+    [entity setValue:scoreboard.highlightURL06     forKey:@"highlightURL06"];
+    [entity setValue:scoreboard.highlightURL07     forKey:@"highlightURL07"];
+    [entity setValue:scoreboard.highlightURL08     forKey:@"highlightURL08"];
+    [entity setValue:scoreboard.highlightURL09     forKey:@"highlightURL09"];
+    [entity setValue:scoreboard.highlightURL10     forKey:@"highlightURL10"];
     
     return entity;
 }
@@ -328,6 +338,16 @@
     scoreboard.losePitchSave      = [requestResult valueForKey:@"losePitchSave"];
     scoreboard.losePitchLoss      = [requestResult valueForKey:@"losePitchLoss"];
     scoreboard.losePitchERA       = [requestResult valueForKey:@"losePitchERA"];
+    scoreboard.highlightURL01     = [requestResult valueForKey:@"highlightURL01"];
+    scoreboard.highlightURL02     = [requestResult valueForKey:@"highlightURL02"];
+    scoreboard.highlightURL03     = [requestResult valueForKey:@"highlightURL03"];
+    scoreboard.highlightURL04     = [requestResult valueForKey:@"highlightURL04"];
+    scoreboard.highlightURL05     = [requestResult valueForKey:@"highlightURL05"];
+    scoreboard.highlightURL06     = [requestResult valueForKey:@"highlightURL06"];
+    scoreboard.highlightURL07     = [requestResult valueForKey:@"highlightURL07"];
+    scoreboard.highlightURL08     = [requestResult valueForKey:@"highlightURL08"];
+    scoreboard.highlightURL09     = [requestResult valueForKey:@"highlightURL09"];
+    scoreboard.highlightURL10     = [requestResult valueForKey:@"highlightURL10"];
     
     return scoreboard;
 }

@@ -64,4 +64,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *media4Button;
 @property (weak, nonatomic) IBOutlet UIButton *media5Button;
 
+@property (weak, nonatomic) NSString *gameDate;
+@property (weak, nonatomic) NSString *time;
+@property (weak, nonatomic) NSString *homeTeamAbbr;
+
+
 @end

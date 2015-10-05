@@ -80,10 +80,10 @@
     if ([segue.identifier isEqualToString:@"ScoreboardSegue"]) {
         GameTableViewCell *cell = (GameTableViewCell *) sender;
         BAScoreboardViewController *scoreboardViewController;
-        scoreboardViewController                     = segue.destinationViewController;
-        scoreboardViewController.gameDateLabel.text  = cell.gameDate;
-        scoreboardViewController.timeLabel.text      = cell.time;
-        scoreboardViewController.homeAbbr1Label.text = cell.homeTeamAbbr;
+        scoreboardViewController              = segue.destinationViewController;
+        scoreboardViewController.gameDate     = cell.gameDate;
+        scoreboardViewController.time         = cell.time;
+        scoreboardViewController.homeTeamAbbr = cell.homeTeamAbbr;
     }
 }
 
