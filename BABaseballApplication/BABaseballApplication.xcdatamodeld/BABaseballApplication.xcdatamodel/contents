@@ -29,6 +29,16 @@
         <attribute name="awayTeamName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="awayWin" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gameDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL01" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL02" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL03" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL04" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL05" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL06" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL07" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL08" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL09" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="highlightURL10" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="homeError" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="homeGameBack" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="homeGameBackWC" optional="YES" attributeType="String" syncable="YES"/>
@@ -79,6 +89,6 @@
     </entity>
     <elements>
         <element name="Favorite" positionX="160" positionY="192" width="128" height="60"/>
-        <element name="Scoreboard" positionX="-63" positionY="-18" width="128" height="1125"/>
+        <element name="Scoreboard" positionX="-63" positionY="-18" width="128" height="1275"/>
     </elements>
 </model>
