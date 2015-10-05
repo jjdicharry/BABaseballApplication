@@ -941,7 +941,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zui-2k-TZr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zui-2k-TZr">
                                 <rect key="frame" x="20" y="440" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -950,22 +950,37 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djv-zV-yCb">
                                 <rect key="frame" x="20" y="508" width="50" height="50"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media1Segue" id="boF-UP-fDM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umW-zp-NYq">
                                 <rect key="frame" x="90" y="508" width="50" height="50"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media2Segue" id="tNl-Ek-0sg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-wT-bTF">
                                 <rect key="frame" x="160" y="508" width="50" height="50"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media3Segue" id="v5w-Tc-Hjo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-WD-GZk">
                                 <rect key="frame" x="230" y="508" width="50" height="50"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media4Segue" id="jvZ-1h-yuK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-tc-owq">
                                 <rect key="frame" x="300" y="508" width="50" height="50"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media5Segue" id="aFb-f8-eAx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highlights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIS-fB-I8i">
                                 <rect key="frame" x="147" y="478" width="103" height="21"/>
@@ -982,7 +997,7 @@
                             <constraint firstItem="7Nj-Oh-Wsl" firstAttribute="top" secondItem="Uyq-fg-33E" secondAttribute="bottom" id="pMR-Eq-wby"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="2mp-SC-f3p"/>
+                    <navigationItem key="navigationItem" title="Scoreboard" id="2mp-SC-f3p"/>
                     <connections>
                         <outlet property="awayAbbr1Label" destination="lzQ-3m-PPO" id="K30-vk-aOI"/>
                         <outlet property="awayAbbr2Label" destination="m5C-ME-RZc" id="b7n-Nc-qmD"/>
@@ -1027,21 +1042,52 @@
                         <outlet property="homeRunLabel" destination="oKe-Hb-dnv" id="vxs-il-8WO"/>
                         <outlet property="homeStoleBaseLabel" destination="jXY-rr-RbH" id="4EY-5U-Pat"/>
                         <outlet property="homeStrikeOutLabel" destination="UtN-Qq-YlD" id="dgN-KU-WJk"/>
-                        <outlet property="losePitchERALabel" destination="CfN-Tt-ZlH" id="YCv-8l-K44"/>
                         <outlet property="losePitchNameLabel" destination="StI-wR-W6U" id="PMf-NN-ZDY"/>
+                        <outlet property="losePitchRecordLabel" destination="CfN-Tt-ZlH" id="Cht-3e-9bL"/>
                         <outlet property="media1Button" destination="djv-zV-yCb" id="sib-mJ-DB9"/>
                         <outlet property="media2Button" destination="umW-zp-NYq" id="cFf-Kf-07m"/>
                         <outlet property="media3Button" destination="wNb-wT-bTF" id="WFU-so-WjH"/>
                         <outlet property="media4Button" destination="oc0-WD-GZk" id="Cgi-Ol-yMl"/>
                         <outlet property="media5Button" destination="Ckn-tc-owq" id="pdg-xT-PbK"/>
                         <outlet property="timeLabel" destination="EiK-0A-3ZX" id="Ztl-0g-1K2"/>
-                        <outlet property="winnPitchERALabel" destination="1gB-6k-AHN" id="QHM-ft-1qn"/>
                         <outlet property="winnPitchNameLabel" destination="4v7-sU-8YW" id="qW5-4I-ymE"/>
+                        <outlet property="winnPitchRecordLabel" destination="1gB-6k-AHN" id="Pay-HF-HdK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3A-Sy-I5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5972" y="971"/>
+        </scene>
+        <!--Media-->
+        <scene sceneID="VYT-3H-sJD">
+            <objects>
+                <viewController title="Media" id="SRU-1o-zkh" customClass="BAMediaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UPN-zr-932"/>
+                        <viewControllerLayoutGuide type="bottom" id="h76-zp-MQO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4b-6A-vYD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="7mQ-kI-dHd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vk7-Gf-Ihv">
+                                <rect key="frame" x="42" y="144" width="517" height="333"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Media" id="w3z-tP-67R"/>
+                    <connections>
+                        <outlet property="webView" destination="Vk7-Gf-Ihv" id="FR8-mX-sAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzx-nD-nJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6791" y="971"/>
         </scene>
         <!--Menu-->
         <scene sceneID="g31-RA-3Rg">
@@ -1282,5 +1328,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RAb-rJ-9DH"/>
+        <segue reference="aFb-f8-eAx"/>
     </inferredMetricsTieBreakers>
 </document>

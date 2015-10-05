@@ -9,6 +9,7 @@
 #import "BAScoreboardViewController.h"
 #import "BAScoreboard.h"
 #import "BACoreData.h"
+#import "BAMediaViewController.h"
 
 @interface BAScoreboardViewController ()
 
@@ -60,32 +61,44 @@
         self.homeStrikeOutLabel.text = scoreboard.homeStrikeOut;
         self.homeStoleBaseLabel.text = scoreboard.homeStoleBase;
         
-        self.awayAbbr2Label.text     = scoreboard.awayTeamAbbr;
-        self.awayRun1Label.text      = scoreboard.awayInni01;
-        self.awayRun2Label.text      = scoreboard.awayInni02;
-        self.awayRun3Label.text      = scoreboard.awayInni03;
-        self.awayRun4Label.text      = scoreboard.awayInni04;
-        self.awayRun5Label.text      = scoreboard.awayInni05;
-        self.awayRun6Label.text      = scoreboard.awayInni06;
-        self.awayRun7Label.text      = scoreboard.awayInni07;
-        self.awayRun8Label.text      = scoreboard.awayInni08;
-        self.awayRun9Label.text      = scoreboard.awayInni09;
-        self.awayRunELabel.text      = scoreboard.awayInniEx;
-        self.homeAbbr2Label.text     = scoreboard.homeTeamAbbr;
-        self.homeRun1Label.text      = scoreboard.homeInni01;
-        self.homeRun2Label.text      = scoreboard.homeInni02;
-        self.homeRun3Label.text      = scoreboard.homeInni03;
-        self.homeRun4Label.text      = scoreboard.homeInni04;
-        self.homeRun5Label.text      = scoreboard.homeInni05;
-        self.homeRun6Label.text      = scoreboard.homeInni06;
-        self.homeRun7Label.text      = scoreboard.homeInni07;
-        self.homeRun8Label.text      = scoreboard.homeInni08;
-        self.homeRun9Label.text      = scoreboard.homeInni09;
-        self.homeRunELabel.text      = scoreboard.homeInniEx;
-        self.winnPitchNameLabel.text = scoreboard.winnPitchLastName;
-        self.winnPitchERALabel.text  = scoreboard.winnPitchERA;
-        self.losePitchNameLabel.text = scoreboard.losePitchLastName;
-        self.losePitchERALabel.text  = scoreboard.losePitchERA;
+        self.awayAbbr2Label.text       = scoreboard.awayTeamAbbr;
+        self.awayRun1Label.text        = scoreboard.awayInni01;
+        self.awayRun2Label.text        = scoreboard.awayInni02;
+        self.awayRun3Label.text        = scoreboard.awayInni03;
+        self.awayRun4Label.text        = scoreboard.awayInni04;
+        self.awayRun5Label.text        = scoreboard.awayInni05;
+        self.awayRun6Label.text        = scoreboard.awayInni06;
+        self.awayRun7Label.text        = scoreboard.awayInni07;
+        self.awayRun8Label.text        = scoreboard.awayInni08;
+        self.awayRun9Label.text        = scoreboard.awayInni09;
+        self.awayRunELabel.text        = scoreboard.awayInniEx;
+        self.homeAbbr2Label.text       = scoreboard.homeTeamAbbr;
+        self.homeRun1Label.text        = scoreboard.homeInni01;
+        self.homeRun2Label.text        = scoreboard.homeInni02;
+        self.homeRun3Label.text        = scoreboard.homeInni03;
+        self.homeRun4Label.text        = scoreboard.homeInni04;
+        self.homeRun5Label.text        = scoreboard.homeInni05;
+        self.homeRun6Label.text        = scoreboard.homeInni06;
+        self.homeRun7Label.text        = scoreboard.homeInni07;
+        self.homeRun8Label.text        = scoreboard.homeInni08;
+        self.homeRun9Label.text        = scoreboard.homeInni09;
+        self.homeRunELabel.text        = scoreboard.homeInniEx;
+        self.winnPitchNameLabel.text   = scoreboard.winnPitchLastName;
+        self.losePitchNameLabel.text   = scoreboard.losePitchLastName;
+        self.winnPitchRecordLabel.text = @"(";
+        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
+                                          stringByAppendingString:scoreboard.winnPitchWin];
+        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@" - "];
+        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
+                                          stringByAppendingString:scoreboard.winnPitchLoss];
+        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@")"];
+        self.losePitchRecordLabel.text = @"(";
+        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
+                                          stringByAppendingString:scoreboard.losePitchWin];
+        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@" - "];
+        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
+                                          stringByAppendingString:scoreboard.losePitchLoss];
+        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@")"];
         
         if (scoreboard.highlightURL01 == nil) {
             [self.media1Button setHidden:YES];
@@ -140,14 +153,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSString *mediaURLString = @"";
+    
+    if ([segue.identifier isEqualToString:@"Media1Segue"]) {
+        mediaURLString = self.media1Button.titleLabel.text;
+    }
+    else if ([segue.identifier isEqualToString:@"Media2Segue"]) {
+        mediaURLString = self.media2Button.titleLabel.text;
+    }
+    else if ([segue.identifier isEqualToString:@"Media3Segue"]) {
+        mediaURLString = self.media3Button.titleLabel.text;
+    }
+    else if ([segue.identifier isEqualToString:@"Media4Segue"]) {
+        mediaURLString = self.media4Button.titleLabel.text;
+    }
+    else if ([segue.identifier isEqualToString:@"Media5Segue"]) {
+        mediaURLString = self.media5Button.titleLabel.text;
+    }
+    
+    BAMediaViewController *mediaViewController;
+    mediaViewController                = segue.destinationViewController;
+    mediaViewController.mediaURLString = mediaURLString;
 }
-*/
 
 @end

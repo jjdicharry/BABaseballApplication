@@ -56,8 +56,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *homeRunELabel;
 @property (weak, nonatomic) IBOutlet UILabel *winnPitchNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *losePitchNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *winnPitchERALabel;
-@property (weak, nonatomic) IBOutlet UILabel *losePitchERALabel;
+@property (weak, nonatomic) IBOutlet UILabel *winnPitchRecordLabel;
+@property (weak, nonatomic) IBOutlet UILabel *losePitchRecordLabel;
 @property (weak, nonatomic) IBOutlet UIButton *media1Button;
 @property (weak, nonatomic) IBOutlet UIButton *media2Button;
 @property (weak, nonatomic) IBOutlet UIButton *media3Button;
