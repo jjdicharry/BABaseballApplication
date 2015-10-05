@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) NSString *mediaURLString;
 
+- (IBAction)share:(id)sender;
+
 @end
