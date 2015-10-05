@@ -22,14 +22,20 @@
     BACoreData   *coreData   = [[BACoreData alloc] init];
     BAScoreboard *scoreboard = [[BAScoreboard alloc] init];
     
-    scoreboard = [coreData getScoreboardWithDate:self.gameDateLabel.text
-                                         andTime:self.timeLabel.text
-                                     andHomeTeam:self.homeAbbr1Label.text
+    scoreboard = [coreData getScoreboardWithDate:self.gameDate
+                                         andTime:self.time
+                                     andHomeTeam:self.homeTeamAbbr
                                        andRemove:NO];
-    self.gameDateLabel.text = scoreboard.gameDate;
-    self.timeLabel.text     = scoreboard.time;
+    
+    self.gameDateLabel.text   = scoreboard.gameDate;
+    self.timeLabel.text       = scoreboard.time;
     [self.timeLabel.text stringByAppendingString:@" "];
     [self.timeLabel.text stringByAppendingString:scoreboard.amPM];
+    self.awayLogoImage.image  = [UIImage imageNamed:scoreboard.awayTeamAbbr];
+    self.awayBigRunLabel.text = scoreboard.awayRun;
+    self.homeLogoImage.image  = [UIImage imageNamed:scoreboard.homeTeamAbbr];
+    self.homeBigRunLabel.text = scoreboard.homeRun;
+    
 }
 
 - (void)didReceiveMemoryWarning {
