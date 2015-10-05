@@ -76,7 +76,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Baseball Launch Logo" width="392" height="140"/>
+        <image name="Baseball Launch Logo" width="2311" height="816"/>
         <image name="grass" width="2048" height="2048"/>
     </resources>
 </document>
