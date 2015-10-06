@@ -38,5 +38,9 @@
 */
 
 - (IBAction)share:(id)sender {
+    NSArray *stuffToPost;
+    stuffToPost = @[self.mediaURLString];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:stuffToPost applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:nil];
 }
 @end
