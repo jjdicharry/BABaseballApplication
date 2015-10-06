@@ -31,6 +31,9 @@
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
 		04DA53251BC04A8B00D6F8FB /* BAXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA53241BC04A8B00D6F8FB /* BAXML.m */; settings = {ASSET_TAGS = (); }; };
+		04DA868C1BC4090100665F1B /* BAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA868B1BC4090100665F1B /* BAMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04DA868E1BC409F800665F1B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA868D1BC409F800665F1B /* CoreLocation.framework */; };
+		04DA86901BC40A0000665F1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA868F1BC40A0000665F1B /* MapKit.framework */; };
 		04E3D0671BC357FD007B61C2 /* BALocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0661BC357FD007B61C2 /* BALocationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04E3D06A1BC35B43007B61C2 /* BALocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0691BC35B43007B61C2 /* BALocationTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -98,6 +101,10 @@
 		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
 		04DA53231BC04A8B00D6F8FB /* BAXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAXML.h; sourceTree = "<group>"; };
 		04DA53241BC04A8B00D6F8FB /* BAXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAXML.m; sourceTree = "<group>"; };
+		04DA868A1BC4090100665F1B /* BAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMapViewController.h; sourceTree = "<group>"; };
+		04DA868B1BC4090100665F1B /* BAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMapViewController.m; sourceTree = "<group>"; };
+		04DA868D1BC409F800665F1B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04DA868F1BC40A0000665F1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04E3D0651BC357FD007B61C2 /* BALocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationViewController.h; sourceTree = "<group>"; };
 		04E3D0661BC357FD007B61C2 /* BALocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationViewController.m; sourceTree = "<group>"; };
 		04E3D0681BC35B43007B61C2 /* BALocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationTableViewCell.h; sourceTree = "<group>"; };
@@ -109,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DA86901BC40A0000665F1B /* MapKit.framework in Frameworks */,
+				04DA868E1BC409F800665F1B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +141,8 @@
 		045B47001BB747570088C360 = {
 			isa = PBXGroup;
 			children = (
+				04DA868F1BC40A0000665F1B /* MapKit.framework */,
+				04DA868D1BC409F800665F1B /* CoreLocation.framework */,
 				045B470B1BB747570088C360 /* BABaseballApplication */,
 				045B47281BB747580088C360 /* BABaseballApplicationTests */,
 				045B47331BB747580088C360 /* BABaseballApplicationUITests */,
@@ -199,6 +210,8 @@
 			children = (
 				04E3D0651BC357FD007B61C2 /* BALocationViewController.h */,
 				04E3D0661BC357FD007B61C2 /* BALocationViewController.m */,
+				04DA868A1BC4090100665F1B /* BAMapViewController.h */,
+				04DA868B1BC4090100665F1B /* BAMapViewController.m */,
 				0499D5811BC2C23300A87505 /* BAMediaViewController.h */,
 				0499D5821BC2C23300A87505 /* BAMediaViewController.m */,
 				045705B51BC18E2B006F9800 /* BAScoreboardViewController.h */,
@@ -391,6 +404,7 @@
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				0499D5831BC2C23300A87505 /* BAMediaViewController.m in Sources */,
 				0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */,
+				04DA868C1BC4090100665F1B /* BAMapViewController.m in Sources */,
 				0462263A1BBB1F770044A8A3 /* Favorite.m in Sources */,
 				048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */,
 				0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */,
