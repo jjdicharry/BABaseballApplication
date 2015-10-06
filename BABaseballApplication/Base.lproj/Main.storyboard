@@ -325,8 +325,8 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-SF-Rka">
-                                                    <rect key="frame" x="80" y="32" width="214" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-SF-Rka">
+                                                    <rect key="frame" x="80" y="32" width="214" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="DLV-ic-GYM"/>
                                                         <constraint firstAttribute="width" constant="112" id="til-DF-GOs"/>
