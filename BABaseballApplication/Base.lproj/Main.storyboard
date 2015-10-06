@@ -1756,10 +1756,10 @@
             </objects>
             <point key="canvasLocation" x="3987" y="2225"/>
         </scene>
-        <!--View Controller-->
+        <!--Map-->
         <scene sceneID="H5a-uK-c0E">
             <objects>
-                <viewController id="Rab-nR-oaO" sceneMemberID="viewController">
+                <viewController title="Map" id="Rab-nR-oaO" customClass="BAMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0wi-Dd-2th"/>
                         <viewControllerLayoutGuide type="bottom" id="0ss-TY-MPm"/>
@@ -1771,35 +1771,29 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-Ba-z7F">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VhG-Qs-XMq">
-                                <rect key="frame" x="20" y="207" width="560" height="185"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="NDd-oV-WqH"/>
-                                    <constraint firstAttribute="height" constant="185" id="Sb9-xJ-jkt"/>
-                                    <constraint firstAttribute="height" constant="47" id="Z2A-3i-JpL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="140"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="NDd-oV-WqH"/>
-                                        <exclude reference="Z2A-3i-JpL"/>
-                                    </mask>
-                                </variation>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mUr-Yy-vs2">
+                                <rect key="frame" x="20" y="66" width="360" height="416"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYf-4d-eh8">
+                                <rect key="frame" x="172" y="498" width="75" height="70"/>
+                                <state key="normal" image="Directions"/>
+                                <connections>
+                                    <action selector="showDirections:" destination="Rab-nR-oaO" eventType="touchUpInside" id="dRP-b9-Zzy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zE7-Ba-z7F" firstAttribute="leading" secondItem="cRe-UU-kOv" secondAttribute="leadingMargin" constant="-20" id="G2K-pk-Vui"/>
-                            <constraint firstItem="VhG-Qs-XMq" firstAttribute="centerY" secondItem="cRe-UU-kOv" secondAttribute="centerY" id="I6u-x3-l19"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zE7-Ba-z7F" secondAttribute="trailing" constant="-20" id="Jxv-gh-0Yz"/>
                             <constraint firstItem="0ss-TY-MPm" firstAttribute="top" secondItem="zE7-Ba-z7F" secondAttribute="bottom" id="M6P-hY-6S5"/>
                             <constraint firstItem="zE7-Ba-z7F" firstAttribute="top" secondItem="cRe-UU-kOv" secondAttribute="topMargin" id="Pid-8d-mpa"/>
-                            <constraint firstItem="VhG-Qs-XMq" firstAttribute="leading" secondItem="cRe-UU-kOv" secondAttribute="leadingMargin" id="VtC-wr-m8I"/>
-                            <constraint firstItem="VhG-Qs-XMq" firstAttribute="trailing" secondItem="cRe-UU-kOv" secondAttribute="trailingMargin" id="vcr-ij-WFS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="directionsButton" destination="bYf-4d-eh8" id="Z8y-dD-XGt"/>
+                        <outlet property="mapView" destination="mUr-Yy-vs2" id="u7A-cI-jPF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcE-x8-xvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1903,6 +1897,7 @@
         <image name="ARI" width="60" height="60"/>
         <image name="BAL" width="60" height="60"/>
         <image name="Baseball Launch Logo" width="2311" height="816"/>
+        <image name="Directions" width="75" height="70"/>
         <image name="Play" width="50" height="50"/>
         <image name="Share" width="80" height="28"/>
         <image name="grass" width="2048" height="2048"/>
