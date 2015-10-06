@@ -31,6 +31,8 @@
 		04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D529931BB84DA700F03357 /* BAScoreboard.m */; settings = {ASSET_TAGS = (); }; };
 		04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9CF511BB74AEE000E2F37 /* BAJSON.m */; settings = {ASSET_TAGS = (); }; };
 		04DA53251BC04A8B00D6F8FB /* BAXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA53241BC04A8B00D6F8FB /* BAXML.m */; settings = {ASSET_TAGS = (); }; };
+		04E3D0671BC357FD007B61C2 /* BALocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0661BC357FD007B61C2 /* BALocationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04E3D06A1BC35B43007B61C2 /* BALocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0691BC35B43007B61C2 /* BALocationTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		04D9CF511BB74AEE000E2F37 /* BAJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSON.m; sourceTree = "<group>"; };
 		04DA53231BC04A8B00D6F8FB /* BAXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAXML.h; sourceTree = "<group>"; };
 		04DA53241BC04A8B00D6F8FB /* BAXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAXML.m; sourceTree = "<group>"; };
+		04E3D0651BC357FD007B61C2 /* BALocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationViewController.h; sourceTree = "<group>"; };
+		04E3D0661BC357FD007B61C2 /* BALocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationViewController.m; sourceTree = "<group>"; };
+		04E3D0681BC35B43007B61C2 /* BALocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationTableViewCell.h; sourceTree = "<group>"; };
+		04E3D0691BC35B43007B61C2 /* BALocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,8 @@
 		04D529951BB8567B00F03357 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				04E3D0651BC357FD007B61C2 /* BALocationViewController.h */,
+				04E3D0661BC357FD007B61C2 /* BALocationViewController.m */,
 				0499D5811BC2C23300A87505 /* BAMediaViewController.h */,
 				0499D5821BC2C23300A87505 /* BAMediaViewController.m */,
 				045705B51BC18E2B006F9800 /* BAScoreboardViewController.h */,
@@ -225,6 +233,8 @@
 				049AB46A1BBAE1A1005DB4E8 /* BACoreData.m */,
 				04D9CF501BB74AEE000E2F37 /* BAJSON.h */,
 				04D9CF511BB74AEE000E2F37 /* BAJSON.m */,
+				04E3D0681BC35B43007B61C2 /* BALocationTableViewCell.h */,
+				04E3D0691BC35B43007B61C2 /* BALocationTableViewCell.m */,
 				04DA53231BC04A8B00D6F8FB /* BAXML.h */,
 				04DA53241BC04A8B00D6F8FB /* BAXML.m */,
 				0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */,
@@ -377,6 +387,7 @@
 				04AEDDB41BBD8F5100435C01 /* GamesViewController.m in Sources */,
 				04D529941BB84DA700F03357 /* BAScoreboard.m in Sources */,
 				044BD5071BB99B150076F540 /* TeamTableViewCell.m in Sources */,
+				04E3D0671BC357FD007B61C2 /* BALocationViewController.m in Sources */,
 				045B470E1BB747570088C360 /* main.m in Sources */,
 				0499D5831BC2C23300A87505 /* BAMediaViewController.m in Sources */,
 				0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */,
@@ -386,6 +397,7 @@
 				04DA53251BC04A8B00D6F8FB /* BAXML.m in Sources */,
 				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
+				04E3D06A1BC35B43007B61C2 /* BALocationTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

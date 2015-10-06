@@ -1385,10 +1385,10 @@
                                 <exclude reference="9sH-Og-cbg"/>
                                 <exclude reference="sUf-Tl-6KV"/>
                                 <exclude reference="J3Z-YP-PYB"/>
+                                <exclude reference="CKN-Oo-EEq"/>
                                 <exclude reference="SRg-aV-Dts"/>
                                 <exclude reference="ZEH-Oi-Wpj"/>
                                 <exclude reference="sV6-cY-o8e"/>
-                                <exclude reference="CKN-Oo-EEq"/>
                                 <exclude reference="GpH-Vo-7qI"/>
                             </mask>
                         </variation>
@@ -1398,10 +1398,10 @@
                                 <include reference="9sH-Og-cbg"/>
                                 <include reference="sUf-Tl-6KV"/>
                                 <exclude reference="J3Z-YP-PYB"/>
+                                <exclude reference="CKN-Oo-EEq"/>
                                 <exclude reference="SRg-aV-Dts"/>
                                 <exclude reference="ZEH-Oi-Wpj"/>
                                 <exclude reference="sV6-cY-o8e"/>
-                                <exclude reference="CKN-Oo-EEq"/>
                                 <exclude reference="GpH-Vo-7qI"/>
                             </mask>
                         </variation>
@@ -1687,7 +1687,7 @@
         <!--Locations-->
         <scene sceneID="TaE-Do-FEG">
             <objects>
-                <viewController id="YUv-ex-JNZ" sceneMemberID="viewController">
+                <viewController id="YUv-ex-JNZ" customClass="BALocationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Xf-GD-0VI"/>
                         <viewControllerLayoutGuide type="bottom" id="m1o-gD-6ze"/>
@@ -1703,30 +1703,36 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="J8h-Pe-g5T">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="56"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationTableViewCell" rowHeight="70" id="J8h-Pe-g5T" customClass="BALocationTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J8h-Pe-g5T" id="qme-FB-hxB">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86A-lB-4XA">
-                                                    <rect key="frame" x="8" y="0.0" width="584" height="47"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgR-Lt-gwy">
+                                                    <rect key="frame" x="10" y="3" width="64" height="64"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86A-lB-4XA">
+                                                    <rect key="frame" x="85" y="10" width="503" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-tX-gon">
+                                                    <rect key="frame" x="85" y="40" width="376" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="86A-lB-4XA" firstAttribute="leading" secondItem="qme-FB-hxB" secondAttribute="leadingMargin" id="CqI-wb-1I9"/>
-                                                <constraint firstItem="86A-lB-4XA" firstAttribute="top" secondItem="qme-FB-hxB" secondAttribute="topMargin" constant="-8" id="ZoX-Ph-yqO"/>
-                                                <constraint firstItem="86A-lB-4XA" firstAttribute="bottom" secondItem="qme-FB-hxB" secondAttribute="bottomMargin" id="pYI-gv-hTY"/>
-                                                <constraint firstItem="86A-lB-4XA" firstAttribute="trailing" secondItem="qme-FB-hxB" secondAttribute="trailingMargin" id="tV2-Uq-vmG"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="Rab-nR-oaO" kind="showDetail" id="XhM-d3-YZi"/>
+                                            <outlet property="cityLabel" destination="DaW-tX-gon" id="QuZ-nD-ZxB"/>
+                                            <outlet property="stadiumLabel" destination="86A-lB-4XA" id="hnV-aX-ffR"/>
+                                            <outlet property="teamLogo" destination="zgR-Lt-gwy" id="opG-Ou-6zh"/>
+                                            <segue destination="Rab-nR-oaO" kind="showDetail" identifier="LocationSegue" id="XhM-d3-YZi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
