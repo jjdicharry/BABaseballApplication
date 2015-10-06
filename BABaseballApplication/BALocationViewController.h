@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BALocationViewController : UIViewController
+@interface BALocationViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
