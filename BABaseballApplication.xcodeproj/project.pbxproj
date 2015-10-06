@@ -34,6 +34,7 @@
 		04DA868C1BC4090100665F1B /* BAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA868B1BC4090100665F1B /* BAMapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04DA868E1BC409F800665F1B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA868D1BC409F800665F1B /* CoreLocation.framework */; };
 		04DA86901BC40A0000665F1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA868F1BC40A0000665F1B /* MapKit.framework */; };
+		04DA86921BC42E5600665F1B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA86911BC42E5600665F1B /* AddressBook.framework */; };
 		04E3D0671BC357FD007B61C2 /* BALocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0661BC357FD007B61C2 /* BALocationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04E3D06A1BC35B43007B61C2 /* BALocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D0691BC35B43007B61C2 /* BALocationTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		04DA868B1BC4090100665F1B /* BAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMapViewController.m; sourceTree = "<group>"; };
 		04DA868D1BC409F800665F1B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		04DA868F1BC40A0000665F1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04DA86911BC42E5600665F1B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		04E3D0651BC357FD007B61C2 /* BALocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationViewController.h; sourceTree = "<group>"; };
 		04E3D0661BC357FD007B61C2 /* BALocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationViewController.m; sourceTree = "<group>"; };
 		04E3D0681BC35B43007B61C2 /* BALocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationTableViewCell.h; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DA86921BC42E5600665F1B /* AddressBook.framework in Frameworks */,
 				04DA86901BC40A0000665F1B /* MapKit.framework in Frameworks */,
 				04DA868E1BC409F800665F1B /* CoreLocation.framework in Frameworks */,
 			);
@@ -141,6 +144,7 @@
 		045B47001BB747570088C360 = {
 			isa = PBXGroup;
 			children = (
+				04DA86911BC42E5600665F1B /* AddressBook.framework */,
 				04DA868F1BC40A0000665F1B /* MapKit.framework */,
 				04DA868D1BC409F800665F1B /* CoreLocation.framework */,
 				045B470B1BB747570088C360 /* BABaseballApplication */,

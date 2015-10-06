@@ -7,6 +7,7 @@
 //
 
 #import "BAMapViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface BAMapViewController ()
 
@@ -17,7 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *address = self.textAddress.text;
+    NSString *address;
+    self.teamLogo.image     = [UIImage imageNamed:self.teamAbbr];
+    self.stadiumLabel.text  = self.stadium;
+    self.address1Label.text = self.street;
+    self.address1Label.text = [self.address1Label.text stringByAppendingString:@", "];
+    self.address1Label.text = [self.address1Label.text stringByAppendingString:self.city];
+    self.address2Label.text = self.state;
+    self.address2Label.text = [self.address2Label.text stringByAppendingString:@", "];
+    self.address2Label.text = [self.address2Label.text stringByAppendingString:self.ZIPCode];
+    self.address2Label.text = [self.address2Label.text stringByAppendingString:@"  P: "];
+    self.address2Label.text = [self.address2Label.text stringByAppendingString:self.phone];
+    
+    address = self.street;
+    address = [address stringByAppendingString:@", "];
+    address = [address stringByAppendingString:self.city];
+    address = [address stringByAppendingString:@", "];
+    address = [address stringByAppendingString:self.state];
+    address = [address stringByAppendingString:@", "];
+    address = [address stringByAppendingString:self.ZIPCode];
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
@@ -40,7 +59,7 @@
         point.title = @"Your Address";
         point.subtitle = [NSString stringWithFormat:@"LatLon: %f %f", point.coordinate.latitude, point.coordinate.longitude];
         
-        [self.map addAnnotation:point];
+        [self.mapView addAnnotation:point];
     }];
 }
 
@@ -60,5 +79,33 @@
 */
 
 - (IBAction)showDirections:(id)sender {
+    CLGeocoder *geocoder      = [[CLGeocoder alloc] init];
+    NSString   *addressString = [NSString stringWithFormat:@"%@ %@ %@ %@", self.street, self.city,
+                                 self.state, self.ZIPCode];
+    
+    [geocoder geocodeAddressString:addressString completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error) {
+            NSLog(@"Geocode failed with error: %@", error.localizedDescription);
+            return;
+        }
+        
+        if (placemarks && placemarks.count > 0) {
+            CLPlacemark *placemark = placemarks[0];
+            CLLocation *location = placemark.location;
+            self.coordinate = location.coordinate;
+            [self showMap];
+        }
+        
+    }];
 }
+
+-(void)showMap {
+    NSDictionary *address = @{(NSString *)kABPersonAddressStreetKey:self.street,(NSString *)kABPersonAddressCityKey:self.city,(NSString *)kABPersonAddressStateKey:self.state,(NSString *)kABPersonAddressZIPKey:self.ZIPCode};
+    
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:self.coordinate addressDictionary:address];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    NSDictionary *options = @{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving};
+    [mapItem openInMapsWithLaunchOptions:options];
+}
+
 @end

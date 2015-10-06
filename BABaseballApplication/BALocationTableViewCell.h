@@ -14,5 +14,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *stadiumLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 @property (weak, nonatomic) NSString *teamAbbr;
+@property (weak, nonatomic) NSString *stadium;
+@property (weak, nonatomic) NSString *street;
+@property (weak, nonatomic) NSString *city;
+@property (weak, nonatomic) NSString *state;
+@property (weak, nonatomic) NSString *ZIPCode;
+@property (weak, nonatomic) NSString *phone;
 
 @end

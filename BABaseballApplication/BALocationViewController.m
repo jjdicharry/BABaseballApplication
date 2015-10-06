@@ -8,6 +8,7 @@
 
 #import "BALocationViewController.h"
 #import "BALocationTableViewCell.h"
+#import "BAMapViewController.h"
 
 @interface BALocationViewController () {
     NSArray      *unsortedTeams;
@@ -62,25 +63,36 @@
     
     team = [teams objectAtIndex:indexPath.row];
     
-    cell.teamAbbr           = [team objectForKey:@"Abbreviation"];
-    cell.teamLogo.image     = [UIImage imageNamed:cell.teamAbbr];
-    cell.stadiumLabel.text  = [team objectForKey:@"Stadium"];
-    cell.cityLabel.text     = [team objectForKey:@"City"];
-    cell.cityLabel.text     = [cell.cityLabel.text stringByAppendingString:@", "];
-    cell.cityLabel.text     = [cell.cityLabel.text stringByAppendingString:[team objectForKey:@"State"]];
-    cell.backgroundColor = [UIColor clearColor];
+    cell.teamAbbr          = [team objectForKey:@"Abbreviation"];
+    cell.stadium           = [team objectForKey:@"Stadium"];
+    cell.street            = [team objectForKey:@"Street"];
+    cell.city              = [team objectForKey:@"City"];
+    cell.state             = [team objectForKey:@"State"];
+    cell.ZIPCode           = [team objectForKey:@"ZIP Code"];
+    cell.phone             = [team objectForKey:@"Phone"];
+    cell.teamLogo.image    = [UIImage imageNamed:cell.teamAbbr];
+    cell.stadiumLabel.text = cell.stadium;
+    cell.cityLabel.text    = cell.city;
+    cell.cityLabel.text    = [cell.cityLabel.text stringByAppendingString:@", "];
+    cell.cityLabel.text    = [cell.cityLabel.text stringByAppendingString:cell.state];
+    cell.backgroundColor   = [UIColor clearColor];
     
     return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"LocationSegue"]) {
+        BALocationTableViewCell *cell = (BALocationTableViewCell *) sender;
+        BAMapViewController *mapViewController;
+        mapViewController          = segue.destinationViewController;
+        mapViewController.teamAbbr = cell.teamAbbr;
+        mapViewController.stadium  = cell.stadium;
+        mapViewController.street   = cell.street;
+        mapViewController.city     = cell.city;
+        mapViewController.state    = cell.state;
+        mapViewController.ZIPCode  = cell.ZIPCode;
+        mapViewController.phone    = cell.phone;
+    }
 }
-*/
 
 @end
