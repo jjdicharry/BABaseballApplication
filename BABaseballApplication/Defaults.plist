@@ -9,180 +9,540 @@
 			<string>Diamondbacks</string>
 			<key>Abbreviation</key>
 			<string>ARI</string>
+			<key>Stadium</key>
+			<string>Chase Field</string>
+			<key>Street</key>
+			<string>401 East Jefferson Street</string>
+			<key>City</key>
+			<string>Phoenix</string>
+			<key>State</key>
+			<string>AZ</string>
+			<key>ZIP Code</key>
+			<string>85004</string>
+			<key>Phone</key>
+			<string>(602) 462-6500</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Braves</string>
 			<key>Abbreviation</key>
 			<string>ATL</string>
+			<key>Stadium</key>
+			<string>Turner Field</string>
+			<key>Street</key>
+			<string>755 Hank Aaron Drive</string>
+			<key>City</key>
+			<string>Atlanta</string>
+			<key>State</key>
+			<string>GA</string>
+			<key>ZIP Code</key>
+			<string>30315</string>
+			<key>Phone</key>
+			<string>(404) 522-7630</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Orioles</string>
 			<key>Abbreviation</key>
 			<string>BAL</string>
+			<key>Stadium</key>
+			<string>Oriole Park</string>
+			<key>Street</key>
+			<string>333 West Camden Street</string>
+			<key>City</key>
+			<string>Baltimore</string>
+			<key>State</key>
+			<string>MD</string>
+			<key>ZIP Code</key>
+			<string>21201</string>
+			<key>Phone</key>
+			<string>(410) 685-9800</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Red Sox</string>
 			<key>Abbreviation</key>
 			<string>BOS</string>
+			<key>Stadium</key>
+			<string>Fenway Park</string>
+			<key>Street</key>
+			<string>4 Yawkey Way</string>
+			<key>City</key>
+			<string>Boston</string>
+			<key>State</key>
+			<string>MA</string>
+			<key>ZIP Code</key>
+			<string>02215</string>
+			<key>Phone</key>
+			<string>(617) 267-9440</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>White Sox</string>
 			<key>Abbreviation</key>
 			<string>CWS</string>
+			<key>Stadium</key>
+			<string>U.S. Cellular Field</string>
+			<key>Street</key>
+			<string>333 West 35th Street</string>
+			<key>City</key>
+			<string>Chicago</string>
+			<key>State</key>
+			<string>IL</string>
+			<key>ZIP Code</key>
+			<string>60616</string>
+			<key>Phone</key>
+			<string>(312) 674-1000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Cubs</string>
 			<key>Abbreviation</key>
 			<string>CHC</string>
+			<key>Stadium</key>
+			<string>Wrigley Field</string>
+			<key>Street</key>
+			<string>1060 West Addison</string>
+			<key>City</key>
+			<string>Chicago</string>
+			<key>State</key>
+			<string>IL</string>
+			<key>ZIP Code</key>
+			<string>60613-4397</string>
+			<key>Phone</key>
+			<string>(773) 404-2827</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Reds</string>
 			<key>Abbreviation</key>
 			<string>CIN</string>
+			<key>Stadium</key>
+			<string>Great American Ball Park</string>
+			<key>Street</key>
+			<string>100 Main Street</string>
+			<key>City</key>
+			<string>Cincinnati</string>
+			<key>State</key>
+			<string>OH</string>
+			<key>ZIP Code</key>
+			<string>45202-4109</string>
+			<key>Phone</key>
+			<string>(513) 765-7000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Indians</string>
 			<key>Abbreviation</key>
 			<string>CLE</string>
+			<key>Stadium</key>
+			<string>Progressive Field</string>
+			<key>Street</key>
+			<string>2401 Ontario Street</string>
+			<key>City</key>
+			<string>Cleveland</string>
+			<key>State</key>
+			<string>OH</string>
+			<key>ZIP Code</key>
+			<string>44115</string>
+			<key>Phone</key>
+			<string>(216) 420-4200</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rockies</string>
 			<key>Abbreviation</key>
 			<string>COL</string>
+			<key>Stadium</key>
+			<string>Coors Field</string>
+			<key>Street</key>
+			<string>2001 Blake Street</string>
+			<key>City</key>
+			<string>Denver</string>
+			<key>State</key>
+			<string>CO</string>
+			<key>ZIP Code</key>
+			<string>80205-2000</string>
+			<key>Phone</key>
+			<string>(303) 292-0200</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Tigers</string>
 			<key>Abbreviation</key>
 			<string>DET</string>
+			<key>Stadium</key>
+			<string>Comerica Park</string>
+			<key>Street</key>
+			<string>2100 Woodward Avenue</string>
+			<key>City</key>
+			<string>Detroit</string>
+			<key>State</key>
+			<string>MI</string>
+			<key>ZIP Code</key>
+			<string>48201</string>
+			<key>Phone</key>
+			<string>(313) 471-2000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Marlins</string>
 			<key>Abbreviation</key>
 			<string>MIA</string>
+			<key>Stadium</key>
+			<string>Marlins Park</string>
+			<key>Street</key>
+			<string>501 Marlins Way</string>
+			<key>City</key>
+			<string>Miami</string>
+			<key>State</key>
+			<string>FL</string>
+			<key>ZIP Code</key>
+			<string>33125</string>
+			<key>Phone</key>
+			<string>(305) 480-1300</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Astros</string>
 			<key>Abbreviation</key>
 			<string>HOU</string>
+			<key>Stadium</key>
+			<string>Minute Maid Park</string>
+			<key>Street</key>
+			<string>501 Crawford Street</string>
+			<key>City</key>
+			<string>Houston</string>
+			<key>State</key>
+			<string>TX</string>
+			<key>ZIP Code</key>
+			<string>77002</string>
+			<key>Phone</key>
+			<string>(713) 259-8000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Royals</string>
 			<key>Abbreviation</key>
 			<string>KC</string>
+			<key>Stadium</key>
+			<string>Kauffman Stadium</string>
+			<key>Street</key>
+			<string>One Royal Way</string>
+			<key>City</key>
+			<string>Kansas City</string>
+			<key>State</key>
+			<string>MO</string>
+			<key>ZIP Code</key>
+			<string>64129</string>
+			<key>Phone</key>
+			<string>(816) 921-8000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Angels</string>
 			<key>Abbreviation</key>
 			<string>LAA</string>
+			<key>Stadium</key>
+			<string>Angel Stadium</string>
+			<key>Street</key>
+			<string>2000 Gene Autry Way</string>
+			<key>City</key>
+			<string>Anaheim</string>
+			<key>State</key>
+			<string>CA</string>
+			<key>ZIP Code</key>
+			<string>92806</string>
+			<key>Phone</key>
+			<string>(714) 940-2000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Dodgers</string>
 			<key>Abbreviation</key>
 			<string>LAD</string>
+			<key>Stadium</key>
+			<string>Dodger Stadium</string>
+			<key>Street</key>
+			<string>1000 Elysian Park Avenue</string>
+			<key>City</key>
+			<string>Los Angeles</string>
+			<key>State</key>
+			<string>CA</string>
+			<key>ZIP Code</key>
+			<string>90012-1199</string>
+			<key>Phone</key>
+			<string>(323) 224-1500</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Brewers</string>
 			<key>Abbreviation</key>
 			<string>MIL</string>
+			<key>Stadium</key>
+			<string>Miller Park</string>
+			<key>Street</key>
+			<string>One Brewers Way</string>
+			<key>City</key>
+			<string>Milwaukee</string>
+			<key>State</key>
+			<string>WI</string>
+			<key>ZIP Code</key>
+			<string>53214</string>
+			<key>Phone</key>
+			<string>(414) 902-4400</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Twins</string>
 			<key>Abbreviation</key>
 			<string>MIN</string>
+			<key>Stadium</key>
+			<string>Target Field</string>
+			<key>Street</key>
+			<string>1 Twins Way</string>
+			<key>City</key>
+			<string>Minneapolis</string>
+			<key>State</key>
+			<string>MN</string>
+			<key>ZIP Code</key>
+			<string>55403</string>
+			<key>Phone</key>
+			<string>(612) 659-3400</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Mets</string>
 			<key>Abbreviation</key>
 			<string>NYM</string>
+			<key>Stadium</key>
+			<string>Citi Field</string>
+			<key>Street</key>
+			<string>120-01 Roosevelt Avenue</string>
+			<key>City</key>
+			<string>Corona</string>
+			<key>State</key>
+			<string>NY</string>
+			<key>ZIP Code</key>
+			<string>11368</string>
+			<key>Phone</key>
+			<string>(718) 507-6387</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Yankees</string>
 			<key>Abbreviation</key>
 			<string>NYY</string>
+			<key>Stadium</key>
+			<string>Yankee Stadium</string>
+			<key>Street</key>
+			<string>One East 161st Street</string>
+			<key>City</key>
+			<string>Bronx</string>
+			<key>State</key>
+			<string>NY</string>
+			<key>ZIP Code</key>
+			<string>10451</string>
+			<key>Phone</key>
+			<string>(718) 293-4300</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Athletics</string>
 			<key>Abbreviation</key>
 			<string>OAK</string>
+			<key>Stadium</key>
+			<string>O.co Coliseum</string>
+			<key>Street</key>
+			<string>7000 Coliseum Way</string>
+			<key>City</key>
+			<string>Oakland</string>
+			<key>State</key>
+			<string>CA</string>
+			<key>ZIP Code</key>
+			<string>94621</string>
+			<key>Phone</key>
+			<string>(510) 638-4900</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Phillies</string>
 			<key>Abbreviation</key>
 			<string>PHI</string>
+			<key>Stadium</key>
+			<string>Citizens Bank Park</string>
+			<key>Street</key>
+			<string>One Citizens Bank Way</string>
+			<key>City</key>
+			<string>Philadelphia</string>
+			<key>State</key>
+			<string>PA</string>
+			<key>ZIP Code</key>
+			<string>19148</string>
+			<key>Phone</key>
+			<string>(215) 463-6000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Padres</string>
 			<key>Abbreviation</key>
 			<string>SD</string>
+			<key>Stadium</key>
+			<string>Petco Park</string>
+			<key>Street</key>
+			<string>100 Park Boulevard</string>
+			<key>City</key>
+			<string>San Diego</string>
+			<key>State</key>
+			<string>CA</string>
+			<key>ZIP Code</key>
+			<string>92101</string>
+			<key>Phone</key>
+			<string>(619) 795-5000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Giants</string>
 			<key>Abbreviation</key>
 			<string>SF</string>
+			<key>Stadium</key>
+			<string>AT&amp;T Park</string>
+			<key>Street</key>
+			<string>24 Willie Mays Plaza</string>
+			<key>City</key>
+			<string>San Francisco</string>
+			<key>State</key>
+			<string>CA</string>
+			<key>ZIP Code</key>
+			<string>94107</string>
+			<key>Phone</key>
+			<string>(415) 972-2000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Mariners</string>
 			<key>Abbreviation</key>
 			<string>SEA</string>
+			<key>Stadium</key>
+			<string>Safeco Field</string>
+			<key>Street</key>
+			<string>P.O. Box 4100</string>
+			<key>City</key>
+			<string>Seattle</string>
+			<key>State</key>
+			<string>WA</string>
+			<key>ZIP Code</key>
+			<string>98104</string>
+			<key>Phone</key>
+			<string>(206) 346-4000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Cardinals</string>
 			<key>Abbreviation</key>
 			<string>STL</string>
+			<key>Stadium</key>
+			<string>Busch Stadium</string>
+			<key>Street</key>
+			<string>700 Clark Street</string>
+			<key>City</key>
+			<string>St. Louis</string>
+			<key>State</key>
+			<string>MO</string>
+			<key>ZIP Code</key>
+			<string>63102</string>
+			<key>Phone</key>
+			<string>(314) 345-9600</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rays</string>
 			<key>Abbreviation</key>
 			<string>TB</string>
+			<key>Stadium</key>
+			<string>Tropicana Field</string>
+			<key>Street</key>
+			<string>One Tropicana Drive</string>
+			<key>City</key>
+			<string>St. Petersburg</string>
+			<key>State</key>
+			<string>FL</string>
+			<key>ZIP Code</key>
+			<string>33705</string>
+			<key>Phone</key>
+			<string>(727) 825-3137</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Rangers</string>
 			<key>Abbreviation</key>
 			<string>TEX</string>
+			<key>Stadium</key>
+			<string>Globe Life Park in Arlington</string>
+			<key>Street</key>
+			<string>1000 Ballpark Way</string>
+			<key>City</key>
+			<string>Arlington</string>
+			<key>State</key>
+			<string>TX</string>
+			<key>ZIP Code</key>
+			<string>76011</string>
+			<key>Phone</key>
+			<string>(817) 273-5222</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Blue Jays</string>
 			<key>Abbreviation</key>
 			<string>TOR</string>
+			<key>Stadium</key>
+			<string>Rogers Centre</string>
+			<key>Street</key>
+			<string>1 Blue Jays Way, Suite 3200</string>
+			<key>City</key>
+			<string>Toronto</string>
+			<key>State</key>
+			<string>ON</string>
+			<key>ZIP Code</key>
+			<string>M5V1J1</string>
+			<key>Phone</key>
+			<string>(416) 341-1000</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Nationals</string>
 			<key>Abbreviation</key>
 			<string>WSH</string>
+			<key>Stadium</key>
+			<string>Nationals Park</string>
+			<key>Street</key>
+			<string>1500 South Capitol Street, SE</string>
+			<key>City</key>
+			<string>Washington</string>
+			<key>State</key>
+			<string>DC</string>
+			<key>ZIP Code</key>
+			<string>20003-1507</string>
+			<key>Phone</key>
+			<string>(202) 675-6287</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Pirates</string>
 			<key>Abbreviation</key>
 			<string>PIT</string>
+			<key>Stadium</key>
+			<string>PNC Park</string>
+			<key>Street</key>
+			<string>115 Federal Street</string>
+			<key>City</key>
+			<string>Pittsburgh</string>
+			<key>State</key>
+			<string>PA</string>
+			<key>ZIP Code</key>
+			<string>15212</string>
+			<key>Phone</key>
+			<string>(412) 323-5000</string>
 		</dict>
 	</array>
 </dict>
