@@ -49,6 +49,12 @@
 	return menuItems.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return 100.0;
+}
+
 /**
  *  Method - tableView:cellForRowAtIndexPath:
  */

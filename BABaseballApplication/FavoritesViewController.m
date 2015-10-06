@@ -79,6 +79,12 @@
 	return favorites.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return 70.0;
+}
+
 /**
  *  Method - tableView:cellForRowAtIndexPath:
  */
@@ -86,7 +92,7 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-	static NSString *reuseIdentifier = @"FavoriteTableViewCell";
+	NSString *reuseIdentifier = @"FavoriteTableViewCell";
 	FavoriteTableViewCell *cell;
 	NSError *error;
 	NSArray *favorites;
@@ -94,16 +100,20 @@
 	NSString *name;
 	NSString *teamAbbr;
 
-	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-
-	cell.backgroundColor = [UIColor clearColor];
-	
 	favorites = [Favorite getAll:&error];
 
 	if (error || !favorites || (favorites.count == 0)) {
-		cell.teamLabel.text = @"No Favorite Teams";
+		reuseIdentifier = @"NoFavoritesCell";
+		cell = [tableView
+			dequeueReusableCellWithIdentifier:reuseIdentifier];
+		cell.backgroundColor = [UIColor clearColor];
+		// cell.teamLabel.text = @"No Favorite Teams";
 		return cell;
 	}
+	
+	reuseIdentifier = @"FavoriteTableViewCell";
+	cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+	cell.backgroundColor = [UIColor clearColor];
 
 	favorite = [favorites objectAtIndex:indexPath.row];
 	name = [favorite valueForKey:@"Name"];

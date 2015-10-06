@@ -63,61 +63,9 @@
 
 #pragma mark - UITableViewDelegate Methods
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-	/*
-    NSError *error;
-    NSArray *favorites;
-	
-    favorites = [Favorite getAll:&error];
-	
-    if (error || !favorites || (favorites.count == 0)) {
-	    return 1;
-    }
-	
-    return 2;
-	 */
-	return 1;
-}
-
-- (NSString *)tableView:(UITableView *)tableView
-titleForHeaderInSection:(NSInteger)section
-{
-	/*
-    NSError *error;
-    NSArray *favorites;
-	
-    favorites = [Favorite getAll:&error];
-	
-    if (error || !favorites || (favorites.count == 0)) {
-	    return @"Teams";
-    }
-	
-	if (section == 0) {
-		return @"Favorites";
-	}
-	 */
-	
-     return @"Teams";
-}
-
 - (NSInteger)   tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section
 {
-	/*
-       NSArray *favorites;
-       NSError *error;
-
-       favorites = [Favorite getAll:&error];
-
-       if (!error && (favorites != nil) && (favorites.count > 0)) {
-            if (section == 1)
-                    return teams.count;
-            else if (section == 0)
-                    return favorites.count;
-       }
-	 */
-
     return teams.count;
 }
 
