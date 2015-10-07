@@ -21,6 +21,7 @@
 		045B47351BB747580088C360 /* BABaseballApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B47341BB747580088C360 /* BABaseballApplicationUITests.m */; };
 		0462263A1BBB1F770044A8A3 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 046226391BBB1F770044A8A3 /* Favorite.m */; settings = {ASSET_TAGS = (); }; };
 		0462263D1BBB1FD10044A8A3 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462263C1BBB1FD10044A8A3 /* Alert.m */; settings = {ASSET_TAGS = (); }; };
+		04673A501BC4949F003F1A85 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04673A4F1BC4949F003F1A85 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		048200991BBC9B72003E209C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048200981BBC9B72003E209C /* FavoritesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0482009C1BBC9D0D003E209C /* FavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482009B1BBC9D0D003E209C /* FavoriteTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		04953F6B1BC0388800C33944 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04953F6A1BC0388800C33944 /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -82,6 +83,8 @@
 		046226391BBB1F770044A8A3 /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 		0462263B1BBB1FD10044A8A3 /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
 		0462263C1BBB1FD10044A8A3 /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
+		04673A4E1BC4949F003F1A85 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		04673A4F1BC4949F003F1A85 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		048200971BBC9B72003E209C /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		048200981BBC9B72003E209C /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		0482009A1BBC9D0D003E209C /* FavoriteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewCell.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				04953F6A1BC0388800C33944 /* MenuViewController.m */,
 				045B47121BB747570088C360 /* TeamViewController.h */,
 				045B47131BB747570088C360 /* TeamViewController.m */,
+				04673A4E1BC4949F003F1A85 /* LaunchViewController.h */,
+				04673A4F1BC4949F003F1A85 /* LaunchViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				04D9CF521BB74AEE000E2F37 /* BAJSON.m in Sources */,
 				045B471A1BB747570088C360 /* BABaseballApplication.xcdatamodeld in Sources */,
 				04E3D06A1BC35B43007B61C2 /* BALocationTableViewCell.m in Sources */,
+				04673A501BC4949F003F1A85 /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

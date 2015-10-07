@@ -1692,13 +1692,13 @@
                                                         <constraint firstAttribute="height" constant="64" id="lJM-A1-Uhg"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86A-lB-4XA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86A-lB-4XA">
                                                     <rect key="frame" x="80" y="8" width="512" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-tX-gon">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-tX-gon">
                                                     <rect key="frame" x="80" y="40" width="512" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1764,7 +1764,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-Ba-z7F">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHz-ae-TAF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHz-ae-TAF">
                                 <rect key="frame" x="92" y="46" width="488" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="saJ-hY-Raf"/>
@@ -1773,7 +1773,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-HB-gD8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-HB-gD8">
                                 <rect key="frame" x="92" y="68" width="488" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7cA-Hl-Z9c"/>
@@ -1782,7 +1782,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-hq-iew">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-hq-iew">
                                 <rect key="frame" x="92" y="25" width="488" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="KlO-bq-OSk"/>
@@ -1860,7 +1860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcE-x8-xvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4927" y="2213"/>
+            <point key="canvasLocation" x="4930" y="2225"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="aib-oD-9sZ">
@@ -1875,10 +1875,10 @@
             </objects>
             <point key="canvasLocation" x="1083" y="1847"/>
         </scene>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="IUJ-GU-1N1">
             <objects>
-                <viewController id="bUL-nX-Xja" sceneMemberID="viewController">
+                <viewController id="bUL-nX-Xja" customClass="LaunchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jvc-Kb-XLt"/>
                         <viewControllerLayoutGuide type="bottom" id="AB3-8h-rY6"/>
@@ -1891,19 +1891,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baseball Launch Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kfR-wB-obB">
-                                <rect key="frame" x="38" y="28" width="525" height="187"/>
+                                <rect key="frame" x="38" y="28" width="525" height="226"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baseball Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-xN-ucw">
-                                <rect key="frame" x="29" y="235" width="543" height="130"/>
+                                <rect key="frame" x="29" y="262" width="543" height="75"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="AYD-rA-JQy"/>
                                     <constraint firstAttribute="height" constant="130" id="wUa-r3-Vz9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wUa-r3-Vz9"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqt-oY-BO1">
-                                <rect key="frame" x="205" y="373" width="190" height="59"/>
+                                <rect key="frame" x="205" y="345" width="190" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="IX2-c8-MMK"/>
                                     <constraint firstAttribute="width" constant="190" id="OzC-Dw-Vu5"/>
@@ -1923,7 +1929,9 @@
                             <constraint firstItem="kfR-wB-obB" firstAttribute="top" secondItem="jvc-Kb-XLt" secondAttribute="bottom" constant="8" id="JcH-xm-EBW"/>
                             <constraint firstItem="bqt-oY-BO1" firstAttribute="top" secondItem="cD5-xN-ucw" secondAttribute="bottom" constant="8" id="N7l-dD-fFV"/>
                             <constraint firstItem="cD5-xN-ucw" firstAttribute="leading" secondItem="rRl-zG-dSf" secondAttribute="leadingMargin" constant="9" id="SAM-Yl-ctq"/>
+                            <constraint firstItem="bqt-oY-BO1" firstAttribute="top" secondItem="cD5-xN-ucw" secondAttribute="bottom" constant="8" id="akK-rq-IM3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o71-gG-dEg" secondAttribute="trailing" constant="-20" id="jKc-dr-DPf"/>
+                            <constraint firstItem="cD5-xN-ucw" firstAttribute="top" secondItem="kfR-wB-obB" secondAttribute="bottom" constant="8" id="kFQ-fZ-ayK"/>
                             <constraint firstItem="cD5-xN-ucw" firstAttribute="centerX" secondItem="rRl-zG-dSf" secondAttribute="centerX" id="q7J-i5-yNC"/>
                             <constraint firstItem="AB3-8h-rY6" firstAttribute="top" secondItem="o71-gG-dEg" secondAttribute="bottom" id="qvZ-Gl-LL9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cD5-xN-ucw" secondAttribute="trailing" constant="8" id="tYs-OP-7Fp"/>
@@ -1931,6 +1939,12 @@
                             <constraint firstItem="cD5-xN-ucw" firstAttribute="top" secondItem="kfR-wB-obB" secondAttribute="bottom" constant="20" id="vVv-H8-UXm"/>
                             <constraint firstItem="o71-gG-dEg" firstAttribute="leading" secondItem="rRl-zG-dSf" secondAttribute="leadingMargin" constant="-20" id="xLe-JH-R6d"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vVv-H8-UXm"/>
+                                <exclude reference="N7l-dD-fFV"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjT-iG-4LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
