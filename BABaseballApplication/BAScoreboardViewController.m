@@ -34,9 +34,19 @@
         self.timeLabel.text       = [self.timeLabel.text stringByAppendingString:@" "];
         self.timeLabel.text       = [self.timeLabel.text stringByAppendingString:scoreboard.amPM];
         self.awayLogoImage.image  = [UIImage imageNamed:scoreboard.awayTeamAbbr];
-        self.awayBigRunLabel.text = scoreboard.awayRun;
+	    
+        if ([scoreboard.awayRun integerValue] < 10)
+		self.awayBigRunLabel.text = [[@" " stringByAppendingString:scoreboard.awayRun] stringByAppendingString:@"  "];
+	else
+            self.awayBigRunLabel.text = scoreboard.awayRun;
+	    
         self.homeLogoImage.image  = [UIImage imageNamed:scoreboard.homeTeamAbbr];
-        self.homeBigRunLabel.text = scoreboard.homeRun;
+	    
+        if ([scoreboard.homeRun integerValue] < 10)
+            self.homeBigRunLabel.text = [[@" " stringByAppendingString:scoreboard.homeRun] stringByAppendingString:@"  "];
+        else
+            self.homeBigRunLabel.text = scoreboard.homeRun;
+	    
         self.awayRecordLabel.text = @"W: ";
         self.awayRecordLabel.text = [self.awayRecordLabel.text stringByAppendingString:scoreboard.awayWin];
         self.awayRecordLabel.text = [self.awayRecordLabel.text stringByAppendingString:@" - L: "];
@@ -70,8 +80,17 @@
         self.awayRun6Label.text        = scoreboard.awayInni06;
         self.awayRun7Label.text        = scoreboard.awayInni07;
         self.awayRun8Label.text        = scoreboard.awayInni08;
-        self.awayRun9Label.text        = scoreboard.awayInni09;
-        self.awayRunELabel.text        = scoreboard.awayInniEx;
+	    
+        if (scoreboard.awayInni09 == nil)
+            self.awayRun9Label.text = @"  ";
+        else
+            self.awayRun9Label.text        = scoreboard.awayInni09;
+	    
+        if (scoreboard.awayInniEx == nil)
+            self.awayRunELabel.text = @"  ";
+        else
+            self.awayRunELabel.text        = scoreboard.awayInniEx;
+	    
         self.homeAbbr2Label.text       = scoreboard.homeTeamAbbr;
         self.homeRun1Label.text        = scoreboard.homeInni01;
         self.homeRun2Label.text        = scoreboard.homeInni02;
@@ -81,8 +100,17 @@
         self.homeRun6Label.text        = scoreboard.homeInni06;
         self.homeRun7Label.text        = scoreboard.homeInni07;
         self.homeRun8Label.text        = scoreboard.homeInni08;
-        self.homeRun9Label.text        = scoreboard.homeInni09;
-        self.homeRunELabel.text        = scoreboard.homeInniEx;
+	    
+        if (scoreboard.homeInni09 == nil)
+            self.homeRun9Label.text = @"  ";
+        else
+            self.homeRun9Label.text        = scoreboard.homeInni09;
+	    
+        if (scoreboard.homeInniEx == nil)
+            self.homeRunELabel.text = @"  ";
+        else
+            self.homeRunELabel.text        = scoreboard.homeInniEx;
+	    
         self.winnPitchNameLabel.text   = scoreboard.winnPitchLastName;
         self.losePitchNameLabel.text   = scoreboard.losePitchLastName;
         self.winnPitchRecordLabel.text = @"(";
