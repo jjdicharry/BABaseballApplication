@@ -349,9 +349,6 @@
                                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="57" y="32" width="137" height="21"/>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="57" y="32" width="137" height="21"/>
-                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMq-FW-EiB">
                                                     <rect key="frame" x="80" y="70" width="214" height="21"/>
@@ -365,9 +362,6 @@
                                                         <rect key="frame" x="57" y="70" width="137" height="21"/>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="57" y="70" width="137" height="21"/>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="57" y="70" width="137" height="21"/>
                                                     </variation>
                                                 </label>
@@ -441,9 +435,6 @@
                                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="255" y="73" width="137" height="21"/>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="255" y="73" width="137" height="21"/>
-                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U47-1b-0gi">
                                                     <rect key="frame" x="378" y="35" width="214" height="21"/>
@@ -465,9 +456,6 @@
                                                         <rect key="frame" x="255" y="35" width="137" height="21"/>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="255" y="35" width="137" height="21"/>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="255" y="35" width="137" height="21"/>
                                                     </variation>
                                                 </label>
@@ -1021,33 +1009,24 @@
                                     <rect key="frame" x="450" y="140" width="200" height="140"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-aC-k2D">
-                                <rect key="frame" x="20" y="28" width="54" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="23" y="28" width="70" height="26"/>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARI" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-A7-AY5">
                                 <rect key="frame" x="31" y="104" width="64" height="64"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="54" y="150" width="130" height="130"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-mS-U3a">
-                                <rect key="frame" x="200" y="28" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-mS-U3a">
+                                <rect key="frame" x="283" y="28" width="80" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="260" y="28" width="70" height="26"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2015/10/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uqu-fk-mts">
-                                <rect key="frame" x="67" y="28" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/10/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uqu-fk-mts">
+                                <rect key="frame" x="98" y="28" width="163" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
@@ -1344,9 +1323,18 @@
                                     <rect key="frame" x="658" y="145" width="130" height="130"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-aC-k2D">
+                                <rect key="frame" x="20" y="28" width="76" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="28" width="70" height="26"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:10 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EiK-0A-3ZX">
-                                <rect key="frame" x="250" y="28" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <rect key="frame" x="377" y="28" width="146" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
@@ -1356,28 +1344,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HiD-aC-k2D" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="9sH-Og-cbg"/>
+                            <constraint firstItem="ZYE-mS-U3a" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="3d2-mI-V8u"/>
+                            <constraint firstItem="HiD-aC-k2D" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="6ue-oQ-NUW"/>
+                            <constraint firstItem="uqu-fk-mts" firstAttribute="leading" secondItem="HiD-aC-k2D" secondAttribute="trailing" constant="2" id="BhX-Sj-KbG"/>
+                            <constraint firstItem="HiD-aC-k2D" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" id="BlN-2M-bBY"/>
                             <constraint firstItem="Uyq-fg-33E" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" constant="-20" id="FWo-B0-JSl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Uyq-fg-33E" secondAttribute="trailing" constant="-20" id="IIC-mC-OTi"/>
+                            <constraint firstItem="uqu-fk-mts" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="JcV-D7-tQI"/>
                             <constraint firstItem="Uyq-fg-33E" firstAttribute="top" secondItem="XMf-Mk-ZQz" secondAttribute="topMargin" id="N6L-jX-2sV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Uyq-fg-33E" secondAttribute="trailing" constant="-20" id="RNY-9A-ccG"/>
                             <constraint firstItem="7Nj-Oh-Wsl" firstAttribute="top" secondItem="Uyq-fg-33E" secondAttribute="bottom" id="pMR-Eq-wby"/>
-                            <constraint firstItem="HiD-aC-k2D" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" constant="3" id="sUf-Tl-6KV"/>
+                            <constraint firstItem="ZYE-mS-U3a" firstAttribute="leading" secondItem="uqu-fk-mts" secondAttribute="trailing" constant="8" id="yVO-CV-qTI"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="IIC-mC-OTi"/>
-                                <exclude reference="9sH-Og-cbg"/>
-                                <exclude reference="sUf-Tl-6KV"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="IIC-mC-OTi"/>
-                                <include reference="9sH-Og-cbg"/>
-                                <include reference="sUf-Tl-6KV"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Scoreboard" id="2mp-SC-f3p"/>
                     <connections>
@@ -1438,7 +1415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3A-Sy-I5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5971.5" y="970.5"/>
+            <point key="canvasLocation" x="5971" y="970"/>
         </scene>
         <!--Media-->
         <scene sceneID="VYT-3H-sJD">
