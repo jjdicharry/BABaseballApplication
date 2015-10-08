@@ -95,7 +95,8 @@
         for (requestResult in requestArray) {
             scoreboard = [self setScoreboardObject:requestResult];
             
-            [returnArray addObject:scoreboard];
+            if (scoreboard.awayRun != nil && scoreboard.homeRun != nil)
+                [returnArray addObject:scoreboard];
         }
     }
     
@@ -132,7 +133,8 @@
         for (requestResult in requestArray) {
             scoreboard = [self setScoreboardObject:requestResult];
             
-            [returnArray addObject:scoreboard];
+            if (scoreboard.awayRun != nil && scoreboard.homeRun != nil)
+                [returnArray addObject:scoreboard];
         }
     }
     
@@ -168,7 +170,8 @@
         for (requestResult in requestArray) {
             scoreboard = [self setScoreboardObject:requestResult];
             
-            [returnArray addObject:scoreboard];
+            if (scoreboard.awayRun != nil && scoreboard.homeRun != nil)
+                [returnArray addObject:scoreboard];
         }
     }
     
