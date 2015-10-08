@@ -34,9 +34,9 @@
 
     BAJSON *json = [[BAJSON alloc] init];
     
-    for (int i=1; i<=30; i++) {
+    for (int i=1; i<=31; i++) {
         [json parseScoreboardWithYear:@"2015"
-                             andMonth:@"08"
+                             andMonth:@"07"
                                andDay:[NSString stringWithFormat:@"%02i",i]];
     }
     
