@@ -33,9 +33,27 @@
     // Do any additional setup after loading the view, typically from a nib.
     BAJSON *json = [[BAJSON alloc] init];
     
-    for (int i=5; i<=5; i++) {
+    for (int i=1; i<=7; i++) {
         [json parseScoreboardWithYear:@"2015"
                              andMonth:@"10"
+                               andDay:[NSString stringWithFormat:@"%02i",i]];
+    }
+    
+    for (int i=1; i<=30; i++) {
+        [json parseScoreboardWithYear:@"2015"
+                             andMonth:@"09"
+                               andDay:[NSString stringWithFormat:@"%02i",i]];
+    }
+    
+    for (int i=1; i<=31; i++) {
+        [json parseScoreboardWithYear:@"2015"
+                             andMonth:@"08"
+                               andDay:[NSString stringWithFormat:@"%02i",i]];
+    }
+    
+    for (int i=1; i<=31; i++) {
+        [json parseScoreboardWithYear:@"2015"
+                             andMonth:@"07"
                                andDay:[NSString stringWithFormat:@"%02i",i]];
     }
     
