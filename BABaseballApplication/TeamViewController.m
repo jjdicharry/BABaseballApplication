@@ -31,9 +31,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+/*
     BAJSON *json = [[BAJSON alloc] init];
     
-/*
     for (int i=1; i<=5; i++) {
         [json parseScoreboardWithYear:@"2015"
                              andMonth:@"10"
