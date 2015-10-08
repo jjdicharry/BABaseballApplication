@@ -1587,7 +1587,8 @@
                                         <exclude reference="si7-gS-6nu"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="200" y="700" width="50" height="50"/>
                                     <mask key="constraints">
                                         <exclude reference="EEx-QS-1Iz"/>
                                         <exclude reference="Hi9-p4-LYU"/>
@@ -1924,7 +1925,7 @@
                                 <include reference="Y2O-yQ-M1m"/>
                                 <include reference="YTP-5l-WbQ"/>
                                 <exclude reference="sQY-a5-rpE"/>
-                                <include reference="P2G-Ls-7hQ"/>
+                                <exclude reference="P2G-Ls-7hQ"/>
                                 <exclude reference="RrI-cg-RmT"/>
                                 <exclude reference="SUz-dJ-Kdy"/>
                                 <include reference="XQf-EE-209"/>
@@ -1935,7 +1936,7 @@
                                 <include reference="YVf-1h-5P0"/>
                                 <include reference="iOa-tY-Jmp"/>
                                 <exclude reference="1ix-3k-M78"/>
-                                <include reference="2we-wz-DLB"/>
+                                <exclude reference="2we-wz-DLB"/>
                                 <include reference="5Ri-0n-4Ts"/>
                                 <exclude reference="Jts-An-lhM"/>
                                 <include reference="KCI-wK-Tqr"/>
@@ -1945,8 +1946,8 @@
                                 <include reference="4qI-xT-Zbv"/>
                                 <exclude reference="IXE-YH-xAJ"/>
                                 <include reference="Uds-tV-5pz"/>
-                                <include reference="fQa-W5-x56"/>
-                                <include reference="fws-vN-jtS"/>
+                                <exclude reference="fQa-W5-x56"/>
+                                <exclude reference="fws-vN-jtS"/>
                                 <include reference="kt3-9A-cgV"/>
                                 <exclude reference="s88-1c-Po9"/>
                                 <exclude reference="IYh-Qk-Qm8"/>
