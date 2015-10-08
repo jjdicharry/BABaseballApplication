@@ -1539,7 +1539,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c21-0c-6ON">
-                                <rect key="frame" x="209" y="406" width="240" height="32"/>
+                                <rect key="frame" x="209" y="406" width="208" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highlights" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="TIS-fB-I8i">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -1615,27 +1615,31 @@
                                             <segue destination="SRU-1o-zkh" kind="show" identifier="Media4Segue" id="jvZ-1h-yuK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-tc-owq">
-                                        <rect key="frame" x="208" y="0.0" width="32" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="BxF-qX-Q7a"/>
-                                            <constraint firstAttribute="height" constant="32" id="jJu-yB-m7k"/>
-                                            <constraint firstAttribute="height" constant="40" id="oSa-jM-Ie2"/>
-                                            <constraint firstAttribute="width" constant="40" id="ple-BV-NuM"/>
-                                        </constraints>
-                                        <state key="normal" image="Play"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="oSa-jM-Ie2"/>
-                                                <exclude reference="ple-BV-NuM"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <segue destination="SRU-1o-zkh" kind="show" identifier="Media5Segue" id="aFb-f8-eAx"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-tc-owq">
+                                <rect key="frame" x="399" y="338" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8A2-v0-F8E"/>
+                                    <constraint firstAttribute="width" constant="32" id="BxF-qX-Q7a"/>
+                                    <constraint firstAttribute="width" constant="50" id="fKB-aQ-Jru"/>
+                                    <constraint firstAttribute="height" constant="32" id="jJu-yB-m7k"/>
+                                    <constraint firstAttribute="height" constant="40" id="oSa-jM-Ie2"/>
+                                    <constraint firstAttribute="width" constant="40" id="ple-BV-NuM"/>
+                                </constraints>
+                                <state key="normal" image="Play"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BxF-qX-Q7a"/>
+                                        <exclude reference="jJu-yB-m7k"/>
+                                        <exclude reference="oSa-jM-Ie2"/>
+                                        <exclude reference="ple-BV-NuM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="SRU-1o-zkh" kind="show" identifier="Media5Segue" id="aFb-f8-eAx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1645,14 +1649,17 @@
                             <constraint firstItem="tVh-RG-qFd" firstAttribute="centerX" secondItem="XMf-Mk-ZQz" secondAttribute="centerX" id="5uY-5y-ufK"/>
                             <constraint firstItem="e9P-A7-AY5" firstAttribute="top" secondItem="HiD-aC-k2D" secondAttribute="bottom" constant="8" id="5zy-0f-csI"/>
                             <constraint firstItem="HiD-aC-k2D" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="6ue-oQ-NUW"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="c21-0c-6ON" secondAttribute="trailing" id="7ge-Gv-waM"/>
                             <constraint firstItem="tVh-RG-qFd" firstAttribute="top" secondItem="cme-d5-AMP" secondAttribute="bottom" constant="8" id="8eI-ZY-zFk"/>
                             <constraint firstItem="uqu-fk-mts" firstAttribute="leading" secondItem="HiD-aC-k2D" secondAttribute="trailing" constant="2" id="BhX-Sj-KbG"/>
                             <constraint firstItem="HiD-aC-k2D" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" id="BlN-2M-bBY"/>
                             <constraint firstItem="cme-d5-AMP" firstAttribute="width" secondItem="rPy-By-uKQ" secondAttribute="width" multiplier="1.49" id="D6h-qm-DeU"/>
+                            <constraint firstItem="Ckn-tc-owq" firstAttribute="leading" secondItem="tVh-RG-qFd" secondAttribute="trailing" constant="8" id="DYd-fw-Vhm"/>
                             <constraint firstItem="jut-pP-cBN" firstAttribute="width" secondItem="txQ-rS-PFO" secondAttribute="width" id="E9Q-TR-ryR"/>
                             <constraint firstItem="tVh-RG-qFd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" id="EXA-Hs-6LB"/>
                             <constraint firstItem="Uyq-fg-33E" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" constant="-20" id="FWo-B0-JSl"/>
                             <constraint firstItem="Xs5-dT-VwP" firstAttribute="top" secondItem="EiK-0A-3ZX" secondAttribute="bottom" constant="8" id="G6c-qD-LEF"/>
+                            <constraint firstItem="Ckn-tc-owq" firstAttribute="top" secondItem="cme-d5-AMP" secondAttribute="bottom" constant="8" id="I9n-jI-Inp"/>
                             <constraint firstItem="rPy-By-uKQ" firstAttribute="top" secondItem="jut-pP-cBN" secondAttribute="bottom" constant="20" id="JQ2-z4-jUE"/>
                             <constraint firstItem="uqu-fk-mts" firstAttribute="top" secondItem="axe-8j-HOE" secondAttribute="bottom" constant="8" id="JcV-D7-tQI"/>
                             <constraint firstItem="cme-d5-AMP" firstAttribute="leading" secondItem="XMf-Mk-ZQz" secondAttribute="leadingMargin" constant="1" id="KhT-d0-X7R"/>
