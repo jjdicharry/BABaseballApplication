@@ -34,15 +34,16 @@
         self.timeLabel.text       = [self.timeLabel.text stringByAppendingString:@" "];
         self.timeLabel.text       = [self.timeLabel.text stringByAppendingString:scoreboard.amPM];
         self.awayLogoImage.image  = [UIImage imageNamed:scoreboard.awayTeamAbbr];
-	    
-        if ([scoreboard.awayRun integerValue] < 10)
-		self.awayBigRunLabel.text = [[@" " stringByAppendingString:scoreboard.awayRun] stringByAppendingString:@"  "];
-	else
+
+        if (scoreboard.awayRun != nil && [scoreboard.awayRun integerValue] < 10)
+            self.awayBigRunLabel.text = [[@" " stringByAppendingString:scoreboard.awayRun] stringByAppendingString:@"  "];
+        else
             self.awayBigRunLabel.text = scoreboard.awayRun;
 	    
+            
         self.homeLogoImage.image  = [UIImage imageNamed:scoreboard.homeTeamAbbr];
 	    
-        if ([scoreboard.homeRun integerValue] < 10)
+        if (scoreboard.homeRun != nil && [scoreboard.homeRun integerValue] < 10)
             self.homeBigRunLabel.text = [[@" " stringByAppendingString:scoreboard.homeRun] stringByAppendingString:@"  "];
         else
             self.homeBigRunLabel.text = scoreboard.homeRun;
@@ -113,20 +114,26 @@
 	    
         self.winnPitchNameLabel.text   = scoreboard.winnPitchLastName;
         self.losePitchNameLabel.text   = scoreboard.losePitchLastName;
-        self.winnPitchRecordLabel.text = @"(";
-        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
-                                          stringByAppendingString:scoreboard.winnPitchWin];
-        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@" - "];
-        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
-                                          stringByAppendingString:scoreboard.winnPitchLoss];
-        self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@")"];
-        self.losePitchRecordLabel.text = @"(";
-        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
-                                          stringByAppendingString:scoreboard.losePitchWin];
-        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@" - "];
-        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
-                                          stringByAppendingString:scoreboard.losePitchLoss];
-        self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@")"];
+        
+        if (scoreboard.winnPitchWin != nil) {
+            self.winnPitchRecordLabel.text = @"(";
+            self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
+                                              stringByAppendingString:scoreboard.winnPitchWin];
+            self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@" - "];
+            self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text
+                                              stringByAppendingString:scoreboard.winnPitchLoss];
+            self.winnPitchRecordLabel.text = [self.winnPitchRecordLabel.text stringByAppendingString:@")"];
+        }
+        
+        if (scoreboard.losePitchWin != nil) {
+            self.losePitchRecordLabel.text = @"(";
+            self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
+                                              stringByAppendingString:scoreboard.losePitchWin];
+            self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@" - "];
+            self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text
+                                              stringByAppendingString:scoreboard.losePitchLoss];
+            self.losePitchRecordLabel.text = [self.losePitchRecordLabel.text stringByAppendingString:@")"];
+        }
         
         if (scoreboard.highlightURL01 == nil) {
             [self.media1Button setHidden:YES];
